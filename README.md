@@ -35,4 +35,38 @@
 
 ### Fontes de receita
 
-### Música
+## Músicas
+- Bad Romance - Lady Gaga
+- Low - Train
+- Tokyo Drift - Teriyaki Boyz
+- On The Floor - JLO
+- Beat It - Michael Jackson
+- Rock That Body - Blacked Eyed Peas
+- Billie Jean - Michael Jackson
+- Thriller - Michael Jackson
+- I Was Made For Lovin’ You - Kiss
+- Highway to Hell - AC/DC
+- Pump It Up - Endor
+- Poker Face - Lady Gaga
+- Just Dance - Lady Gaga
+- Crazy In Love - Beyonce
+- I Love It - Charli xcx
+- Dark Horse-Katy Perry
+- In Da Club - 50 CENT
+- Yeah - Usher
+- S&M - Rihanna
+- TiK ToK - Kesha
+- Danza Kuduro - Don Omar
+- Candy Shop - 50 CENT
+- What Makes You Beautiful - 1D
+- Rich Girl - Eve
+- Back in Black - AC/DC
+- Chicago - Michael Jackson
+- Bohemian Rhapsody - Queen
+- We Will Rock You - Queen
+- Cherry Pie - Warrant
+- Come As You Are - Nirvana
+- No More Tears - Ozzy
+- Milkshake - Kelis
+- Smack That - Akon
+- Ice Ice Baby - Vanilla Ice

@@ -89,6 +89,11 @@ A principal fonte de receita do Rhythm Protocol seria a cobrança por partida, p
 - Milkshake - Kelis
 - Smack That - Akon
 - Ice Ice Baby - Vanilla Ice
+- Temperature - Sean
+- Hotel Room - Pitbull
+- Right Round - Kesha 
+- Smooth Criminal - Michael Jackson
+- Sexy and i know it - LMFAO
 
 ## Músicas em seus níveis:
 - **Fácil (12)** - What Makes You Beautiful, Billie Jean, Pump It Up, Smack That, Just Dance, In Da Club, Rich Girl, On The Floor, Tokyo Drift, Dark Horse, Candy Shop, Sexy and i Know it

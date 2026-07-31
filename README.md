@@ -28,12 +28,31 @@
  Dentro do universo, aquele que melhor seguir o “protocolo do ritmo” irá ganhar a aposta, o dinheiro envolvido e a sobrevivência, sendo liberado da sala. Porém, seu adversário deve continuar na sala e lidar com as consequências da aposta.
 
 ### Regras
+- Os jogadores não poderão sair após a porta se fechar, terão que esperar o final da competição para sair da discoteca;
+- Os jogadores terão que entrar em consenso sobre a escolha da música;
+- Os jogadores terão que entrar em consenso sobre a dificuldade da partida;
+- Será uma única partida de 2 minutos para cada dupla; 
+- Os jogadores precisarão tirar os calçados para competir;
+- Os jogadores deverão acompanhar os movimentos indicados na tela/projeção.
+- Cada jogador deverá executar os movimentos no ritmo e no momento indicados.
+- Os erros serão contabilizados durante a partida.
+- O jogador que obtiver o melhor desempenho ao seguir o “protocolo do ritmo” será declarado vencedor.
+- Em caso de empate, poderá ser realizada uma rodada de desempate.
+- Após a aplicação da consequência, a partida será encerrada e a sala estará disponível para uma nova dupla.
+- O jogador que perder será obrigado a arcar com a punição;
+
 
 ### Personagens
+Modo fácil / Homem
+Modo médio / Criança
+Modo díficil / Mulher
 
 ### Artefatos
+Pista; 
+Tela/projeção
 
 ### Fontes de receita
+A principal fonte de receita do Rhythm Protocol seria a cobrança por partida, permitindo que os jogadores paguem para participar da experiência de dança e competição. Assim, cada participante paga para entrar em uma partida de 2 minutos com outra pessoa.
 
 ## Músicas
 - Bad Romance - Lady Gaga
@@ -70,3 +89,8 @@
 - Milkshake - Kelis
 - Smack That - Akon
 - Ice Ice Baby - Vanilla Ice
+
+## Músicas em seus níveis:
+- **Fácil (12)** - What Makes You Beautiful, Billie Jean, Pump It Up, Smack That, Just Dance, In Da Club, Rich Girl, On The Floor, Tokyo Drift, Dark Horse, Candy Shop, Sexy and i Know it
+- **Médio(13)** -TiK ToK, We Will Rock You, Highway To Hell, Danca Kuduro, Back in Black, Chicago, Rock That Body, Low, Ice Ice Baby, Sexy Back, Temperature, Highway to Hell,  Right Round, Smooth Criminal
+- **Díficil (13)**- Bad Romance, Thriller, Poker Face, Crazy In Love, Bohemian Rhapsody, Yeah, I Love It, Milkshake, Cherry Pie,I Was Made For Lovin’You, S&M, Beat It, Hotel Room,

@@ -1,72 +1,67 @@
-Game Design:
-Overview
-Theme / Setting / Genre
-Core Gameplay Mechanics Brief
-Targeted platforms
-Monetization model (Brief/Document)
-Project Scope
-Influences (Brief)                                                 
-Dance dance revolution
-Pump It Up!
-O conto da aia
-Harrison Bergeron
-Stray
-Alice in Borderland
-Beat Saber
-Equilibrium
-Footloose
-The elevator Pitch
-Project Description (Brief)
-Project Description (Detailed)
-
-What sets this project apart?
-Core Gameplay Mechanics (Detailed)
-Sincronização com o ritmo
-Execução de passos
-Pontuação e gerenciamento de erros
-Duelo competitivo e consequência
-
-Story and Gameplay
-Story (Brief)
-Story (Detailed)
-Gameplay (Brief)
-Gameplay (Detailed)
-
-Assets Needed
-2D
-3D
-Sound
-Code
-Animation
-
-Schedule
-Software
-Hardware
-Conexão de ambos
-Testes
-Feira
+# Game Design:
+## Overview
+## Theme / Setting / Genre
+## Core Gameplay Mechanics Brief
+## Targeted platforms
+## Monetization model (Brief/Document)
+## Project Scope
+## Influences (Brief)                                                 
+## Dance dance revolution
+## Pump It Up!
+- O conto da aia
+- Harrison Bergeron
+- Stray
+- Alice in Borderland
+- Beat Saber
+- Equilibrium
+- Footloose
+## The elevator Pitch
+## Project Description (Brief)
+## Project Description (Detailed)
+## What sets this project apart?
+## Core Gameplay Mechanics (Detailed)
+- Sincronização com o ritmo
+- Execução de passos
+- Pontuação e gerenciamento de erros
+- Duelo competitivo e consequência
+## Story and Gameplay
+## Story (Brief)
+## Story (Detailed)
+## Gameplay (Brief)
+## Gameplay (Detailed)
+## Assets Needed
+- 2D
+- 3D
+- Sound
+- Code
+## Schedule
+- Software
+- Hardware
+- Conexão de ambos
+- Testes
+- Feira
 
 
-Theme / Setting / Genre
+## Theme / Setting / Genre
 Gênero: Ritmo / Jogo de dança / Competição
 Tema: Sobrevivência, competição e as consequências de um futuro distópico dominado pela tecnologia.
 
-Core Gameplay Mechanics Brief
+## Core Gameplay Mechanics Brief
 
 Sincronização com o ritmo
 Execução de passos
 Pontuação e gerenciamento de erros
 Duelo competitivo e consequência
 
-Targeted platforms
+## Targeted platforms
 Phaser
 RasPi/ESP32
 
-Monetization model (Brief/Document) 
+## Monetization model (Brief/Document) 
   - A principal fonte de receita de Rhythm Protocol será a cobrança individual por partida. Cada jogador pagará para participar de uma competição de aproximadamente dois minutos contra outro participante. O modelo de monetização foi escolhido para combinar com a proposta de uma experiência presencial de dança, na qual o equipamento físico e a pista fazem parte da experiência.
   - O valor pago dará acesso a uma partida completa, incluindo a seleção da música e da dificuldade e a disputa entre os dois participantes. Como cada partida possui duração limitada, o equipamento poderá receber diversas duplas ao longo do período de funcionamento, permitindo que o modelo de cobrança por partida seja aplicado de maneira contínua.
 
-Project Scope 
+## Project Scope 
   - Game Time Scale
     - O custo estimado de desenvolvimento é baseado no valor aproximado de mercado do trabalho da equipe, dos equipamentos e dos demais recursos necessários para criar um protótipo funcional.
     - O protótipo está previsto para levar aproximadamente 4 meses para ser desenvolvido, seguindo o cronograma atual do projeto, desde as primeiras etapas de desenvolvimento até a feira de jogos em novembro de 2026.
@@ -95,7 +90,7 @@ Materiais para acabamento: R$ 50 a R$ 150
 Valor total estimado: entre R$ 840 e R$ 2.070.
 
 
-Influences (Brief)
+## Influences (Brief)
   - Pump It Up!
     - Jogo
     - Como uma de duas principais referências para as mecânicas do jogo, temos essa máquina de dança que nos deu a ideia inicialmente.
@@ -124,27 +119,26 @@ Influences (Brief)
     - Filme
     - Estamos utilizando esse filme como referência por ser uma cidade onde a dança é proibida, assim como no universo do nosso jogo.
 
-The elevator Pitch
+## The elevator Pitch
  Em Rhythm Protocol, temos uma competição de dança onde apenas aquele que seguir os movimentos corretos irá sobreviver. Num universo cyberpunk, com uma teocracia proibindo a dança, Rhythm Protocol é um jogo que busca a adrenalina do perigo.
 
-Project Description (Brief):
+## Project Description (Brief):
 
 Rhythm Protocol é um jogo futurista de ritmo e sobrevivência ambientado em uma discoteca abandonada, em um futuro onde a tecnologia domina a sociedade. Dois competidores são colocados frente a frente em uma batalha de ritmo, na qual precisam reproduzir corretamente uma sequência de movimentos enquanto enfrentam uma pressão constante. Cada erro aproxima o jogador da condenação, tornando cada movimento mais tenso.
 O objetivo principal é acompanhar o ritmo, memorizar as sequências e cometer o menor número possível de erros. Conforme a disputa avança, os movimentos se tornam mais rápidos e complexos, aumentando a dificuldade e a tensão. Combinando música, competição e uma atmosfera distópica, Rhythm Protocol busca proporcionar uma experiência intensa na qual apenas o competidor que conseguir manter o ritmo poderá vencer o desafio.
 Project Description (Detailed)
-
 Rhythm Protocol se passa em um futuro distópico no qual a tecnologia alcançou um nível de domínio sobre a humanidade. Nesse cenário, antigas formas de entretenimento foram abandonadas, incluindo as discotecas que antes eram símbolos de diversão e liberdade. Uma dessas discotecas esquecidas é transformada em uma arena tecnológica, onde dois competidores são colocados frente a frente para participar de uma perigosa batalha de ritmo.
 A principal mecânica do jogo consiste em observar e reproduzir corretamente sequências de movimentos sincronizadas com a música. O jogador precisa manter a concentração e acompanhar o ritmo enquanto as sequências aumentam gradualmente em velocidade e complexidade. Cada movimento executado de forma incorreta representa um erro e aproxima o competidor de sua condenação, criando uma constante sensação de risco durante a partida.
 A competição entre os dois jogadores é um dos elementos centrais da experiência. Eles estão lutando pelo mesmo objetivo, a maior pontuação e a vitória. Enquanto tentam manter seu próprio ritmo, os competidores também precisam lidar com a pressão causada pelo adversário e pela possibilidade de falhar. Quanto mais a batalha avança, maior se torna a tensão entre os participantes.
 O ambiente da discoteca contribui para a identidade visual e narrativa do projeto. Iluminação neon, estruturas antigas, elementos tecnológicos e efeitos visuais futuristas criam um contraste entre o passado do local e o futuro dominado pelas máquinas. A música e os efeitos de iluminação acompanham o desempenho dos jogadores, fazendo com que a arena pareça reagir à batalha e aumentando a imersão durante a partida.
 Rhythm Protocol busca unir a acessibilidade dos jogos de ritmo com a tensão dos jogos de competição. Embora a ideia principal seja simples, acompanhar corretamente a sequência de movimentos e manter o ritmo, o aumento progressivo da dificuldade exige precisão, memória, concentração e capacidade de adaptação. Dessa forma, cada partida se transforma em um teste de habilidade no qual um único erro pode mudar completamente o resultado.
 
-What sets this project apart?
-Jogo de competição (1x1)
-Dança / Jogo físico/Hardware
-A história (adrenalina pelo jogo proibido)
+## What sets this project apart?
+  - Jogo de competição (1x1)
+  - Dança / Jogo físico/Hardware
+  - A história (adrenalina pelo jogo proibido)
 
-Core Gameplay Mechanics (Detailed)
+## Core Gameplay Mechanics (Detailed)
   - Sincronização com o ritmo
     - A sincronização com o ritmo é a base do gameplay de Rhythm Protocol. As sequências de movimentos são criadas de acordo com a música escolhida e aparecem na tela em momentos específicos. O jogador precisa acompanhar essas indicações mantendo seus movimentos sincronizados com a música.
     - Cada movimento possui um momento específico no qual deve ser executado. O sistema compara o momento em que o jogador realiza o movimento com o momento esperado pela sequência. Quanto menor for a diferença entre os dois tempos, melhor será o resultado do jogador.
@@ -160,12 +154,12 @@ O sistema mantém a pontuação atualizada durante toda a partida, permitindo qu
     - Rhythm Protocol transforma a mecânica de ritmo em uma competição direta entre dois jogadores. Ambos recebem o mesmo desafio e competem para obter o melhor desempenho durante a partida.
     - Ao final da partida, as pontuações dos dois jogadores são comparadas. O participante com o melhor desempenho é declarado vencedor. Em caso de empate, poderá ocorrer uma rodada de desempate. Depois da definição do vencedor, a consequência narrativa é aplicada ao perdedor e a partida é encerrada.
 
-Story and Gameplay
+## Story and Gameplay
 Em um futuro dominado pela tecnologia e por um sistema autoritário que controla o comportamento da população, a dança e outras formas de expressão foram proibidas por serem consideradas manifestações de desordem. Uma antiga discoteca, abandonada após a ascensão desse novo regime, tornou-se um dos poucos lugares onde a dança ainda existe.
 Dois competidores entram no local para participar do Rhythm Protocol, uma competição clandestina na qual devem seguir sequências de movimentos determinadas pelo sistema. Cada erro aumenta seu nível de condenação e pode fazê-los perder créditos, status e acesso à liberdade.
 Ao final, apenas o jogador que apresentar o melhor desempenho é declarado vencedor e recebe autorização para deixar a discoteca. O perdedor, porém, precisa enfrentar uma consequência determinada pelo próprio Protocolo.
 
-Story (Detailed)
+## Story (Detailed)
 Rhythm Protocol se passa em um futuro distópico no qual a tecnologia deixou de ser apenas uma ferramenta utilizada pela humanidade e passou a controlar grande parte da sociedade. Governos e sistemas automatizados monitoram constantemente o comportamento da população, determinando o que pode ser feito, consumido e até mesmo expressado. Nesse novo modelo de sociedade, manifestações consideradas imprevisíveis ou desnecessárias são proibidas. Entre elas está a dança, vista pelo regime como uma forma de expressão capaz de incentivar desordem e desafiar o controle estabelecido.
 Antes da ascensão desse sistema, as discotecas eram espaços associados à música, à liberdade e à interação entre pessoas. Com a transformação da sociedade, esses locais foram abandonados e substituídos por ambientes controlados pela tecnologia. A maioria dessas antigas discotecas foi destruída ou convertida em instalações do novo regime. Entretanto, algumas permaneceram esquecidas, escondidas entre as estruturas de uma cidade dominada por máquinas.
 Uma dessas construções é uma antiga discoteca que, durante anos, permaneceu abandonada. O local ainda conserva parte de sua estrutura original, como a pista de dança, os sistemas de iluminação e os equipamentos de som. Porém, esses elementos foram modificados e incorporados a uma tecnologia avançada. Cabos, telas, sensores e estruturas metálicas ocupam o espaço, enquanto luzes neon iluminam a pista. O ambiente representa o contraste entre o passado, quando a dança significava liberdade, e o presente, no qual até mesmo os movimentos do corpo são controlados pela tecnologia.
@@ -187,13 +181,12 @@ Depois que o vencedor é definido, a arena retorna gradualmente ao estado de esp
 Assim, o Rhythm Protocol transforma uma antiga forma de diversão em uma competição intensa. Em um mundo onde a tecnologia controla quase todos os aspectos da vida humana, a dança continua existindo de uma maneira diferente. Na arena, cada movimento representa uma tentativa de superar o adversário, cada erro pode mudar a pontuação e cada sequência concluída aproxima os competidores do final da disputa.
 No fim, o verdadeiro desafio não é apenas seguir o ritmo da música. É conseguir manter a concentração, superar a pressão e permanecer no ritmo até o último movimento.
 
-
-Gameplay (Brief)
+## Gameplay (Brief)
 Rhythm Protocol é um jogo de ritmo competitivo para dois jogadores no qual os participantes devem reproduzir movimentos indicados na tela no ritmo da música. Antes da partida, os jogadores entram em consenso sobre a música e a dificuldade que desejam jogar.
 Durante aproximadamente dois minutos, os competidores acompanham uma sequência de movimentos e tentam executá-los com a maior precisão possível. O sistema registra os acertos e erros e calcula a pontuação de cada jogador. Ao final da partida, os desempenhos são comparados e o jogador com a maior pontuação vence. Em caso de empate, uma rodada de desempate poderá ser realizada.
 Dentro da narrativa do jogo, vencer significa escapar da discoteca e evitar a consequência imposta pelo Protocolo. Assim, cada movimento não representa apenas uma pontuação, mas também uma tentativa de sobreviver à competição.
 
-Gameplay (Detailed)
+## Gameplay (Detailed)
 A partida de Rhythm Protocol começa com dois jogadores entrando na arena de dança. A porta da discoteca é fechada e os participantes ficam impossibilitados de deixar o local antes do término da competição. Os dois jogadores devem então entrar em consenso sobre a música e a dificuldade da partida.
 Após a seleção, a música começa e a sequência de movimentos é apresentada na tela ou projeção localizada à frente dos jogadores. As indicações são organizadas de acordo com o ritmo da música e representam os movimentos que devem ser realizados na pista. Cada jogador deve acompanhar as indicações e executar o movimento correspondente no momento correto.
 O sistema registra continuamente as ações realizadas pelos jogadores. Para cada movimento, é comparado o tempo em que a ação deveria ocorrer com o tempo em que o jogador realmente executou o movimento. Quanto menor for essa diferença, maior será a precisão do jogador e, consequentemente, sua pontuação.
@@ -203,24 +196,24 @@ Durante o duelo, os jogadores podem acompanhar suas respectivas pontuações, pe
 Ao término da música, o sistema apresenta o resultado da partida. O jogador que obtiver a maior pontuação é declarado vencedor. Caso os dois jogadores apresentem a mesma pontuação, uma rodada de desempate poderá ser realizada para determinar o vencedor.
 Após a definição do resultado, a narrativa do jogo é concluída: o vencedor recebe autorização para deixar a discoteca, enquanto o perdedor precisa lidar com a consequência estabelecida pelo Rhythm Protocol. Depois disso, a partida é encerrada e o sistema retorna à tela inicial, permitindo que uma nova dupla participe.
 
+## Assets Needed:
+### 2D
+  - Setas coloridas
+  - Botão de Play
+  - Formas geométrica / retângulos onde os personagens ficam
+  - Formas geométrica / retângulos onde as músicas ficam
+  - Pista
+  - Espaço para pontuação
 
-Assets Needed:
-2D
-  -
-
-3D
+### 3D
   - Characters List
-    - Character #1
-    - Character #2
-    - Character #3
-    - etc.
-  - Environmental Art Lists
-    - Example #1
-    - Example #2 
-    - Example #3
-    - etc.
+    - Homem (Fácil
+    - Criança (Médio)
+    - Mulher (Díficil)
+  - Mapa
+    - Fundo estático
 
-Sound
+### Sound
   - Sound List (Ambient)
    	-Carpenter Brut – Turbo Killer
 	-Mega Drive – NARC
@@ -235,7 +228,7 @@ Sound
  - Sound List (Player)
       	Efeitos Sonoros de erros e acertos
 
-Code
+### Code
   - Escolha de dificuldade que leva a seleção de músicas
   - Seleção da música
   - Estrutura básica das músicas (setas, quando aparecem, etc)
@@ -245,7 +238,7 @@ Code
   - Tela de vitória e derrota a partir da pontuação
   - Botão de “Reiniciar”
 
-Schedule
+## Schedule
   - Software
     - 20/09
   - Hardware

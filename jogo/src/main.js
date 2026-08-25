@@ -31,5 +31,6 @@ game.scene.add('DarkHorseScene', DarkHorseScene);
 game.scene.add('CandyShopScene', CandyShopScene);
 game.scene.add('BeautifulScene', BeautifulScene);
 game.scene.add('RichGirlScene', RichGirlScene);
+game.scene.add('TokyoGameScene', TokyoGameScene);
 
 game.scene.start('PreloadScene');

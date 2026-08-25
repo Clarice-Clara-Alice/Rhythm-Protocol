@@ -1,4 +1,4 @@
-#cutscene-tk{
+#cutscene-billie {
 
     position: absolute;
 
@@ -16,7 +16,7 @@
 
 }
 
-#cutscene-tk img {
+#cutscene-billie img {
 
     position: absolute;
 
@@ -35,39 +35,34 @@
 
 }
 
-
-#cutscene-tk img:nth-child(1) {
+#cutscene-billie img:nth-child(1) {
 
     animation-name: exibirInicial;
     animation-delay: 0s;
 
 }
 
-
-#cutscene-tk img:nth-child(2) {
+#cutscene-billie img:nth-child(2) {
 
     animation-name: exibirOutros;
     animation-delay: 2s;
 
 }
 
-
-#cutscene-tk img:nth-child(3) {
+#cutscene-billie img:nth-child(3) {
 
     animation-name: exibir3s;
     animation-delay: 4s;
 
 }
 
-
-#cutscene-tk img:nth-child(4) {
+#cutscene-billie img:nth-child(4) {
 
     animation-name: exibirFinal;
 
     animation-delay: 6s;
 
 }
-
 
 @keyframes exibirInicial {
 
@@ -78,7 +73,6 @@
 
 }
 
-
 @keyframes exibirOutros {
 
     0% {visibility: hidden; opacity: 0;}
@@ -88,7 +82,6 @@
 
 }
 
-
 @keyframes exibir3s {
 
     0% {visibility: hidden; opacity: 0;}
@@ -97,7 +90,6 @@
     100% {visibility: hidden; opacity: 0;}
 
 }
-
 
 @keyframes exibirFinal {
 

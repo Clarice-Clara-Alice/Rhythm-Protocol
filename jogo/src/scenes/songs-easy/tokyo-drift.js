@@ -21,7 +21,7 @@ window.TokyoScene = class TokyoScene extends Phaser.Scene {
 
         const cutscene = document.createElement('div');
 
-        cutscene.id = 'cutscene-tk';
+        cutscene.id = 'cutscene-billie';
        
         cutscene.innerHTML = `
             <img src="assets/images/1-easy.png">

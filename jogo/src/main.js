@@ -32,5 +32,6 @@ game.scene.add('CandyShopScene', CandyShopScene);
 game.scene.add('BeautifulScene', BeautifulScene);
 game.scene.add('RichGirlScene', RichGirlScene);
 game.scene.add('TokyoGameScene', TokyoGameScene);
+game.scene.add('BillieGameScene', BillieGameScene);
 
 game.scene.start('PreloadScene');

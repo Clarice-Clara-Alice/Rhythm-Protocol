@@ -1,8 +1,8 @@
-window.TokyoGameScene = class TokyoGameScene extends Phaser.Scene {
+window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
 
     constructor() {
         super({
-            key: 'TokyoGameScene',
+            key: 'BillieGameScene',
         });
     }
 
@@ -116,9 +116,7 @@ window.TokyoGameScene = class TokyoGameScene extends Phaser.Scene {
         this.mapData = this.cache.json.get(
             'billieMap'
         );
-        
-        this.mapData = this.cache.json.get('billieMap');
-        console.log('MAP DATA:', this.mapData);
+
         this.events = this.mapData.eventos;
 
         this.input.keyboard.on('keydown-A', () => this.hitNote('left', 1));

@@ -1,17 +1,17 @@
-window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
+window.TheFloorGameScene = class TheFloorGameScene extends Phaser.Scene {
 constructor() {
    super({
-       key: 'BillieGameScene'
+       key: 'TheFloorGameScene'
    });
 }
 preload() {
    this.load.audio(
-       'billieMusic',
-       'assets/music/billie-jean-michael-jackson-youtube_mT4mmhRr.mp3'
+       'FloorJLOMusic',
+       'assets/music/jlo.mp3'
    );
    this.load.json(
-       'billieMap',
-       'maps/billie-jean.json'
+       'TheFloorMap',
+       'maps/on-the-floor.json'
    );
 }
 
@@ -109,16 +109,17 @@ create() {
    )
    .setOrigin(0.5);
    this.mapData = this.cache.json.get(
-       'billieMap'
+       'TheFloorMap'
    );
    if (!this.mapData) {
        console.error(
-           'ERRO: Não foi possível carregar billieMap.'
+           'ERRO: Não foi possível carregar FloorJLOMap.'
        );
        return;
    }
-   this.events =
-       this.mapData.eventos;
+    this.noteEvents =
+    this.mapData.eventos;
+console.log('EVENTOS DA MÚSICA:', this.noteEvents);
    this.input.keyboard.on('keydown-A',
        () => this.hitNote(
            'left', 1));
@@ -145,7 +146,7 @@ create() {
            'right', 2));
 
    this.music = this.sound.add(
-       'billieMusic'
+       'FloorJLOMusic'
    );
    this.music.play();
    this.songStartTime =
@@ -212,48 +213,37 @@ createLanes() {
    });
 }
 
-
 update() {
-   if (!this.music.isPlaying) {
-       return;
-   }
-   const songTime =
-       (this.time.now -
-       this.songStartTime) / 1000;
-   while (
-       this.mapIndex <
-       this.events.length
-   ) {
-       const event =
-           this.events[
-               this.mapIndex
-           ];
-       const spawnTime =
-           event.tempo -
-           (
-               this.travelTime / 1000
-           );
 
-       if (
-           songTime >= spawnTime
-       ) {
-           this.spawnNote(
-               event, 1);
-           this.spawnNote(
-               event, 2);
-           this.mapIndex++;}
-       else {break;}
-   }
-   [...this.activeNotes].forEach((note) => {
-       if (!note.hit &&
-           songTime >
-           note.time + 0.25
-       ) {
-           this.missNote(
-               note
-           );
-       }
-   });
+    if (!this.music || !this.music.isPlaying) {
+        return;
+    }
+    const songTime =
+        (this.time.now - this.songStartTime) / 1000;
+    while (
+        this.mapIndex < this.noteEvents.length
+    ) {
+        const event =
+            this.noteEvents[this.mapIndex];
+        const spawnTime =
+            event.tempo -
+            (this.travelTime / 1000);
+        if (songTime >= spawnTime) {
+            this.spawnNote(event, 1);
+            this.spawnNote(event, 2);
+            this.mapIndex++;
+        } else {
+            break;
+        }
+    }
+    [...this.activeNotes].forEach((note) => {
+        if (
+            !note.hit &&
+            songTime > note.time + 0.25
+        ) {
+            this.missNote(note);
+        }
+    });
 }
 
 spawnNote(
@@ -310,7 +300,7 @@ hitNote(
    direction,
    player
 ) {
-   if (!this.music.isPlaying) {return;}
+    if (!this.music || !this.music.isPlaying) {return;}
    const songTime =
        (this.time.now -
        this.songStartTime) / 1000;

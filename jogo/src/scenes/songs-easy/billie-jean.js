@@ -21,7 +21,7 @@ window.BillieScene = class BillieScene extends Phaser.Scene {
 
         const cutscene = document.createElement('div');
 
-        cutscene.id = 'cutscene-billie';
+        cutscene.id = 'cutscene-easy';
        
         cutscene.innerHTML = `
             <img src="assets/images/1-easy.png">

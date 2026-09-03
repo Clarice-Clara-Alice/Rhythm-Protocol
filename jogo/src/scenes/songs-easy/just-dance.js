@@ -1,8 +1,8 @@
-window.PumpItScene = class PumpItScene extends Phaser.Scene {
+window.JustDanceScene = class JustDanceScene extends Phaser.Scene {
 
     constructor() {
         super({
-            key: 'PumpItScene',
+            key: 'JustDanceScene',
         });
     }
 
@@ -22,7 +22,7 @@ window.PumpItScene = class PumpItScene extends Phaser.Scene {
         this.add.text(
             this.scale.width / 2,
             this.scale.height / 2,
-            'Pump It Up',
+            'Just Dance',
             {
                 fontFamily: 'Times New Roman',
                 fontSize: '60px',

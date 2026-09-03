@@ -35,15 +35,8 @@ window.BillieScene = class BillieScene extends Phaser.Scene {
             .appendChild(cutscene);
 
        this.time.delayedCall(8000, () => {
-
             cutscene.remove();
-
             this.scene.start('BillieGameScene');
-
         });
-
-
     }
-
-
 };

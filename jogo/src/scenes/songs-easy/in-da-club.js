@@ -1,8 +1,8 @@
-window.TokyoScene = class TokyoScene extends Phaser.Scene {
+window.InDaClubScene = class InDaClubScene extends Phaser.Scene {
 
     constructor() {
         super({
-            key: 'TokyoScene',
+            key: 'InDaClubScene',
         });
     }
 
@@ -21,7 +21,7 @@ window.TokyoScene = class TokyoScene extends Phaser.Scene {
 
         const cutscene = document.createElement('div');
 
-        cutscene.id = 'cutscene-billie';
+        cutscene.id = 'cutscene-easy';
        
         cutscene.innerHTML = `
             <img src="assets/images/1-easy.png">
@@ -35,15 +35,8 @@ window.TokyoScene = class TokyoScene extends Phaser.Scene {
             .appendChild(cutscene);
 
        this.time.delayedCall(8000, () => {
-
             cutscene.remove();
-
-            this.scene.start('TokyoGameScene');
-
+            this.scene.start('InDaClubGameScene');
         });
-
-
     }
-
-
 };

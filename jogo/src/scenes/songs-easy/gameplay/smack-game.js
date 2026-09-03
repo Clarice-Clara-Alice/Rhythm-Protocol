@@ -1,17 +1,17 @@
-window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
+window.SmackThatGameScene = class SmackThatGameScene extends Phaser.Scene {
 constructor() {
    super({
-       key: 'BillieGameScene'
+       key: 'SmackThatGameScene'
    });
 }
 preload() {
    this.load.audio(
-       'billieMusic',
-       'assets/music/billie-jean.mp3'
+       'smackMusic',
+       'assets/music/smack-that.mp3'
    );
    this.load.json(
-       'billieMap',
-       'maps/billie-jean.json'
+       'smackMap',
+       'maps/smack-that.json'
    );
 }
 
@@ -109,11 +109,11 @@ create() {
    )
    .setOrigin(0.5);
    this.mapData = this.cache.json.get(
-       'billieMap'
+       'smackMap'
    );
    if (!this.mapData) {
        console.error(
-           'ERRO: Não foi possível carregar billieMap.'
+           'ERRO: Não foi possível carregar smackMap.'
        );
        return;
    }
@@ -145,7 +145,7 @@ create() {
            'right', 2));
 
    this.music = this.sound.add(
-       'billieMusic'
+       'smackMusic'
    );
    this.music.play();
    this.songStartTime =

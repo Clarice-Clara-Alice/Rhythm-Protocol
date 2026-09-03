@@ -1,17 +1,17 @@
-window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
+window.DarkHorseGameScene = class DarkHorseGameScene extends Phaser.Scene {
 constructor() {
    super({
-       key: 'BillieGameScene'
+       key: 'DarkHorseGameScene'
    });
 }
 preload() {
    this.load.audio(
-       'billieMusic',
-       'assets/music/billie-jean.mp3'
+       'darkHorseMusic',
+       'assets/music/dark-horse.mp3'
    );
    this.load.json(
-       'billieMap',
-       'maps/billie-jean.json'
+       'darkHorseMap',
+       'maps/dark-horse.json'
    );
 }
 
@@ -109,11 +109,11 @@ create() {
    )
    .setOrigin(0.5);
    this.mapData = this.cache.json.get(
-       'billieMap'
+       'darkHorseMap'
    );
    if (!this.mapData) {
        console.error(
-           'ERRO: Não foi possível carregar billieMap.'
+           'ERRO: Não foi possível carregar darkHorseMap.'
        );
        return;
    }
@@ -145,7 +145,7 @@ create() {
            'right', 2));
 
    this.music = this.sound.add(
-       'billieMusic'
+       'darkHorseMusic'
    );
    this.music.play();
    this.songStartTime =

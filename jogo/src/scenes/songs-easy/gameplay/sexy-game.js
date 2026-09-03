@@ -1,17 +1,18 @@
-window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
+window.SexyKnowItGameScene = class SexyKnowItGameScene extends Phaser.Scene {
+    
 constructor() {
    super({
-       key: 'BillieGameScene'
+       key: 'SexyKnowItGameScene'
    });
 }
 preload() {
    this.load.audio(
-       'billieMusic',
-       'assets/music/billie-jean.mp3'
+       'sexyMusic',
+       'assets/music/sexy-know-it.mp3'
    );
    this.load.json(
-       'billieMap',
-       'maps/billie-jean.json'
+       'sexyMap',
+       'maps/sexy-and-i-know-it.json'
    );
 }
 
@@ -109,11 +110,11 @@ create() {
    )
    .setOrigin(0.5);
    this.mapData = this.cache.json.get(
-       'billieMap'
+       'sexyMap'
    );
    if (!this.mapData) {
        console.error(
-           'ERRO: Não foi possível carregar billieMap.'
+           'ERRO: Não foi possível carregar sexyMap.'
        );
        return;
    }
@@ -145,7 +146,7 @@ create() {
            'right', 2));
 
    this.music = this.sound.add(
-       'billieMusic'
+       'sexyMusic'
    );
    this.music.play();
    this.songStartTime =

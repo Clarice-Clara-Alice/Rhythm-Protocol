@@ -7,7 +7,7 @@ constructor() {
 preload() {
    this.load.audio(
        'FloorJLOMusic',
-       'assets/music/jlo.mp3'
+       'assets/music/on-the-floor.mp3'
    );
    this.load.json(
        'TheFloorMap',

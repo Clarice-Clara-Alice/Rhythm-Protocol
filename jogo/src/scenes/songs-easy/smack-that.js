@@ -1,8 +1,8 @@
-window.BeautifulScene = class BeautifulScene extends Phaser.Scene {
+window.SmackThatScene = class SmackThatScene extends Phaser.Scene {
 
     constructor() {
         super({
-            key: 'BeautifulScene',
+            key: 'SmackThatScene',
         });
     }
 
@@ -36,7 +36,7 @@ window.BeautifulScene = class BeautifulScene extends Phaser.Scene {
 
        this.time.delayedCall(8000, () => {
             cutscene.remove();
-            this.scene.start('BeautifulGameScene');
+            this.scene.start('SmackThatGameScene');
         });
     }
 };

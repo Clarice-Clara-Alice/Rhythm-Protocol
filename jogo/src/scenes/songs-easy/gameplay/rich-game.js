@@ -1,17 +1,18 @@
-window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
+window.RichGirlGameScene = class RichGirlGameScene extends Phaser.Scene {
+    
 constructor() {
    super({
-       key: 'BillieGameScene'
+       key: 'RichGirlGameScene'
    });
 }
 preload() {
    this.load.audio(
-       'billieMusic',
-       'assets/music/billie-jean.mp3'
+       'richMusic',
+       'assets/music/rich-girl.mp3'
    );
    this.load.json(
-       'billieMap',
-       'maps/billie-jean.json'
+       'richMap',
+       'maps/rich-girl.json'
    );
 }
 
@@ -109,11 +110,11 @@ create() {
    )
    .setOrigin(0.5);
    this.mapData = this.cache.json.get(
-       'billieMap'
+       'richMap'
    );
    if (!this.mapData) {
        console.error(
-           'ERRO: Não foi possível carregar billieMap.'
+           'ERRO: Não foi possível carregar richMap.'
        );
        return;
    }
@@ -145,7 +146,7 @@ create() {
            'right', 2));
 
    this.music = this.sound.add(
-       'billieMusic'
+       'richMusic'
    );
    this.music.play();
    this.songStartTime =

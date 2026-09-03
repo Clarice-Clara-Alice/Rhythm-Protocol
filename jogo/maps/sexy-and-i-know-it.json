@@ -1,0 +1,881 @@
+{
+    "musica": "LMFAO - Sexy and I Know It - LMFAOVEVO (youtube)(1).mp3",
+    "eventos": [
+        {
+            "tecla": "down",
+            "tempo": 3.137
+        },
+        {
+            "tecla": "up",
+            "tempo": 3.329
+        },
+        {
+            "tecla": "down",
+            "tempo": 3.696
+        },
+        {
+            "tecla": "right",
+            "tempo": 4.128
+        },
+        {
+            "tecla": "left",
+            "tempo": 4.432
+        },
+        {
+            "tecla": "down",
+            "tempo": 4.672
+        },
+        {
+            "tecla": "up",
+            "tempo": 4.977
+        },
+        {
+            "tecla": "down",
+            "tempo": 5.473
+        },
+        {
+            "tecla": "right",
+            "tempo": 6.688
+        },
+        {
+            "tecla": "left",
+            "tempo": 6.864
+        },
+        {
+            "tecla": "up",
+            "tempo": 7.856
+        },
+        {
+            "tecla": "down",
+            "tempo": 8.096
+        },
+        {
+            "tecla": "up",
+            "tempo": 8.352
+        },
+        {
+            "tecla": "right",
+            "tempo": 8.8
+        },
+        {
+            "tecla": "left",
+            "tempo": 9.137
+        },
+        {
+            "tecla": "down",
+            "tempo": 10.368
+        },
+        {
+            "tecla": "up",
+            "tempo": 10.592
+        },
+        {
+            "tecla": "up",
+            "tempo": 11.04
+        },
+        {
+            "tecla": "right",
+            "tempo": 11.52
+        },
+        {
+            "tecla": "left",
+            "tempo": 11.872
+        },
+        {
+            "tecla": "down",
+            "tempo": 12.064
+        },
+        {
+            "tecla": "up",
+            "tempo": 12.529
+        },
+        {
+            "tecla": "right",
+            "tempo": 12.896
+        },
+        {
+            "tecla": "left",
+            "tempo": 13.728
+        },
+        {
+            "tecla": "down",
+            "tempo": 13.968
+        },
+        {
+            "tecla": "up",
+            "tempo": 14.528
+        },
+        {
+            "tecla": "down",
+            "tempo": 14.896
+        },
+        {
+            "tecla": "right",
+            "tempo": 15.296
+        },
+        {
+            "tecla": "left",
+            "tempo": 15.904
+        },
+        {
+            "tecla": "down",
+            "tempo": 16.337
+        },
+        {
+            "tecla": "up",
+            "tempo": 16.752
+        },
+        {
+            "tecla": "up",
+            "tempo": 17.568
+        },
+        {
+            "tecla": "up",
+            "tempo": 18.048
+        },
+        {
+            "tecla": "up",
+            "tempo": 18.48
+        },
+        {
+            "tecla": "down",
+            "tempo": 18.944
+        },
+        {
+            "tecla": "up",
+            "tempo": 19.153
+        },
+        {
+            "tecla": "down",
+            "tempo": 19.456
+        },
+        {
+            "tecla": "up",
+            "tempo": 19.856
+        },
+        {
+            "tecla": "up",
+            "tempo": 20.337
+        },
+        {
+            "tecla": "down",
+            "tempo": 20.785
+        },
+        {
+            "tecla": "up",
+            "tempo": 20.976
+        },
+        {
+            "tecla": "down",
+            "tempo": 21.297
+        },
+        {
+            "tecla": "up",
+            "tempo": 21.712
+        },
+        {
+            "tecla": "up",
+            "tempo": 22.16
+        },
+        {
+            "tecla": "down",
+            "tempo": 22.608
+        },
+        {
+            "tecla": "up",
+            "tempo": 22.816
+        },
+        {
+            "tecla": "down",
+            "tempo": 23.153
+        },
+        {
+            "tecla": "right",
+            "tempo": 23.488
+        },
+        {
+            "tecla": "left",
+            "tempo": 23.601
+        },
+        {
+            "tecla": "right",
+            "tempo": 23.985
+        },
+        {
+            "tecla": "down",
+            "tempo": 24.528
+        },
+        {
+            "tecla": "up",
+            "tempo": 24.992
+        },
+        {
+            "tecla": "down",
+            "tempo": 25.344
+        },
+        {
+            "tecla": "up",
+            "tempo": 25.504
+        },
+        {
+            "tecla": "down",
+            "tempo": 25.84
+        },
+        {
+            "tecla": "up",
+            "tempo": 26.368
+        },
+        {
+            "tecla": "down",
+            "tempo": 27.025
+        },
+        {
+            "tecla": "up",
+            "tempo": 27.232
+        },
+        {
+            "tecla": "down",
+            "tempo": 27.44
+        },
+        {
+            "tecla": "up",
+            "tempo": 27.713
+        },
+        {
+            "tecla": "down",
+            "tempo": 28.176
+        },
+        {
+            "tecla": "up",
+            "tempo": 28.864
+        },
+        {
+            "tecla": "down",
+            "tempo": 29.12
+        },
+        {
+            "tecla": "up",
+            "tempo": 29.504
+        },
+        {
+            "tecla": "right",
+            "tempo": 30.016
+        },
+        {
+            "tecla": "left",
+            "tempo": 30.608
+        },
+        {
+            "tecla": "down",
+            "tempo": 30.944
+        },
+        {
+            "tecla": "up",
+            "tempo": 31.424
+        },
+        {
+            "tecla": "right",
+            "tempo": 31.936
+        },
+        {
+            "tecla": "left",
+            "tempo": 32.192
+        },
+        {
+            "tecla": "right",
+            "tempo": 32.368
+        },
+        {
+            "tecla": "left",
+            "tempo": 32.544
+        },
+        {
+            "tecla": "right",
+            "tempo": 32.848
+        },
+        {
+            "tecla": "left",
+            "tempo": 33.2
+        },
+        {
+            "tecla": "right",
+            "tempo": 33.744
+        },
+        {
+            "tecla": "left",
+            "tempo": 33.84
+        },
+        {
+            "tecla": "right",
+            "tempo": 34.064
+        },
+        {
+            "tecla": "left",
+            "tempo": 34.288
+        },
+        {
+            "tecla": "down",
+            "tempo": 34.672
+        },
+        {
+            "tecla": "up",
+            "tempo": 35.553
+        },
+        {
+            "tecla": "right",
+            "tempo": 36.0
+        },
+        {
+            "tecla": "left",
+            "tempo": 36.272
+        },
+        {
+            "tecla": "up",
+            "tempo": 36.496
+        },
+        {
+            "tecla": "down",
+            "tempo": 36.96
+        },
+        {
+            "tecla": "right",
+            "tempo": 37.44
+        },
+        {
+            "tecla": "left",
+            "tempo": 37.632
+        },
+        {
+            "tecla": "down",
+            "tempo": 37.92
+        },
+        {
+            "tecla": "up",
+            "tempo": 38.352
+        },
+        {
+            "tecla": "up",
+            "tempo": 39.248
+        },
+        {
+            "tecla": "down",
+            "tempo": 39.504
+        },
+        {
+            "tecla": "right",
+            "tempo": 39.777
+        },
+        {
+            "tecla": "left",
+            "tempo": 39.936
+        },
+        {
+            "tecla": "down",
+            "tempo": 40.208
+        },
+        {
+            "tecla": "down",
+            "tempo": 41.072
+        },
+        {
+            "tecla": "right",
+            "tempo": 41.248
+        },
+        {
+            "tecla": "down",
+            "tempo": 41.536
+        },
+        {
+            "tecla": "left",
+            "tempo": 41.712
+        },
+        {
+            "tecla": "right",
+            "tempo": 42.032
+        },
+        {
+            "tecla": "down",
+            "tempo": 42.592
+        },
+        {
+            "tecla": "up",
+            "tempo": 42.816
+        },
+        {
+            "tecla": "down",
+            "tempo": 43.312
+        },
+        {
+            "tecla": "left",
+            "tempo": 43.52
+        },
+        {
+            "tecla": "down",
+            "tempo": 43.92
+        },
+        {
+            "tecla": "right",
+            "tempo": 44.113
+        },
+        {
+            "tecla": "down",
+            "tempo": 44.672
+        },
+        {
+            "tecla": "up",
+            "tempo": 45.44
+        },
+        {
+            "tecla": "down",
+            "tempo": 45.664
+        },
+        {
+            "tecla": "up",
+            "tempo": 46.144
+        },
+        {
+            "tecla": "up",
+            "tempo": 46.656
+        },
+        {
+            "tecla": "right",
+            "tempo": 47.072
+        },
+        {
+            "tecla": "left",
+            "tempo": 47.296
+        },
+        {
+            "tecla": "up",
+            "tempo": 47.584
+        },
+        {
+            "tecla": "up",
+            "tempo": 48.032
+        },
+        {
+            "tecla": "down",
+            "tempo": 48.496
+        },
+        {
+            "tecla": "up",
+            "tempo": 48.688
+        },
+        {
+            "tecla": "left",
+            "tempo": 48.912
+        },
+        {
+            "tecla": "right",
+            "tempo": 49.056
+        },
+        {
+            "tecla": "left",
+            "tempo": 49.329
+        },
+        {
+            "tecla": "up",
+            "tempo": 49.84
+        },
+        {
+            "tecla": "down",
+            "tempo": 50.352
+        },
+        {
+            "tecla": "up",
+            "tempo": 50.784
+        },
+        {
+            "tecla": "right",
+            "tempo": 51.248
+        },
+        {
+            "tecla": "left",
+            "tempo": 51.552
+        },
+        {
+            "tecla": "up",
+            "tempo": 52.16
+        },
+        {
+            "tecla": "down",
+            "tempo": 52.592
+        },
+        {
+            "tecla": "left",
+            "tempo": 52.736
+        },
+        {
+            "tecla": "up",
+            "tempo": 53.12
+        },
+        {
+            "tecla": "right",
+            "tempo": 53.504
+        },
+        {
+            "tecla": "left",
+            "tempo": 53.696
+        },
+        {
+            "tecla": "up",
+            "tempo": 54.064
+        },
+        {
+            "tecla": "up",
+            "tempo": 54.48
+        },
+        {
+            "tecla": "down",
+            "tempo": 54.976
+        },
+        {
+            "tecla": "up",
+            "tempo": 55.392
+        },
+        {
+            "tecla": "left",
+            "tempo": 55.776
+        },
+        {
+            "tecla": "right",
+            "tempo": 55.968
+        },
+        {
+            "tecla": "up",
+            "tempo": 56.336
+        },
+        {
+            "tecla": "down",
+            "tempo": 56.848
+        },
+        {
+            "tecla": "up",
+            "tempo": 57.264
+        },
+        {
+            "tecla": "right",
+            "tempo": 57.712
+        },
+        {
+            "tecla": "down",
+            "tempo": 58.144
+        },
+        {
+            "tecla": "up",
+            "tempo": 58.336
+        },
+        {
+            "tecla": "left",
+            "tempo": 58.56
+        },
+        {
+            "tecla": "down",
+            "tempo": 58.784
+        },
+        {
+            "tecla": "right",
+            "tempo": 59.12
+        },
+        {
+            "tecla": "up",
+            "tempo": 59.536
+        },
+        {
+            "tecla": "right",
+            "tempo": 60.016
+        },
+        {
+            "tecla": "down",
+            "tempo": 60.208
+        },
+        {
+            "tecla": "up",
+            "tempo": 60.464
+        },
+        {
+            "tecla": "left",
+            "tempo": 60.8
+        },
+        {
+            "tecla": "down",
+            "tempo": 61.36
+        },
+        {
+            "tecla": "up",
+            "tempo": 61.904
+        },
+        {
+            "tecla": "down",
+            "tempo": 62.368
+        },
+        {
+            "tecla": "up",
+            "tempo": 62.816
+        },
+        {
+            "tecla": "left",
+            "tempo": 63.376
+        },
+        {
+            "tecla": "down",
+            "tempo": 63.632
+        },
+        {
+            "tecla": "up",
+            "tempo": 63.888
+        },
+        {
+            "tecla": "right",
+            "tempo": 64.224
+        },
+        {
+            "tecla": "up",
+            "tempo": 64.624
+        },
+        {
+            "tecla": "down",
+            "tempo": 65.649
+        },
+        {
+            "tecla": "up",
+            "tempo": 66.048
+        },
+        {
+            "tecla": "left",
+            "tempo": 66.416
+        },
+        {
+            "tecla": "right",
+            "tempo": 66.976
+        },
+        {
+            "tecla": "up",
+            "tempo": 67.344
+        },
+        {
+            "tecla": "down",
+            "tempo": 67.776
+        },
+        {
+            "tecla": "left",
+            "tempo": 68.32
+        },
+        {
+            "tecla": "right",
+            "tempo": 68.768
+        },
+        {
+            "tecla": "down",
+            "tempo": 69.296
+        },
+        {
+            "tecla": "up",
+            "tempo": 69.712
+        },
+        {
+            "tecla": "down",
+            "tempo": 69.952
+        },
+        {
+            "tecla": "up",
+            "tempo": 70.224
+        },
+        {
+            "tecla": "right",
+            "tempo": 70.624
+        },
+        {
+            "tecla": "left",
+            "tempo": 70.912
+        },
+        {
+            "tecla": "down",
+            "tempo": 71.168
+        },
+        {
+            "tecla": "up",
+            "tempo": 71.584
+        },
+        {
+            "tecla": "right",
+            "tempo": 72.016
+        },
+        {
+            "tecla": "down",
+            "tempo": 72.848
+        },
+        {
+            "tecla": "up",
+            "tempo": 73.056
+        },
+        {
+            "tecla": "down",
+            "tempo": 73.457
+        },
+        {
+            "tecla": "left",
+            "tempo": 73.824
+        },
+        {
+            "tecla": "right",
+            "tempo": 74.368
+        },
+        {
+            "tecla": "down",
+            "tempo": 74.8
+        },
+        {
+            "tecla": "up",
+            "tempo": 75.28
+        },
+        {
+            "tecla": "down",
+            "tempo": 75.664
+        },
+        {
+            "tecla": "right",
+            "tempo": 76.176
+        },
+        {
+            "tecla": "up",
+            "tempo": 76.752
+        },
+        {
+            "tecla": "down",
+            "tempo": 77.104
+        },
+        {
+            "tecla": "up",
+            "tempo": 77.28
+        },
+        {
+            "tecla": "down",
+            "tempo": 77.584
+        },
+        {
+            "tecla": "up",
+            "tempo": 78.033
+        },
+        {
+            "tecla": "down",
+            "tempo": 78.752
+        },
+        {
+            "tecla": "up",
+            "tempo": 79.008
+        },
+        {
+            "tecla": "down",
+            "tempo": 79.216
+        },
+        {
+            "tecla": "down",
+            "tempo": 79.424
+        },
+        {
+            "tecla": "up",
+            "tempo": 79.936
+        },
+        {
+            "tecla": "up",
+            "tempo": 80.576
+        },
+        {
+            "tecla": "down",
+            "tempo": 80.832
+        },
+        {
+            "tecla": "up",
+            "tempo": 81.056
+        },
+        {
+            "tecla": "down",
+            "tempo": 81.28
+        },
+        {
+            "tecla": "up",
+            "tempo": 81.728
+        },
+        {
+            "tecla": "right",
+            "tempo": 82.256
+        },
+        {
+            "tecla": "left",
+            "tempo": 82.512
+        },
+        {
+            "tecla": "down",
+            "tempo": 82.672
+        },
+        {
+            "tecla": "up",
+            "tempo": 83.088
+        },
+        {
+            "tecla": "down",
+            "tempo": 83.616
+        },
+        {
+            "tecla": "up",
+            "tempo": 83.984
+        },
+        {
+            "tecla": "down",
+            "tempo": 84.16
+        },
+        {
+            "tecla": "up",
+            "tempo": 84.544
+        },
+        {
+            "tecla": "down",
+            "tempo": 84.912
+        },
+        {
+            "tecla": "up",
+            "tempo": 85.424
+        },
+        {
+            "tecla": "down",
+            "tempo": 86.064
+        },
+        {
+            "tecla": "up",
+            "tempo": 86.272
+        },
+        {
+            "tecla": "down",
+            "tempo": 86.48
+        },
+        {
+            "tecla": "up",
+            "tempo": 86.784
+        },
+        {
+            "tecla": "down",
+            "tempo": 87.28
+        },
+        {
+            "tecla": "up",
+            "tempo": 87.952
+        },
+        {
+            "tecla": "down",
+            "tempo": 88.16
+        },
+        {
+            "tecla": "up",
+            "tempo": 88.4
+        },
+        {
+            "tecla": "down",
+            "tempo": 88.608
+        },
+        {
+            "tecla": "up",
+            "tempo": 89.104
+        }
+    ]
+}

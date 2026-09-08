@@ -41,5 +41,9 @@ game.scene.add('BeautifulGameScene', BeautifulGameScene);
 game.scene.add('RichGirlGameScene', RichGirlGameScene);
 game.scene.add('InDaClubGameScene', InDaClubGameScene);
 game.scene.add('SexyKnowItGameScene', SexyKnowItGameScene);
+game.scene.add('JustDanceGameScene', JustDanceGameScene);
+game.scene.add('CandyShopGameScene', CandyShopGameScene);
+game.scene.add('LowScene', LowScene);
+game.scene.add('LowGameScene', LowGameScene);
 
 game.scene.start('PreloadScene');

@@ -1,8 +1,8 @@
-window.JustDanceScene = class JustDanceScene extends Phaser.Scene {
+window.LowScene = class LowScene extends Phaser.Scene {
 
     constructor() {
         super({
-            key: 'JustDanceScene',
+            key: 'LowScene',
         });
     }
 
@@ -35,15 +35,8 @@ window.JustDanceScene = class JustDanceScene extends Phaser.Scene {
             .appendChild(cutscene);
 
        this.time.delayedCall(8000, () => {
-
             cutscene.remove();
-
-            this.scene.start('JustDanceGameScene');
-
+            this.scene.start('LowGameScene');
         });
-
-
     }
-
-
 };

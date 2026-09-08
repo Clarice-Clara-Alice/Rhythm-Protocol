@@ -19,19 +19,24 @@ window.CandyShopScene = class CandyShopScene extends Phaser.Scene {
             this.scale.height
         );
 
-        this.add.text(
-            this.scale.width / 2,
-            this.scale.height / 2,
-            'Candy Shop',
-            {
-                fontFamily: 'Times New Roman',
-                fontSize: '60px',
-                fontStyle: 'bold',
-                color: '#8c40d3',
-                stroke: '#311649c2',
-                strokeThickness: 10
-            }
-        )
+        const cutscene = document.createElement('div');
 
+        cutscene.id = 'cutscene-easy';
+       
+        cutscene.innerHTML = `
+            <img src="assets/images/1-easy.png">
+            <img src="assets/images/2-easy.png">
+            <img src="assets/images/3-easy.png">
+            <img src="assets/images/lets-play-easy.png">
+            `;
+
+        document
+            .getElementById('game-container')
+            .appendChild(cutscene);
+
+       this.time.delayedCall(8000, () => {
+            cutscene.remove();
+            this.scene.start('CandyShopGameScene');
+        });
     }
 };

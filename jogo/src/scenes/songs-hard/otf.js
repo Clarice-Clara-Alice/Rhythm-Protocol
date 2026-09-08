@@ -1,8 +1,8 @@
-window.LowScene = class LowScene extends Phaser.Scene {
+window.OTFloorHardScene = class OTFloorHardScene extends Phaser.Scene {
 
     constructor() {
         super({
-            key: 'LowScene',
+            key: 'OTFloorHardScene',
         });
     }
 
@@ -21,13 +21,13 @@ window.LowScene = class LowScene extends Phaser.Scene {
 
         const cutscene = document.createElement('div');
 
-        cutscene.id = 'cutscene-medium';
+        cutscene.id = 'cutscene-easy';
        
         cutscene.innerHTML = `
-            <img src="assets/images/1-medium.png">
-            <img src="assets/images/2-medium.png">
-            <img src="assets/images/3-medium.png">
-            <img src="assets/images/lets-play-medium.png">
+            <img src="assets/images/1-easy.png">
+            <img src="assets/images/2-easy.png">
+            <img src="assets/images/3-easy.png">
+            <img src="assets/images/lets-play-easy.png">
             `;
 
         document
@@ -35,8 +35,15 @@ window.LowScene = class LowScene extends Phaser.Scene {
             .appendChild(cutscene);
 
        this.time.delayedCall(8000, () => {
+
             cutscene.remove();
-            this.scene.start('LowGameScene');
+
+            this.scene.start('TheFloorHardGameScene');
+
         });
+
+
     }
+
+
 };

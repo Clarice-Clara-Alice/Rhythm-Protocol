@@ -45,5 +45,8 @@ game.scene.add('JustDanceGameScene', JustDanceGameScene);
 game.scene.add('CandyShopGameScene', CandyShopGameScene);
 game.scene.add('LowScene', LowScene);
 game.scene.add('LowGameScene', LowGameScene);
+game.scene.add('TheFloorHardGameScene', TheFloorHardGameScene);
+game.scene.add('OTFloorHardScene', OTFloorHardScene);
+game.scene.add('EasyResultScene', EasyResultScene);
 
 game.scene.start('PreloadScene');

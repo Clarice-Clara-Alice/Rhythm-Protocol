@@ -1,17 +1,17 @@
-window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
+window.TheFloorHardGameScene = class TheFloorHardGameScene extends Phaser.Scene {
 constructor() {
    super({
-       key: 'BillieGameScene'
+       key: 'TheFloorHardGameScene'
    });
 }
 preload() {
    this.load.audio(
-       'billieMusic',
-       'assets/music/billie-jean.mp3'
+       'FloorJLOMusic',
+       'assets/music/on-the-floor.mp3'
    );
    this.load.json(
-       'billieMap',
-       'maps/billie-jean.json'
+       'TheFloorMap',
+       'maps/on-the-floor.json'
    );
 }
 
@@ -39,6 +39,7 @@ create() {
    this.player1Combo = 0;
    this.player2Score = 0;
    this.player2Combo = 0;
+   this.keysSwapped = false;
    this.gameEnded = false;
 
    const background = this.add.image(
@@ -90,7 +91,7 @@ create() {
        }
    );
    this.judgementTextP1 = this.add.text(
-       315, 300,'',
+       340, 225, '',
        {
            fontFamily: 'Times New Roman',
            fontSize: '40px',
@@ -100,7 +101,7 @@ create() {
    )
    .setOrigin(0.5);
    this.judgementTextP2 = this.add.text(
-       1005, 300, '',
+       910, 225, '',
        {
            fontFamily: 'Times New Roman',
            fontSize: '40px',
@@ -108,18 +109,35 @@ create() {
            color: '#7de22ac0'
        }
    )
-   .setOrigin(0.5);
+
+   this.keySwapText = this.add.text(
+    this.scale.width / 2,
+    350,
+    '',
+    {
+        fontFamily: 'Arial',
+        fontSize: '40px',
+        fontStyle: 'bold',
+        color: '#ffffff',
+        stroke: '#000000',
+        strokeThickness: 6
+    }
+).setOrigin(0.5);
+
+this.keySwapText.setAlpha(0).setOrigin(0.5);
+
    this.mapData = this.cache.json.get(
-       'billieMap'
+       'TheFloorMap'
    );
    if (!this.mapData) {
        console.error(
-           'ERRO: Não foi possível carregar billieMap.'
+           'ERRO: Não foi possível carregar FloorJLOMap.'
        );
        return;
    }
-   this.events =
-       this.mapData.eventos;
+    this.noteEvents =
+    this.mapData.eventos;
+console.log('EVENTOS DA MÚSICA:', this.noteEvents);
    this.input.keyboard.on('keydown-A',
        () => this.hitNote(
            'left', 1));
@@ -146,7 +164,7 @@ create() {
            'right', 2));
 
    this.music = this.sound.add(
-       'billieMusic'
+       'FloorJLOMusic'
    );
    this.music.play();
    this.songStartTime =
@@ -213,49 +231,60 @@ createLanes() {
    });
 }
 
-
 update() {
-   if (!this.music.isPlaying) {
-       this.endGame();
-       return;
-   }
-   const songTime =
-       (this.time.now -
-       this.songStartTime) / 1000;
-   while (
-       this.mapIndex <
-       this.events.length
-   ) {
-       const event =
-           this.events[
-               this.mapIndex
-           ];
-       const spawnTime =
-           event.tempo -
-           (
-               this.travelTime / 1000
-           );
 
-       if (
-           songTime >= spawnTime
-       ) {
-           this.spawnNote(
-               event, 1);
-           this.spawnNote(
-               event, 2);
-           this.mapIndex++;}
-       else {break;}
-   }
-   [...this.activeNotes].forEach((note) => {
-       if (!note.hit &&
-           songTime >
-           note.time + 0.25
-       ) {
-           this.missNote(
-               note
-           );
-       }
-   });
+    if (!this.music || !this.music.isPlaying) {
+        this.endGame();
+        return;
+    }
+    const songTime =
+        (this.time.now - this.songStartTime) / 1000;
+
+//  teste
+
+        if (
+    songTime >= 30 &&
+    songTime < 45 &&
+    !this.keysSwapped
+) {
+    this.swapKeys();
+    this.keysSwapped = true;
+}
+
+if (
+    songTime >= 45 &&
+    this.keysSwapped
+) {
+    this.restoreKeys();
+    this.keysSwapped = false;
+}
+
+// teste fim 
+
+    while (
+        this.mapIndex < this.noteEvents.length
+    ) {
+        const event =
+            this.noteEvents[this.mapIndex];
+        const spawnTime =
+            event.tempo -
+            (this.travelTime / 1000);
+        if (songTime >= spawnTime) {
+            this.spawnNote(event, 1);
+            this.spawnNote(event, 2);
+            this.mapIndex++;
+        } else {
+            break;
+        }
+    }
+    [...this.activeNotes].forEach((note) => {
+        if (
+            !note.hit &&
+            songTime > note.time + 0.25
+        ) {
+            this.missNote(note);
+        }
+    });
 }
 
 spawnNote(
@@ -308,11 +337,21 @@ spawnNote(
            'Linear'
    });
 }
-hitNote(
-   direction,
-   player
-) {
-   if (!this.music.isPlaying) {return;}
+hitNote(direction, player) {
+
+    // teste
+
+    if (!this.music.isPlaying) {
+        return;
+    }
+
+    if (this.keySwap) {
+        direction = this.keySwap[direction];
+    }
+
+    // teste fim
+
+    if (!this.music || !this.music.isPlaying) {return;}
    const songTime =
        (this.time.now -
        this.songStartTime) / 1000;
@@ -487,6 +526,69 @@ showJudgement(
        delay: 300
    });
 }
+
+// teste
+
+swapKeys() {
+
+    this.keySwap = {
+        left: 'right',
+        right: 'left',
+        up: 'down',
+        down: 'up'
+    };
+
+    this.keySwapText.setText(
+        '⚠ TECLAS TROCADAS! ⚠'
+    );
+
+    this.keySwapText.setAlpha(1);
+
+    this.tweens.add({
+        targets: this.keySwapText,
+        alpha: 0,
+        duration: 500,
+        delay: 2000
+    });
+}
+
+restoreKeys() {
+
+    this.keySwap = null;
+
+    this.keySwapText.setText(
+        '✓ TECLAS NORMALIZADAS!'
+    );
+
+    this.keySwapText.setAlpha(1);
+
+    this.tweens.add({
+        targets: this.keySwapText,
+        alpha: 0,
+        duration: 500,
+        delay: 2000
+    });
+}
+
+// teste fim
+
+endGame() {
+
+   if (this.gameEnded) {
+       return;
+   }
+
+   this.gameEnded = true;
+
+   this.scene.start(
+       'EasyResultScene',
+       {
+           player1Score: this.player1Score,
+           player2Score: this.player2Score
+       }
+   );
+}
+
 getArrow(direction) {
    const arrows = {
        left: '←',

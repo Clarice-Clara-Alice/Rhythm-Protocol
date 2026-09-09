@@ -11,7 +11,7 @@ preload() {
    );
    this.load.json(
        'beautifulMap',
-       'maps/what-makes-you-beautiful.json'
+       'maps/easy/what-makes-you-beautiful.json'
    );
 }
 

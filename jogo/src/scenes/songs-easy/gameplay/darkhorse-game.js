@@ -11,7 +11,7 @@ preload() {
    );
    this.load.json(
        'darkHorseMap',
-       'maps/dark-horse.json'
+       'maps/easy/dark-horse.json'
    );
 }
 
@@ -39,6 +39,7 @@ create() {
    this.player1Combo = 0;
    this.player2Score = 0;
    this.player2Combo = 0;
+   this.gameEnded = false;
 
    const background = this.add.image(
        this.scale.width / 2,
@@ -215,6 +216,7 @@ createLanes() {
 
 update() {
    if (!this.music.isPlaying) {
+       this.endGame();
        return;
    }
    const songTime =
@@ -485,6 +487,24 @@ showJudgement(
        delay: 300
    });
 }
+
+endGame() {
+
+   if (this.gameEnded) {
+       return;
+   }
+
+   this.gameEnded = true;
+
+   this.scene.start(
+       'EasyResultScene',
+       {
+           player1Score: this.player1Score,
+           player2Score: this.player2Score
+       }
+   );
+}
+
 getArrow(direction) {
    const arrows = {
        left: '←',

@@ -156,144 +156,138 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
            BackInBlackText
        ]);
 
-       // Candy Shop - 50 Cent
+       // Chicago - Michael Jackson
 
-       const CandyShop = this.add.container(755, 440);
-       const CandyShopBack = this.add.graphics();
-       CandyShopBack.fillStyle(0x66877d, 0.4);
-       CandyShopBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
+       const Chicago = this.add.container(755, 440);
+       const ChicagoBack = this.add.graphics();
+       ChicagoBack.fillStyle(0xFFFFE0, 0.4);
+       ChicagoBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
 
-       const Candy = this.add.text(
-           0, 0, 'Candy Shop - 50 Cent',
+       const ChicagoText = this.add.text(
+           0, 0, 'Chicago - Michael Jackson',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#ffeaae',
+               stroke: '#9c7813',
                strokeThickness: 3
            }
        );
 
-       Candy.setOrigin(0.5);
+       ChicagoText.setOrigin(0.5);
 
-       CandyShop.add([
-           CandyShopBack,
-           Candy
+       Chicago.add([
+           ChicagoBack,
+           ChicagoText
        ]);
 
-       // Dark Horse - Katy Perry
+       // We Will Rock You - Queen
 
-       const DarkHorse = this.add.container(275, 540);
-       const DarkHorseBack = this.add.graphics();
-       DarkHorseBack.fillStyle(0x66877d, 0.4);
+       const WeWillRockYou = this.add.container(275, 540);
+       const WeWillRockYouBack = this.add.graphics();
+       WeWillRockYouBack.fillStyle(0xFFFFE0, 0.4);
+       WeWillRockYouBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
 
-       DarkHorseBack.fillRoundedRect(
+       const RockYouText = this.add.text(
+           0, 0, 'We Will Rock You - Queen',
+           {
+               fontFamily: 'Times New Roman',
+               fontSize: '25px',
+               fontStyle: 'bold',
+               color: '#ffeaae',
+               stroke: '#9c7813',
+               strokeThickness: 3
+           }
+       );
+
+       RockYouText.setOrigin(0.5);
+
+       WeWillRockYou.add([
+           WeWillRockYouBack,
+           RockYouText
+       ]);
+
+       // Sexy Back - Justin Timberlake
+
+       const SexyBack = this.add.container(755, 540);
+       const SexyBackBack = this.add.graphics();
+       SexyBackBack.fillStyle(0xFFFFE0, 0.4);
+       SexyBackBack.fillRoundedRect(
            -205, -42.5, 410, 85, 40
        );
 
-       const Horse = this.add.text(
-           0, 0, 'Dark Horse - Katy Perry',
+       const SexyBackText = this.add.text(
+           0, 0, 'Sexy Back - Justin Timberlake',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#ffeaae',
+               stroke: '#9c7813',
                strokeThickness: 3
            }
        );
 
-       Horse.setOrigin(0.5);
+       SexyBackText.setOrigin(0.5);
 
-       DarkHorse.add([
-           DarkHorseBack,
-           Horse
+       SexyBack.add([
+           SexyBackBack,
+           SexyBackText
        ]);
 
-       // Just Dance - Lady Gaga
+       // Temperature - Sean
 
-       const JustDance = this.add.container(755, 540);
-       const JustDanceBack = this.add.graphics();
-       JustDanceBack.fillStyle(0x66877d, 0.4);
-       JustDanceBack.fillRoundedRect(
+       const Temperature = this.add.container(275, 640);
+       const TemperatureBack = this.add.graphics();
+       TemperatureBack.fillStyle(0xFFFFE0, 0.4);
+       TemperatureBack.fillRoundedRect(
            -205, -42.5, 410, 85, 40
        );
 
-       const Dance = this.add.text(
-           0, 0, 'Just Dance - Lady Gaga',
+       const TemperatureText = this.add.text(
+           0, 0, 'Temperature - Sean',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#ffeaae',
+               stroke: '#9c7813',
                strokeThickness: 3
            }
        );
 
-       Dance.setOrigin(0.5);
+       TemperatureText.setOrigin(0.5);
 
-       JustDance.add([
-           JustDanceBack,
-           Dance
+       Temperature.add([
+           TemperatureBack,
+           TemperatureText
        ]);
 
-       // In Da Club - 50 Cent
+       // Right Round - KeSha
 
-       const InDaClub = this.add.container(275, 640);
-       const InDaClubBack = this.add.graphics();
-       InDaClubBack.fillStyle(0x66877d, 0.4);
-       InDaClubBack.fillRoundedRect(
-           -205, -42.5, 410, 85, 40
-       );
+       const RightRound = this.add.container(755, 640);
+       const RightRoundBack = this.add.graphics();
+       RightRoundBack.fillStyle(0xFFFFE0, 0.4);
+       RightRoundBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
 
-       const Club = this.add.text(
-           0, 0, 'In Da Club - 50 Cent',
+       const RightRoundText = this.add.text(
+           0, 0, 'Right Round - KeSha',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#ffeaae',
+               stroke: '#9c7813',
                strokeThickness: 3
            }
        );
 
-       Club.setOrigin(0.5);
+       RightRoundText.setOrigin(0.5);
 
-       InDaClub.add([
-           InDaClubBack,
-           Club
-       ]);
-
-       // Sexy and I know it - LMFAO
-
-       const SexyKnowIt = this.add.container(755, 640);
-       const SexyKnowItBack = this.add.graphics();
-       SexyKnowItBack.fillStyle(0x66877d, 0.4);
-
-       SexyKnowItBack.fillRoundedRect(
-           -205, -42.5, 410, 85, 40
-       );
-
-       const KnowIt = this.add.text(
-           0, 0, 'Sexy and I know it - LMFAO',
-           {
-               fontFamily: 'Times New Roman',
-               fontSize: '25px',
-               fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
-               strokeThickness: 3
-           }
-       );
-
-       KnowIt.setOrigin(0.5);
-
-       SexyKnowIt.add([
-           SexyKnowItBack,
-           KnowIt
+       RightRound.add([
+           RightRoundBack,
+           RightRoundText
        ]);
 
        // botões
@@ -311,17 +305,17 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
 
            [
                BackInBlack,
-               CandyShop
+               Chicago
            ],
 
            [
-               DarkHorse,
-               JustDance
+               WeWillRockYou,
+               SexyBack
            ],
 
            [
-               InDaClub,
-               SexyKnowIt
+               Temperature,
+               RightRound
            ]
        ];
 

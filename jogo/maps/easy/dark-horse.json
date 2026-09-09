@@ -2,10 +2,6 @@
     "musica": "darkhorsecerto.mp3",
     "eventos": [
         {
-            "tecla": "up",
-            "tempo": 1.536
-        },
-        {
             "tecla": "down",
             "tempo": 1.952
         },

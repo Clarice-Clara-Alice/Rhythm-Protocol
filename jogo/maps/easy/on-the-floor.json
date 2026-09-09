@@ -6,10 +6,6 @@
             "tempo": 1.568
         },
         {
-            "tecla": "down",
-            "tempo": 1.952
-        },
-        {
             "tecla": "up",
             "tempo": 2.4
         },
@@ -364,10 +360,6 @@
         {
             "tecla": "right",
             "tempo": 38.32
-        },
-        {
-            "tecla": "right",
-            "tempo": 38.82
         },
         {
             "tecla": "right",

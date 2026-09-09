@@ -11,7 +11,7 @@ preload() {
    );
    this.load.json(
        'billieMap',
-       'maps/billie-jean.json'
+       'maps/easy/billie-jean.json'
    );
 }
 
@@ -487,6 +487,24 @@ showJudgement(
        delay: 300
    });
 }
+
+endGame() {
+
+   if (this.gameEnded) {
+       return;
+   }
+
+   this.gameEnded = true;
+
+   this.scene.start(
+       'EasyResultScene',
+       {
+           player1Score: this.player1Score,
+           player2Score: this.player2Score
+       }
+   );
+}
+
 getArrow(direction) {
    const arrows = {
        left: '←',

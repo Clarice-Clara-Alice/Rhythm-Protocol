@@ -27,13 +27,13 @@ window.EasyResultScene = class EasyResultScene extends Phaser.Scene {
 
         this.add.text(
             this.scale.width / 2,
-            70,
+            90,
             'RESULTADO',
             {
                 fontFamily: 'Times New Roman',
-                fontSize: '58px',
+                fontSize: '80px',
                 fontStyle: 'bold',
-                color: '#8bf12aa8'
+                color: '#6ec71ba8'
             }
         ).setOrigin(0.5);
 

@@ -1,0 +1,108 @@
+#cutscene-hard{
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: none;
+
+}
+
+#cutscene-hard img {
+
+    position: absolute;
+
+    width: 1200px;
+
+    max-width: 200vw;
+    max-height: 190vh;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+#cutscene-hard img:nth-child(1) {
+
+    animation-name: exibirInicial;
+    animation-delay: 0s;
+
+}
+
+
+#cutscene-hard img:nth-child(2) {
+
+    animation-name: exibirOutros;
+    animation-delay: 2s;
+
+}
+
+
+#cutscene-hard img:nth-child(3) {
+
+    animation-name: exibir3s;
+    animation-delay: 4s;
+
+}
+
+
+#cutscene-hard img:nth-child(4) {
+
+    animation-name: exibirFinal;
+
+    animation-delay: 6s;
+
+}
+
+
+@keyframes exibirInicial {
+
+    0% {visibility: hidden; opacity: 0;}
+    25% {visibility: visible; opacity: 1;}
+    75% {visibility: visible; opacity: 1;}
+    100% {visibility: hidden; opacity: 0;}
+
+}
+
+
+@keyframes exibirOutros {
+
+    0% {visibility: hidden; opacity: 0;}
+    25% {visibility: visible; opacity: 1;}
+    75% {visibility: visible; opacity: 1;}
+    100% {visibility: hidden; opacity: 0;}
+
+}
+
+
+@keyframes exibir3s {
+
+    0% {visibility: hidden; opacity: 0;}
+    25% {visibility: visible; opacity: 1;}
+    75% {visibility: visible; opacity: 1;}
+    100% {visibility: hidden; opacity: 0;}
+
+}
+
+
+@keyframes exibirFinal {
+
+    0% {visibility: hidden; opacity: 0;}
+    25% {visibility: visible; opacity: 1;}
+    100% { visibility: visible; opacity: 1;}
+
+}

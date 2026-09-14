@@ -33,6 +33,7 @@ game.scene.add('DarkHorseScene', DarkHorseScene);
 game.scene.add('JustDanceScene', JustDanceScene);
 game.scene.add('InDaClubScene', InDaClubScene);
 game.scene.add('SexyKnowItScene', SexyKnowItScene);
+game.scene.add('BadRomanceScene', BadRomanceScene);
 game.scene.add('TheFloorGameScene', TheFloorGameScene);
 game.scene.add('BillieGameScene', BillieGameScene);
 game.scene.add('DarkHorseGameScene', DarkHorseGameScene);
@@ -46,6 +47,7 @@ game.scene.add('CandyShopGameScene', CandyShopGameScene);
 game.scene.add('LowScene', LowScene);
 game.scene.add('LowGameScene', LowGameScene);
 game.scene.add('TheFloorHardGameScene', TheFloorHardGameScene);
+game.scene.add('BadRomanceGameScene', BadRomanceGameScene);
 game.scene.add('OTFloorHardScene', OTFloorHardScene);
 game.scene.add('EasyResultScene', EasyResultScene);
 

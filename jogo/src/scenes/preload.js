@@ -18,6 +18,11 @@ window.PreloadScene = class PreloadScene extends Phaser.Scene {
        this.load.image('dificil-diff', 'assets/images/dificil-diff.png');
        this.load.image('Facil', 'assets/images/Facil.png');
        this.load.image('Medio', 'assets/images/Medio.png');
+       this.load.image('Dificil', 'assets/images/Dificil.png');
+       this.load.image('SetaUp', 'assets/images/setaUp.png');
+       this.load.image('SetaDown', 'assets/images/setaDown.png');
+       this.load.image('SetaLeft', 'assets/images/setaLeft.png');
+       this.load.image('SetaRight', 'assets/images/setaRight.png');
    }
 
    create() {

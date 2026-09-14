@@ -1,21 +1,21 @@
-window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
+window.BadRomanceGameScene = class BadRomanceGameScene extends Phaser.Scene {
 
     constructor() {
         super({
-            key: 'BillieGameScene'
+            key: 'BadRomanceGameScene'
         });
     }
 
     preload() {
 
         this.load.audio(
-            'billieMusic',
-            'assets/music/billie-jean.mp3'
+            'badRomanceMusic',
+            'assets/music/bad-romance.mp3'
         );
 
         this.load.json(
-            'billieMap',
-            'maps/easy/billie-jean.json'
+            'badRomanceMap',
+            'maps/hard/bad-romance.json'
         );
     }
 
@@ -133,13 +133,13 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
         ).setOrigin(0.5);
 
         this.mapData = this.cache.json.get(
-            'billieMap'
+            'badRomanceMap'
         );
 
         if (!this.mapData) {
 
             console.error(
-                'ERRO: Não foi possível carregar billieMap.'
+                'ERRO: Não foi possível carregar badRomanceMap.'
             );
 
             return;
@@ -180,7 +180,7 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
             () => this.hitNote('right', 2)
         );
         this.music = this.sound.add(
-            'billieMusic'
+            'badRomanceMusic'
         );
         this.music.play();
         this.songStartTime =

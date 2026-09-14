@@ -10,7 +10,7 @@ window.HardScene = class HardScene extends Phaser.Scene {
 
     console.log('background:', this.textures.exists('background'));
     console.log('Mulher:', this.textures.exists('Mulher'));
-    console.log('Facil:', this.textures.exists('Facil'));
+    console.log('Dificil:', this.textures.exists('Dificil'));
     
        const background = this.add.image(
            this.scale.width / 2,
@@ -24,7 +24,7 @@ window.HardScene = class HardScene extends Phaser.Scene {
        );
 
        this.add.image(1100, 390, 'Mulher');
-       this.add.image(515, 120, 'Facil');
+       this.add.image(515, 120, 'Dificil');
 
        // On the floor - JLO
 
@@ -52,30 +52,30 @@ window.HardScene = class HardScene extends Phaser.Scene {
            OTF
        ]);
 
-       // What Makes You Beautiful - 1D
+       // Bad Romance - Lady Gaga
       
-       const MakesYouBeautiful = this.add.container(755, 240);
-       const BeautifulBack = this.add.graphics();
-       BeautifulBack.fillStyle(0x66877d, 0.4);
-       BeautifulBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
+       const BadRomance = this.add.container(755, 240);
+       const BadRomanceBack = this.add.graphics();
+       BadRomanceBack.fillStyle(0x876670, 0.4);
+       BadRomanceBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
 
-       const Beautiful = this.add.text(
-           0, 0, 'What Makes You Beautiful - 1D',
+       const Bad = this.add.text(
+           0, 0, 'Bad Romance - Lady Gaga',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#f5d8d8',
+               stroke: '#491616',
                strokeThickness: 3
            }
        );
 
-       Beautiful.setOrigin(0.5);
+       Bad.setOrigin(0.5);
 
-       MakesYouBeautiful.add([
-           BeautifulBack,
-           Beautiful
+       BadRomance.add([
+           BadRomanceBack,
+           Bad
        ]);
 
        // Billie Jean - Michael Jackson
@@ -305,7 +305,7 @@ window.HardScene = class HardScene extends Phaser.Scene {
 
            [
                OnTheFloor,
-               MakesYouBeautiful
+               BadRomance
            ],
 
            [
@@ -372,7 +372,7 @@ window.HardScene = class HardScene extends Phaser.Scene {
            else if (
                this.selectedRow === 0 &&
                this.selectedColumn === 1
-           ) {this.scene.start('BeautifulScene');}
+           ) {this.scene.start('BadRomanceScene');}
            else if (
                this.selectedRow === 1 &&
                this.selectedColumn === 0

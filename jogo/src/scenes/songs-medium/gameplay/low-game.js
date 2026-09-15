@@ -11,7 +11,7 @@ preload() {
    );
    this.load.json(
        'lowMap',
-       'maps/low.json'
+       'maps/half/low.json'
    );
 }
 

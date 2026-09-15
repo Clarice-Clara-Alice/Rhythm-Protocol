@@ -2,18 +2,6 @@
     "musica": "chicago.mp3",
     "eventos": [
         {
-            "tecla": "up",
-            "tempo": 0.951
-        },
-        {
-            "tecla": "down",
-            "tempo": 1.223
-        },
-        {
-            "tecla": "right",
-            "tempo": 1.576
-        },
-        {
             "tecla": "left",
             "tempo": 1.815
         },

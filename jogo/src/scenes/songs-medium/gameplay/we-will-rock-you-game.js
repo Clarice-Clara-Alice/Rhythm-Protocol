@@ -1,21 +1,21 @@
-window.LowGameScene = class LowGameScene extends Phaser.Scene {
+window.WeWillRockYouGameScene = class WeWillRockYouGameScene extends Phaser.Scene {
 
 constructor() {
         super({
-            key: 'LowGameScene'
+            key: 'WeWillRockYouGameScene'
         });
 }
 
 preload() {
 
         this.load.audio(
-            'LowMusic',
-            'assets/music/low.mp3'
+            'RockYouMusic',
+            'assets/music/we-will-rock-you.mp3'
         );
 
         this.load.json(
-            'LowMap',
-            'maps/half/low.json'
+            'RockYouMap',
+            'maps/half/we-will-rock-you.json'
         );
 }
 
@@ -133,13 +133,13 @@ create() {
         ).setOrigin(0.5);
 
         this.mapData = this.cache.json.get(
-            'LowMap'
+            'RockYouMap'
         );
 
         if (!this.mapData) {
 
             console.error(
-                'ERRO: Não foi possível carregar LowMap.'
+                'ERRO: Não foi possível carregar RockYouMap.'
             );
 
             return;
@@ -180,7 +180,7 @@ create() {
             () => this.hitNote('right', 2)
         );
         this.music = this.sound.add(
-            'LowMusic'
+            'RockYouMusic'
         );
         this.music.play();
         this.songStartTime =

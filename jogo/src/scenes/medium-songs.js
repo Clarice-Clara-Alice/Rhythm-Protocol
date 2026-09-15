@@ -370,7 +370,7 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
            else if (
                this.selectedRow === 1 &&
                this.selectedColumn === 1
-           ) {this.scene.start('RichGirlScene');}
+           ) {this.scene.start('DanzaKuduroScene');}
            else if (
                this.selectedRow === 2 &&
                this.selectedColumn === 0
@@ -378,15 +378,15 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
            else if (
                this.selectedRow === 2 &&
                this.selectedColumn === 1
-           ) {this.scene.start('CandyShopScene');}
+           ) {this.scene.start('ChicagoScene');}
            else if (
                this.selectedRow === 3 &&
                this.selectedColumn === 0
-           ) {this.scene.start('DarkHorseScene');}
+           ) {this.scene.start('WeWillRockYouScene');}
            else if (
                this.selectedRow === 3 &&
                this.selectedColumn === 1
-           ) {this.scene.start('JustDanceScene');}
+           ) {this.scene.start('SexyBackScene');}
            else if (
                this.selectedRow === 4 &&
                this.selectedColumn === 0
@@ -394,7 +394,7 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
            else if (
                this.selectedRow === 4 &&
                this.selectedColumn === 1
-           ) {this.scene.start('SexyKnowItScene');}
+           ) {this.scene.start('RightRoundScene');}
        });
    }
 

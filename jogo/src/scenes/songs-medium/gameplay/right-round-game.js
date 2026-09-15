@@ -1,21 +1,21 @@
-window.LowGameScene = class LowGameScene extends Phaser.Scene {
+window.RightRoundGameScene = class RightRoundGameScene extends Phaser.Scene {
 
 constructor() {
         super({
-            key: 'LowGameScene'
+            key: 'RightRoundGameScene'
         });
 }
 
 preload() {
 
         this.load.audio(
-            'LowMusic',
-            'assets/music/low.mp3'
+            'RightRoundMusic',
+            'assets/music/right-round.mp3'
         );
 
         this.load.json(
-            'LowMap',
-            'maps/half/low.json'
+            'RightRoundMap',
+            'maps/half/right-round.json'
         );
 }
 
@@ -133,13 +133,13 @@ create() {
         ).setOrigin(0.5);
 
         this.mapData = this.cache.json.get(
-            'LowMap'
+            'RightRoundMap'
         );
 
         if (!this.mapData) {
 
             console.error(
-                'ERRO: Não foi possível carregar LowMap.'
+                'ERRO: Não foi possível carregar RightRoundMap.'
             );
 
             return;
@@ -180,7 +180,7 @@ create() {
             () => this.hitNote('right', 2)
         );
         this.music = this.sound.add(
-            'LowMusic'
+            'RightRoundMusic'
         );
         this.music.play();
         this.songStartTime =

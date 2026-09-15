@@ -3,11 +3,7 @@
     "eventos": [
         {
             "tecla": "up",
-            "tempo": 1.618
-        },
-        {
-            "tecla": "down",
-            "tempo": 2.064
+            "tempo": 1.918
         },
         {
             "tecla": "right",

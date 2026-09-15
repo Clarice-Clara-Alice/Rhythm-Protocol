@@ -1,21 +1,21 @@
-window.LowGameScene = class LowGameScene extends Phaser.Scene {
+window.DanzaKuduroGameScene = class DanzaKuduroGameScene extends Phaser.Scene {
 
 constructor() {
         super({
-            key: 'LowGameScene'
+            key: 'DanzaKuduroGameScene'
         });
 }
 
 preload() {
 
         this.load.audio(
-            'LowMusic',
-            'assets/music/low.mp3'
+            'DanzaMusic',
+            'assets/music/danza-kuduro.mp3'
         );
 
         this.load.json(
-            'LowMap',
-            'maps/half/low.json'
+            'DanzaMap',
+            'maps/half/danza-kuduro.json'
         );
 }
 
@@ -133,13 +133,13 @@ create() {
         ).setOrigin(0.5);
 
         this.mapData = this.cache.json.get(
-            'LowMap'
+            'DanzaMap'
         );
 
         if (!this.mapData) {
 
             console.error(
-                'ERRO: Não foi possível carregar LowMap.'
+                'ERRO: Não foi possível carregar DanzaMap.'
             );
 
             return;
@@ -180,7 +180,7 @@ create() {
             () => this.hitNote('right', 2)
         );
         this.music = this.sound.add(
-            'LowMusic'
+            'DanzaMusic'
         );
         this.music.play();
         this.songStartTime =

@@ -2,10 +2,6 @@
     "musica": "Flo-Rida-Right-Round-_feat.-Keha_-_Official-Video_-Flo-Rida-_youtube_.mp3",
     "eventos": [
         {
-            "tecla": "up",
-            "tempo": 1.592
-        },
-        {
             "tecla": "down",
             "tempo": 2.072
         },

@@ -2,10 +2,6 @@
     "musica": "low(1).mp3",
     "eventos": [
         {
-            "tecla": "up",
-            "tempo": 1.817
-        },
-        {
             "tecla": "down",
             "tempo": 1.976
         },

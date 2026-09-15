@@ -1,21 +1,21 @@
-window.LowGameScene = class LowGameScene extends Phaser.Scene {
+window.ChicagoGameScene = class ChicagoGameScene extends Phaser.Scene {
 
 constructor() {
         super({
-            key: 'LowGameScene'
+            key: 'ChicagoGameScene'
         });
 }
 
 preload() {
 
         this.load.audio(
-            'LowMusic',
-            'assets/music/low.mp3'
+            'ChicagoMusic',
+            'assets/music/chicago.mp3'
         );
 
         this.load.json(
-            'LowMap',
-            'maps/half/low.json'
+            'ChicagoMap',
+            'maps/half/chicago.json'
         );
 }
 
@@ -133,13 +133,13 @@ create() {
         ).setOrigin(0.5);
 
         this.mapData = this.cache.json.get(
-            'LowMap'
+            'ChicagoMap'
         );
 
         if (!this.mapData) {
 
             console.error(
-                'ERRO: Não foi possível carregar LowMap.'
+                'ERRO: Não foi possível carregar ChicagoMap.'
             );
 
             return;
@@ -180,7 +180,7 @@ create() {
             () => this.hitNote('right', 2)
         );
         this.music = this.sound.add(
-            'LowMusic'
+            'ChicagoMusic'
         );
         this.music.play();
         this.songStartTime =

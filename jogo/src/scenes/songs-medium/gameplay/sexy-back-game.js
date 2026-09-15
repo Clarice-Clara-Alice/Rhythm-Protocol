@@ -1,21 +1,21 @@
-window.LowGameScene = class LowGameScene extends Phaser.Scene {
+window.SexyBackGameScene = class SexyBackGameScene extends Phaser.Scene {
 
 constructor() {
         super({
-            key: 'LowGameScene'
+            key: 'SexyBackGameScene'
         });
 }
 
 preload() {
 
         this.load.audio(
-            'LowMusic',
-            'assets/music/low.mp3'
+            'SexyBackMusic',
+            'assets/music/sexy-back.mp3'
         );
 
         this.load.json(
-            'LowMap',
-            'maps/half/low.json'
+            'SexyBackMap',
+            'maps/half/sexy-back.json'
         );
 }
 
@@ -133,13 +133,13 @@ create() {
         ).setOrigin(0.5);
 
         this.mapData = this.cache.json.get(
-            'LowMap'
+            'SexyBackMap'
         );
 
         if (!this.mapData) {
 
             console.error(
-                'ERRO: Não foi possível carregar LowMap.'
+                'ERRO: Não foi possível carregar SexyBackMap.'
             );
 
             return;
@@ -180,7 +180,7 @@ create() {
             () => this.hitNote('right', 2)
         );
         this.music = this.sound.add(
-            'LowMusic'
+            'SexyBackMusic'
         );
         this.music.play();
         this.songStartTime =

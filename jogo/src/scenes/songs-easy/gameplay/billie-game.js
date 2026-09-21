@@ -1,25 +1,23 @@
 window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
 
-    constructor() {
+constructor() {
         super({
             key: 'BillieGameScene'
         });
-    }
+}
 
-    preload() {
-
+preload() {
         this.load.audio(
             'billieMusic',
             'assets/music/billie-jean.mp3'
         );
-
         this.load.json(
             'billieMap',
             'maps/easy/billie-jean.json'
         );
-    }
+}
 
-    create() {
+create() {
 
         this.targetY = 180;
         this.spawnY = 850;
@@ -185,9 +183,9 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
         this.music.play();
         this.songStartTime =
             this.time.now;
-    }
+}
 
-    createLanes() {
+createLanes() {
         const directions = [
             'left',
             'down',
@@ -230,9 +228,9 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
             target.setOrigin(0.5);
             target.setAlpha(0.85);
         });
-    }
+}
 
-    update() {
+update() {
 
         if (!this.music.isPlaying) {
             this.endGame();
@@ -288,9 +286,9 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
                 );
             }
         });
-    }
+}
 
-    spawnNote(
+spawnNote(
         event,
         player
     ) {
@@ -333,9 +331,9 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
             ease:
                 'Linear'
         });
-    }
+}
 
-    hitNote(
+hitNote(
         direction,
         player
     ) {
@@ -417,9 +415,9 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
                 player
             );
         }
-    }
+}
 
-    registerHit(
+registerHit(
         note,
         judgement,
         points,
@@ -477,9 +475,9 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
                 1
             );
         }
-    }
+}
 
-    missNote(
+missNote(
         note
     ) {
         note.hit =
@@ -521,9 +519,9 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
                 1
             );
         }
-    }
+}
 
-    showJudgement(
+showJudgement(
         text,
         player
     ) {
@@ -550,8 +548,9 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
             delay:
                 300
         });
-    }
-    endGame() {
+}
+
+endGame() {
         if ( this.gameEnded) {return;}
         this.gameEnded =
             true;
@@ -564,9 +563,9 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
                     this.player2Score
             }
         );
-    }
+}
 
-    getArrow(
+getArrow(
         direction
     ) {
         const arrows = {
@@ -579,5 +578,4 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
         return arrows[
             direction
         ];
-    }
-};
+}};

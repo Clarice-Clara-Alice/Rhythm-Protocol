@@ -1,12 +1,12 @@
 window.EasyResultScene = class EasyResultScene extends Phaser.Scene {
 
-    constructor() {
+constructor() {
         super({
             key: 'EasyResultScene'
         });
-    }
+}
 
-    create(data) {
+create(data) {
 
         const player1Score =
             data.player1Score || 0;
@@ -140,5 +140,5 @@ window.EasyResultScene = class EasyResultScene extends Phaser.Scene {
                 color: '#ff00ff'
             }
         ).setOrigin(0.5);
-    }
+}
 };

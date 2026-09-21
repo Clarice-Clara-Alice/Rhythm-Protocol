@@ -7,19 +7,17 @@ constructor() {
 }
 
 preload() {
-
         this.load.audio(
             'beautifulMusic',
             'assets/music/what-makes-you-beautiful.mp3'
         );
-
         this.load.json(
             'beautifulMap',
             'maps/easy/what-makes-you-beautiful.json'
         );
-    }
+}
 
-    create() {
+create() {
 
         this.targetY = 180;
         this.spawnY = 850;
@@ -185,9 +183,9 @@ preload() {
         this.music.play();
         this.songStartTime =
             this.time.now;
-    }
+}
 
-    createLanes() {
+createLanes() {
         const directions = [
             'left',
             'down',
@@ -230,9 +228,9 @@ preload() {
             target.setOrigin(0.5);
             target.setAlpha(0.85);
         });
-    }
+}
 
-    update() {
+update() {
 
         if (!this.music.isPlaying) {
             this.endGame();
@@ -288,9 +286,9 @@ preload() {
                 );
             }
         });
-    }
+}
 
-    spawnNote(
+spawnNote(
         event,
         player
     ) {
@@ -333,9 +331,9 @@ preload() {
             ease:
                 'Linear'
         });
-    }
+}
 
-    hitNote(
+hitNote(
         direction,
         player
     ) {
@@ -417,9 +415,9 @@ preload() {
                 player
             );
         }
-    }
+}
 
-    registerHit(
+registerHit(
         note,
         judgement,
         points,
@@ -477,9 +475,9 @@ preload() {
                 1
             );
         }
-    }
+}
 
-    missNote(
+missNote(
         note
     ) {
         note.hit =
@@ -521,9 +519,9 @@ preload() {
                 1
             );
         }
-    }
+}
 
-    showJudgement(
+showJudgement(
         text,
         player
     ) {
@@ -550,8 +548,9 @@ preload() {
             delay:
                 300
         });
-    }
-    endGame() {
+}
+
+endGame() {
         if ( this.gameEnded) {return;}
         this.gameEnded =
             true;
@@ -564,9 +563,9 @@ preload() {
                     this.player2Score
             }
         );
-    }
+}
 
-    getArrow(
+getArrow(
         direction
     ) {
         const arrows = {
@@ -579,5 +578,4 @@ preload() {
         return arrows[
             direction
         ];
-    }
-};
+}};

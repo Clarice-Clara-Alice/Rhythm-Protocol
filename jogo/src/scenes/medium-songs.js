@@ -362,11 +362,11 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
            else if (
                this.selectedRow === 0 &&
                this.selectedColumn === 1
-           ) {this.scene.start('BeautifulScene');}
+           ) {this.scene.start('HighwayScene');}
            else if (
                this.selectedRow === 1 &&
                this.selectedColumn === 0
-           ) {this.scene.start('BillieScene');}
+           ) {this.scene.start('TiktokScene');}
            else if (
                this.selectedRow === 1 &&
                this.selectedColumn === 1
@@ -374,7 +374,7 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
            else if (
                this.selectedRow === 2 &&
                this.selectedColumn === 0
-           ) {this.scene.start('SmackThatScene');}
+           ) {this.scene.start('BackInBlackScene');}
            else if (
                this.selectedRow === 2 &&
                this.selectedColumn === 1
@@ -390,7 +390,7 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
            else if (
                this.selectedRow === 4 &&
                this.selectedColumn === 0
-           ) {this.scene.start('InDaClubScene');}
+           ) {this.scene.start('TemperatureScene');}
            else if (
                this.selectedRow === 4 &&
                this.selectedColumn === 1

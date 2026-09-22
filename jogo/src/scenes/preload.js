@@ -23,6 +23,12 @@ window.PreloadScene = class PreloadScene extends Phaser.Scene {
        this.load.image('SetaDown', 'assets/images/setaDown.png');
        this.load.image('SetaLeft', 'assets/images/setaLeft.png');
        this.load.image('SetaRight', 'assets/images/setaRight.png');
+       this.load.image('P1Ganha', 'assets/images/P1Ganha.png');
+       this.load.image('P2Ganha', 'assets/images/P2Ganha.png');
+       this.load.image('P1Perde', 'assets/images/P1Perde.png');
+       this.load.image('P2Perde', 'assets/images/P2Perde.png');
+       this.load.image('P1Empate', 'assets/images/P1Empate.png');
+       this.load.image('P2Empate', 'assets/images/P2Empate.png');
    }
 
    create() {

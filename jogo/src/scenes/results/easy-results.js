@@ -25,120 +25,70 @@ create(data) {
             this.scale.height
         );
 
-        this.add.text(
-            this.scale.width / 2,
-            90,
-            'RESULTADO',
-            {
-                fontFamily: 'Times New Roman',
-                fontSize: '80px',
-                fontStyle: 'bold',
-                color: '#6ec71ba8'
-            }
-        ).setOrigin(0.5);
-
-        let player1Result;
-        let player2Result;
+        let player1Image;
+        let player2Image;
 
         if (player1Score > player2Score) {
-
-            player1Result = 'GANHADOR';
-            player2Result = 'PERDEDOR';
-
+            player1Image = 'P1Ganha';
+            player2Image = 'P2Perde';
         }
+
         else if (player2Score > player1Score) {
-
-            player1Result = 'PERDEDOR';
-            player2Result = 'GANHADOR';
-
+            player1Image = 'P1Perde';
+            player2Image = 'P2Ganha';
         }
+
         else {
-
-            player1Result = 'EMPATE';
-            player2Result = 'EMPATE';
-
+            player1Image = 'P1Empate';
+            player2Image = 'P2Empate';
         }
 
-        this.add.rectangle(320, 390, 500, 430, 0x111111, 0.85);
+        this.add.image(
+            320,
+            390,
+            player1Image
+        ).setOrigin(0.5).setScale(0.65);
 
-        this.add.text(
-            320, 230, 'PLAYER 1',
-            {
-                fontFamily: 'Times New Roman',
-                fontSize: '42px',
-                fontStyle: 'bold',
-                color: '#00ffff'
-            }
+        this.add.image(
+            960,
+            390,
+            player2Image
+        ).setOrigin(0.5).setScale(0.65);
+
+        this.add.text( 
+            this.scale.width / 2, 
+            90, 
+            'RESULTADO', 
+            { 
+                fontFamily: 'Audiowide', 
+                fontSize: '80px', 
+                fontStyle: 'bold', 
+                color: '#e6e0e0' 
+            } 
         ).setOrigin(0.5);
 
         this.add.text(
-            320, 330, player1Result,
+            320,
+            510,
+            player1Score.toString(),
             {
-                fontFamily: 'Times New Roman',
-                fontSize: '48px',
-                fontStyle: 'bold',
-                color: '#00ffff'
-            }
-        ).setOrigin(0.5);
-
-        this.add.text(
-            320, 450, 'PONTUAÇÃO',
-            {
-                fontFamily: 'Times New Roman',
-                fontSize: '28px',
-                color: '#00ffff'
-            }
-        ).setOrigin(0.5);
-
-        this.add.text(
-            320, 510, player1Score.toString(),
-            {
-                fontFamily: 'Arial',
+                fontFamily: 'Audiowide',
                 fontSize: '60px',
                 fontStyle: 'bold',
-                color: '#00ffff'
-            }
-        ).setOrigin(0.5);
-
-        this.add.rectangle(960, 390, 500, 430, 0x111111, 0.85);
-
-        this.add.text(
-            960, 230, 'PLAYER 2',
-            {
-                fontFamily: 'Times New Roman',
-                fontSize: '42px',
-                fontStyle: 'bold',
-                color: '#ff00ff'
+                color: '#e6e0e0'
             }
         ).setOrigin(0.5);
 
         this.add.text(
-            960, 330, player2Result,
+            960,
+            510,
+            player2Score.toString(),
             {
-                fontFamily: 'Times New Roman',
-                fontSize: '48px',
-                fontStyle: 'bold',
-                color: '#ff00ff'
-            }
-        ).setOrigin(0.5);
-
-        this.add.text(
-            960, 450, 'PONTUAÇÃO',
-            {
-                fontFamily: 'Times New Roman',
-                fontSize: '28px',
-                color: '#ff00ff'
-            }
-        ).setOrigin(0.5);
-
-        this.add.text(
-            960, 510,  player2Score.toString(),
-            {
-                fontFamily: 'Arial',
+                fontFamily: 'Audiowide',
                 fontSize: '60px',
                 fontStyle: 'bold',
-                color: '#ff00ff'
+                color: '#e6e0e0'
             }
         ).setOrigin(0.5);
-}
+    }
 };

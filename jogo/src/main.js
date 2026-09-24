@@ -64,8 +64,10 @@ game.scene.add('WeWillRockYouGameScene', WeWillRockYouGameScene);
 game.scene.add('SexyBackGameScene', SexyBackGameScene);
 game.scene.add('RightRoundGameScene', RightRoundGameScene);
 game.scene.add('TiktokGameScene', TiktokGameScene);
+game.scene.add('BeatItScene', BeatItScene);
 game.scene.add('TheFloorHardGameScene', TheFloorHardGameScene);
 game.scene.add('BadRomanceGameScene', BadRomanceGameScene);
+game.scene.add('BeatItGameScene', BeatItGameScene);
 game.scene.add('OTFloorHardScene', OTFloorHardScene);
 game.scene.add('EasyResultScene', EasyResultScene);
 

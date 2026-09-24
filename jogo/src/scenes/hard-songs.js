@@ -78,30 +78,30 @@ window.HardScene = class HardScene extends Phaser.Scene {
            Bad
        ]);
 
-       // Billie Jean - Michael Jackson
+       // Beat it - Michael Jackson
 
-       const BillieJean = this.add.container(275, 340);
-       const BillieJeanBack = this.add.graphics();
-       BillieJeanBack.fillStyle(0x66877d, 0.4);
-       BillieJeanBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
+       const BeatIt = this.add.container(275, 340);
+       const BeatItBack = this.add.graphics();
+       BeatItBack.fillStyle(0x876670, 0.4);
+       BeatItBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
 
-       const Billie = this.add.text(
-           0, 0, 'Billie Jean - Michael Jackson',
+       const Beat = this.add.text(
+           0, 0, 'Beat It - Michael Jackson',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#f5d8d8',
+               stroke: '#491616',
                strokeThickness: 3
            }
        );
 
-       Billie.setOrigin(0.5);
+       Beat.setOrigin(0.5);
 
-       BillieJean.add([
-           BillieJeanBack,
-           Billie
+       BeatIt.add([
+           BeatItBack,
+           Beat
        ]);
 
        // Rich Girl - Eve
@@ -309,7 +309,7 @@ window.HardScene = class HardScene extends Phaser.Scene {
            ],
 
            [
-               BillieJean,
+               BeatIt,
                RichGirl
            ],
 
@@ -376,7 +376,7 @@ window.HardScene = class HardScene extends Phaser.Scene {
            else if (
                this.selectedRow === 1 &&
                this.selectedColumn === 0
-           ) {this.scene.start('BillieScene');}
+           ) {this.scene.start('BeatItScene');}
            else if (
                this.selectedRow === 1 &&
                this.selectedColumn === 1

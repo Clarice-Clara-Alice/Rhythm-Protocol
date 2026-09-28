@@ -67,9 +67,7 @@ window.PlayScene = class PlayScene extends Phaser.Scene {
 
 
         this.input.keyboard.on('keydown-ENTER', () => {
-
             this.scene.start('DifficultyScene');
-
         });
 
     }

@@ -1,12 +1,12 @@
 window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
 
-    constructor() {
+constructor() {
         super({
             key: 'BeatItGameScene'
         });
-    }
+}
 
-    preload() {
+preload() {
 
         this.load.audio(
             'beatItMusic',
@@ -17,9 +17,9 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
             'beatItMap',
             'maps/hard/beat-it.json'
         );
-    }
+}
 
-    create() {
+create() {
 
         this.targetY = 180;
         this.spawnY = 850;
@@ -45,6 +45,7 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
         this.player1Combo = 0;
         this.player2Score = 0;
         this.player2Combo = 0;
+        this.keysSwapped = false;
         this.gameEnded = false;
 
         const background = this.add.image(
@@ -132,6 +133,32 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
             }
         ).setOrigin(0.5);
 
+        this.keySwapText1 = this.add.text(
+            315, 350, '',
+            {
+                fontFamily: 'Arial',
+                fontSize: '30px',
+                fontStyle: 'bold',
+                color: '#ffffff',
+                stroke: '#000000',
+                strokeThickness: 6
+            }
+        ).setOrigin(0.5);
+        this.keySwapText1.setAlpha(0).setOrigin(0.5);
+
+        this.keySwapText2 = this.add.text(
+            980, 350, '',
+            {
+                fontFamily: 'Arial',
+                fontSize: '30px',
+                fontStyle: 'bold',
+                color: '#ffffff',
+                stroke: '#000000',
+                strokeThickness: 6
+            }
+        ).setOrigin(0.5);
+        this.keySwapText2.setAlpha(0).setOrigin(0.5);
+
         this.mapData = this.cache.json.get(
             'beatItMap'
         );
@@ -185,9 +212,9 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
         this.music.play();
         this.songStartTime =
             this.time.now;
-    }
+}
 
-    createLanes() {
+createLanes() {
         const directions = [
             'left',
             'down',
@@ -230,9 +257,9 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
             target.setOrigin(0.5);
             target.setAlpha(0.85);
         });
-    }
+}
 
-    update() {
+update() {
 
         if (!this.music.isPlaying) {
             this.endGame();
@@ -243,6 +270,25 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
             ( this.time.now -
                 this.songStartTime
             ) / 1000;
+
+
+        if (
+            songTime >= 58 &&
+            songTime < 72 &&
+            !this.keysSwapped
+        ) {
+            this.swapKeys();
+            this.keysSwapped = true;
+        }
+        
+        if (
+            songTime >= 72 &&
+            this.keysSwapped
+        ) {
+            this.restoreKeys();
+            this.keysSwapped = false;
+        }
+
 
         while (
             this.mapIndex <
@@ -288,9 +334,9 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
                 );
             }
         });
-    }
+}
 
-    spawnNote(
+spawnNote(
         event,
         player
     ) {
@@ -333,9 +379,9 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
             ease:
                 'Linear'
         });
-    }
+}
 
-    hitNote(
+hitNote(
         direction,
         player
     ) {
@@ -343,6 +389,10 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
             !this.music.isPlaying
         ) {
             return;
+        }
+
+        if (this.keySwap) {
+            direction = this.keySwap[direction];
         }
 
         const songTime =
@@ -417,9 +467,9 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
                 player
             );
         }
-    }
+}
 
-    registerHit(
+registerHit(
         note,
         judgement,
         points,
@@ -477,9 +527,9 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
                 1
             );
         }
-    }
+}
 
-    missNote(
+missNote(
         note
     ) {
         note.hit =
@@ -521,9 +571,9 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
                 1
             );
         }
-    }
+}
 
-    showJudgement(
+showJudgement(
         text,
         player
     ) {
@@ -550,8 +600,76 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
             delay:
                 300
         });
-    }
-    endGame() {
+}
+
+swapKeys() {
+
+    this.keySwap = {
+        left: 'right',
+        right: 'left',
+        up: 'down',
+        down: 'up'
+    };
+
+    this.keySwapText1.setText(
+        '⚠ TECLAS TROCADAS! ⚠'
+    );
+
+    this.keySwapText1.setAlpha(1);
+
+        this.keySwapText2.setText(
+        '⚠ TECLAS TROCADAS! ⚠'
+    );
+
+    this.keySwapText2.setAlpha(1);
+
+    this.tweens.add({
+        targets: this.keySwapText1, 
+        alpha: 0,
+        duration: 500,
+        delay: 2000
+    });
+
+        this.tweens.add({
+        targets: this.keySwapText2, 
+        alpha: 0,
+        duration: 500,
+        delay: 2000
+    });
+}
+
+restoreKeys() {
+
+    this.keySwap = null;
+
+    this.keySwapText1.setText(
+        '✓ TECLAS NORMALIZADAS!'
+    );
+
+    this.keySwapText1.setAlpha(1);
+
+    this.keySwapText2.setText(
+        '✓ TECLAS NORMALIZADAS!'
+    );
+
+    this.keySwapText2.setAlpha(1);
+
+    this.tweens.add({
+        targets: this.keySwapText1,
+        alpha: 0,
+        duration: 500,
+        delay: 2000
+    });
+
+    this.tweens.add({
+        targets: this.keySwapText2, 
+        alpha: 0,
+        duration: 500,
+        delay: 2000
+    });
+}
+
+endGame() {
         if ( this.gameEnded) {return;}
         this.gameEnded =
             true;
@@ -564,9 +682,9 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
                     this.player2Score
             }
         );
-    }
+}
 
-    getArrow(
+getArrow(
         direction
     ) {
         const arrows = {
@@ -579,5 +697,4 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
         return arrows[
             direction
         ];
-    }
-};
+}};

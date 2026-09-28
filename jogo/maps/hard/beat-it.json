@@ -2,10 +2,6 @@
     "musica": "BEATIT.mp3",
     "eventos": [
         {
-            "tecla": "up",
-            "tempo": 1.216
-        },
-        {
             "tecla": "down",
             "tempo": 1.888
         },

@@ -33,7 +33,6 @@ game.scene.add('DarkHorseScene', DarkHorseScene);
 game.scene.add('JustDanceScene', JustDanceScene);
 game.scene.add('InDaClubScene', InDaClubScene);
 game.scene.add('SexyKnowItScene', SexyKnowItScene);
-game.scene.add('BadRomanceScene', BadRomanceScene);
 game.scene.add('TheFloorGameScene', TheFloorGameScene);
 game.scene.add('BillieGameScene', BillieGameScene);
 game.scene.add('DarkHorseGameScene', DarkHorseGameScene);
@@ -64,11 +63,33 @@ game.scene.add('WeWillRockYouGameScene', WeWillRockYouGameScene);
 game.scene.add('SexyBackGameScene', SexyBackGameScene);
 game.scene.add('RightRoundGameScene', RightRoundGameScene);
 game.scene.add('TiktokGameScene', TiktokGameScene);
+
+// Músicas - difícil
+
+game.scene.add('BadRomanceScene', BadRomanceScene);
 game.scene.add('BeatItScene', BeatItScene);
-game.scene.add('TheFloorHardGameScene', TheFloorHardGameScene);
-game.scene.add('BadRomanceGameScene', BadRomanceGameScene);
+game.scene.add('YeahScene', YeahScene);
+game.scene.add('BohemianRhapsodyScene', BohemianRhapsodyScene);
+game.scene.add('CherryPieScene', CherryPieScene);
+game.scene.add('CrazyInLoveScene', CrazyInLoveScene);
+game.scene.add('LovinYouScene', LovinYouScene);
+game.scene.add('PokerFaceScene', PokerFaceScene);
+game.scene.add('SMScene', SMScene);
+
+// Gameplay - Difícil
+
 game.scene.add('BeatItGameScene', BeatItGameScene);
-game.scene.add('OTFloorHardScene', OTFloorHardScene);
+game.scene.add('BadRomanceGameScene', BadRomanceGameScene);
+game.scene.add('YeahGameScene', YeahGameScene);
+game.scene.add('BohemianRhapsodyGameScene', BohemianRhapsodyGameScene);
+game.scene.add('CherryPieGameScene', CherryPieGameScene);
+game.scene.add('CrazyInLoveGameScene', CrazyInLoveGameScene);
+game.scene.add('LovinYouGameScene', LovinYouGameScene);
+game.scene.add('PokerFaceGameScene', PokerFaceGameScene);
+game.scene.add('SMGameScene', SMGameScene);
+
+// Resultado
+
 game.scene.add('EasyResultScene', EasyResultScene);
 
 game.scene.start('PreloadScene');

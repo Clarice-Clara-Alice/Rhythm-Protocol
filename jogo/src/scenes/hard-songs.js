@@ -26,30 +26,30 @@ window.HardScene = class HardScene extends Phaser.Scene {
        this.add.image(1100, 390, 'Mulher');
        this.add.image(515, 120, 'Dificil');
 
-       // On the floor - JLO
+       // Yeah - Usher
 
-       const OnTheFloor = this.add.container(275, 240);
-       const OnTheFloorBack = this.add.graphics();
-       OnTheFloorBack.fillStyle(0x66877d, 0.4);
-       OnTheFloorBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
+       const Yeah = this.add.container(275, 240);
+       const YeahBack = this.add.graphics();
+       YeahBack.fillStyle(0x876670, 0.4);
+       YeahBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
 
-       const OTF = this.add.text(
-           0, 0, 'On The Floor - JLO',
+       const YeahUsher = this.add.text(
+           0, 0, 'Yeah - Usher',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#f5dcd8',
+               color: '#f5d8d8',
                stroke: '#491616',
                strokeThickness: 3
            }
        );
 
-       OTF.setOrigin(0.5);
+       YeahUsher.setOrigin(0.5);
 
-       OnTheFloor.add([
-           OnTheFloorBack,
-           OTF
+       Yeah.add([
+           YeahBack,
+           YeahUsher
        ]);
 
        // Bad Romance - Lady Gaga
@@ -104,171 +104,171 @@ window.HardScene = class HardScene extends Phaser.Scene {
            Beat
        ]);
 
-       // Rich Girl - Eve
+       // S&M
       
-       const RichGirl = this.add.container(755, 340);
-       const RichGirlBack = this.add.graphics();
-       RichGirlBack.fillStyle(0x66877d, 0.4);
-       RichGirlBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
+       const SM = this.add.container(755, 340);
+       const SMBack = this.add.graphics();
+       SMBack.fillStyle(0x876670, 0.4);
+       SMBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
 
-       const Rich = this.add.text(
-           0, 0, 'Rich Girl - Eve',
+       const SMText = this.add.text(
+           0, 0, 'S&M - Rihanna',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#f5d8d8',
+               stroke: '#491616',
                strokeThickness: 3
            }
        );
 
-       Rich.setOrigin(0.5);
+       SMText.setOrigin(0.5);
 
-       RichGirl.add([
-           RichGirlBack,
-           Rich
+       SM.add([
+           SMBack,
+           SMText
        ]);
 
-       // Smack That - Akon
+       // I was made for lovin' you
 
-       const SmackThat = this.add.container(275, 440);
-       const SmackThatBack = this.add.graphics();
-       SmackThatBack.fillStyle(0x66877d, 0.4);
-       SmackThatBack.fillRoundedRect(
+       const LovinYou = this.add.container(275, 440);
+       const LovinYouBack = this.add.graphics();
+       LovinYouBack.fillStyle(0x876670, 0.4);
+       LovinYouBack.fillRoundedRect(
            -205, -42.5, 410, 85, 40
        );
 
-       const Smack = this.add.text(
+       const Lovin = this.add.text(
            0,
            0,
-           'Smack That - Akon',
+           'I Was Made For Lovin You - Kiss',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#f5d8d8',
+               stroke: '#491616',
                strokeThickness: 3
            }
        );
 
-       Smack.setOrigin(0.5);
+       Lovin.setOrigin(0.5);
 
-       SmackThat.add([
-           SmackThatBack,
-           Smack
+       LovinYou.add([
+           LovinYouBack,
+           Lovin
        ]);
 
        // Candy Shop - 50 Cent
 
-       const CandyShop = this.add.container(755, 440);
-       const CandyShopBack = this.add.graphics();
-       CandyShopBack.fillStyle(0x66877d, 0.4);
-       CandyShopBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
+       const BohemianRhapsody = this.add.container(755, 440);
+       const BohemianRhapsodyBack = this.add.graphics();
+       BohemianRhapsodyBack.fillStyle(0x876670, 0.4);
+       BohemianRhapsodyBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
 
-       const Candy = this.add.text(
-           0, 0, 'Candy Shop - 50 Cent',
+       const Bohemian = this.add.text(
+           0, 0, 'Bohemian Rhapsody - Queen',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#f5d8d8',
+               stroke: '#491616',
                strokeThickness: 3
            }
        );
 
-       Candy.setOrigin(0.5);
+       Bohemian.setOrigin(0.5);
 
-       CandyShop.add([
-           CandyShopBack,
-           Candy
+       BohemianRhapsody.add([
+           BohemianRhapsodyBack,
+           Bohemian
        ]);
 
-       // Dark Horse - Katy Perry
+       // Poker Face - Katy Perry
 
-       const DarkHorse = this.add.container(275, 540);
-       const DarkHorseBack = this.add.graphics();
-       DarkHorseBack.fillStyle(0x66877d, 0.4);
+       const PokerFace = this.add.container(275, 540);
+       const PokerFaceBack = this.add.graphics();
+       PokerFaceBack.fillStyle(0x876670, 0.4);
 
-       DarkHorseBack.fillRoundedRect(
+       PokerFaceBack.fillRoundedRect(
            -205, -42.5, 410, 85, 40
        );
 
-       const Horse = this.add.text(
-           0, 0, 'Dark Horse - Katy Perry',
+       const Poker = this.add.text(
+           0, 0, 'Poker Face - Katy Perry',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#f5d8d8',
+               stroke: '#491616',
                strokeThickness: 3
            }
        );
 
-       Horse.setOrigin(0.5);
+       Poker.setOrigin(0.5);
 
-       DarkHorse.add([
-           DarkHorseBack,
-           Horse
+       PokerFace.add([
+           PokerFaceBack,
+           Poker
        ]);
 
-       // Just Dance - Lady Gaga
+       // Cherry Pie - Warrant
 
-       const JustDance = this.add.container(755, 540);
-       const JustDanceBack = this.add.graphics();
-       JustDanceBack.fillStyle(0x66877d, 0.4);
-       JustDanceBack.fillRoundedRect(
+       const CherryPie = this.add.container(755, 540);
+       const CherryPieBack = this.add.graphics();
+       CherryPieBack.fillStyle(0x876670, 0.4);
+       CherryPieBack.fillRoundedRect(
            -205, -42.5, 410, 85, 40
        );
 
-       const Dance = this.add.text(
-           0, 0, 'Just Dance - Lady Gaga',
+       const Cherry = this.add.text(
+           0, 0, 'Just Cherry - Lady Gaga',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#f5d8d8',
+               stroke: '#491616',
                strokeThickness: 3
            }
        );
 
-       Dance.setOrigin(0.5);
+       Cherry.setOrigin(0.5);
 
-       JustDance.add([
-           JustDanceBack,
-           Dance
+       CherryPie.add([
+           CherryPieBack,
+           Cherry
        ]);
 
-       // In Da Club - 50 Cent
+       // Crazy In Love - Beyonce
 
-       const InDaClub = this.add.container(275, 640);
-       const InDaClubBack = this.add.graphics();
-       InDaClubBack.fillStyle(0x66877d, 0.4);
-       InDaClubBack.fillRoundedRect(
+       const CrazyInLove = this.add.container(275, 640);
+       const CrazyInLoveBack = this.add.graphics();
+       CrazyInLoveBack.fillStyle(0x876670, 0.4);
+       CrazyInLoveBack.fillRoundedRect(
            -205, -42.5, 410, 85, 40
        );
 
-       const Club = this.add.text(
-           0, 0, 'In Da Club - 50 Cent',
+       const Crazy = this.add.text(
+           0, 0, 'Crazy in Love - Beyonce',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#f5d8d8',
+               stroke: '#491616',
                strokeThickness: 3
            }
        );
 
-       Club.setOrigin(0.5);
+       Crazy.setOrigin(0.5);
 
-       InDaClub.add([
-           InDaClubBack,
-           Club
+       CrazyInLove.add([
+           CrazyInLoveBack,
+           Crazy
        ]);
 
        // Sexy and I know it - LMFAO
@@ -304,27 +304,27 @@ window.HardScene = class HardScene extends Phaser.Scene {
        this.buttons = [
 
            [
-               OnTheFloor,
+               Yeah,
                BadRomance
            ],
 
            [
                BeatIt,
-               RichGirl
+               SM
            ],
 
            [
-               SmackThat,
-               CandyShop
+               LovinYou,
+               BohemianRhapsody
            ],
 
            [
-               DarkHorse,
-               JustDance
+               PokerFace,
+               CherryPie
            ],
 
            [
-               InDaClub,
+               CrazyInLove,
                SexyKnowIt
            ]
        ];
@@ -350,25 +350,27 @@ window.HardScene = class HardScene extends Phaser.Scene {
            this.updateSelection();
 
        });
-
        this.input.keyboard.on('keydown-RIGHT', () => {
 
            if (this.buttons[this.selectedRow][1] !== null) {
            this.selectedColumn = 1;}
            this.updateSelection();
        });
-
        this.input.keyboard.on('keydown-LEFT', () => {
            this.selectedColumn = 0;
            this.updateSelection();
        });
-
        this.input.keyboard.on('keydown-ENTER', () => {
+            console.log(
+                'ENTER:',
+                'row =', this.selectedRow,
+                'column =', this.selectedColumn
+            );
 
            if (
                this.selectedRow === 0 &&
                this.selectedColumn === 0
-           ) {this.scene.start('OTFloorHardScene');}
+           ) {this.scene.start('YeahScene');}
            else if (
                this.selectedRow === 0 &&
                this.selectedColumn === 1
@@ -380,27 +382,27 @@ window.HardScene = class HardScene extends Phaser.Scene {
            else if (
                this.selectedRow === 1 &&
                this.selectedColumn === 1
-           ) {this.scene.start('RichGirlScene');}
+           ) {this.scene.start('SMScene');}
            else if (
                this.selectedRow === 2 &&
                this.selectedColumn === 0
-           ) {this.scene.start('SmackThatScene');}
+           ) {this.scene.start('LovinYouScene');}
            else if (
                this.selectedRow === 2 &&
                this.selectedColumn === 1
-           ) {this.scene.start('CandyShopScene');}
+           ) {this.scene.start('BohemianRhapsodyScene');}
            else if (
                this.selectedRow === 3 &&
                this.selectedColumn === 0
-           ) {this.scene.start('DarkHorseScene');}
+           ) {this.scene.start('PokerFaceScene');}
            else if (
                this.selectedRow === 3 &&
                this.selectedColumn === 1
-           ) {this.scene.start('JustDanceScene');}
+           ) {this.scene.start('CherryPieScene');}
            else if (
                this.selectedRow === 4 &&
                this.selectedColumn === 0
-           ) {this.scene.start('InDaClubScene');}
+           ) {this.scene.start('CrazyInLoveScene');}
            else if (
                this.selectedRow === 4 &&
                this.selectedColumn === 1

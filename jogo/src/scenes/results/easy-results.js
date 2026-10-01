@@ -1,4 +1,4 @@
-window.EasyResultScene = class EasyResultScene extends Phaser.Scene {
+window.EasyResultScene = class ResultScene extends Phaser.Scene {
 
 constructor() {
         super({
@@ -45,13 +45,13 @@ create(data) {
 
         this.add.image(
             320,
-            390,
+            450,
             player1Image
         ).setOrigin(0.5).setScale(0.65);
 
         this.add.image(
             960,
-            390,
+            450,
             player2Image
         ).setOrigin(0.5).setScale(0.65);
 
@@ -67,9 +67,21 @@ create(data) {
             } 
         ).setOrigin(0.5);
 
+        this.add.text( 
+            this.scale.width / 2, 
+            175, 
+            'Enter = Reiniciar', 
+            { 
+                fontFamily: 'Audiowide', 
+                fontSize: '40px', 
+                fontStyle: 'bold', 
+                color: '#e6e0e0' 
+            } 
+        ).setOrigin(0.5);
+
         this.add.text(
             320,
-            510,
+            570,
             player1Score.toString(),
             {
                 fontFamily: 'Audiowide',
@@ -81,7 +93,7 @@ create(data) {
 
         this.add.text(
             960,
-            510,
+            570,
             player2Score.toString(),
             {
                 fontFamily: 'Audiowide',
@@ -90,5 +102,21 @@ create(data) {
                 color: '#e6e0e0'
             }
         ).setOrigin(0.5);
+
+        this.input.keyboard.on('keydown-ENTER', () => {
+            this.resetGameData();
+            this.scene.start('PlayScene');
+        });
+}
+
+        resetGameData() {
+            window.player1Score = 0;
+            window.player2Score = 0;
+            
+            window.player1Combo = 0;
+            window.player2Combo = 0;
+            
+            window.mapIndex = 0;
+            window.activeNotes = [];
     }
 };

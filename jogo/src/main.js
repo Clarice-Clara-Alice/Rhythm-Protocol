@@ -75,6 +75,7 @@ game.scene.add('CrazyInLoveScene', CrazyInLoveScene);
 game.scene.add('LovinYouScene', LovinYouScene);
 game.scene.add('PokerFaceScene', PokerFaceScene);
 game.scene.add('SMScene', SMScene);
+game.scene.add('HotelRoomScene', HotelRoomScene);
 
 // Gameplay - Difícil
 
@@ -87,6 +88,7 @@ game.scene.add('CrazyInLoveGameScene', CrazyInLoveGameScene);
 game.scene.add('LovinYouGameScene', LovinYouGameScene);
 game.scene.add('PokerFaceGameScene', PokerFaceGameScene);
 game.scene.add('SMGameScene', SMGameScene);
+game.scene.add('HotelRoomGameScene', HotelRoomGameScene);
 
 // Resultado
 

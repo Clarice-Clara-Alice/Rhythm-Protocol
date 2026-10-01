@@ -1,21 +1,21 @@
-window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
+window.HotelRoomGameScene = class HotelRoomGameScene extends Phaser.Scene {
 
 constructor() {
         super({
-            key: 'BeatItGameScene'
+            key: 'HotelRoomGameScene'
         });
 }
 
 preload() {
 
         this.load.audio(
-            'beatItMusic',
-            'assets/music/beat-it.mp3'
+            'HotelRoomMusic',
+            'assets/music/hotel-room.mp3'
         );
 
         this.load.json(
-            'beatItMap',
-            'maps/hard/beat-it.json'
+            'HotelRoomMap',
+            'maps/hard/hotel-room.json'
         );
 }
 
@@ -160,13 +160,13 @@ create() {
         this.keySwapText2.setAlpha(0).setOrigin(0.5);
 
         this.mapData = this.cache.json.get(
-            'beatItMap'
+            'HotelRoomMap'
         );
 
         if (!this.mapData) {
 
             console.error(
-                'ERRO: Não foi possível carregar beatItMap.'
+                'ERRO: Não foi possível carregar HotelRoomMap.'
             );
 
             return;
@@ -207,7 +207,7 @@ create() {
             () => this.hitNote('right', 2)
         );
         this.music = this.sound.add(
-            'beatItMusic'
+            'HotelRoomMusic'
         );
         this.music.play();
         this.songStartTime =
@@ -288,6 +288,7 @@ update() {
             this.restoreKeys();
             this.keysSwapped = false;
         }
+
 
         while (
             this.mapIndex <

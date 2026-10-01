@@ -225,7 +225,7 @@ window.HardScene = class HardScene extends Phaser.Scene {
        );
 
        const Cherry = this.add.text(
-           0, 0, 'Just Cherry - Lady Gaga',
+           0, 0, 'Cherry Pie - Warrant',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
@@ -271,33 +271,33 @@ window.HardScene = class HardScene extends Phaser.Scene {
            Crazy
        ]);
 
-       // Sexy and I know it - LMFAO
+       // Hotel Room - Pitbull
 
-       const SexyKnowIt = this.add.container(755, 640);
-       const SexyKnowItBack = this.add.graphics();
-       SexyKnowItBack.fillStyle(0x66877d, 0.4);
+       const HotelRoom = this.add.container(755, 640);
+       const HotelRoomBack = this.add.graphics();
+       HotelRoomBack.fillStyle(0x876670, 0.4);
 
-       SexyKnowItBack.fillRoundedRect(
+       HotelRoomBack.fillRoundedRect(
            -205, -42.5, 410, 85, 40
        );
 
-       const KnowIt = this.add.text(
-           0, 0, 'Sexy and I know it - LMFAO',
+       const Hotel = this.add.text(
+           0, 0, 'Hotel Room - Pitbull',
            {
                fontFamily: 'Times New Roman',
                fontSize: '25px',
                fontStyle: 'bold',
-               color: '#d8f5df',
-               stroke: '#294916',
+               color: '#f5d8d8',
+               stroke: '#491616',
                strokeThickness: 3
            }
        );
 
-       KnowIt.setOrigin(0.5);
+       Hotel.setOrigin(0.5);
 
-       SexyKnowIt.add([
-           SexyKnowItBack,
-           KnowIt
+       HotelRoom.add([
+           HotelRoomBack,
+           Hotel
        ]);
 
        // botões
@@ -325,7 +325,7 @@ window.HardScene = class HardScene extends Phaser.Scene {
 
            [
                CrazyInLove,
-               SexyKnowIt
+               HotelRoom
            ]
        ];
 
@@ -406,7 +406,7 @@ window.HardScene = class HardScene extends Phaser.Scene {
            else if (
                this.selectedRow === 4 &&
                this.selectedColumn === 1
-           ) {this.scene.start('SexyKnowItScene');}
+           ) {this.scene.start('HotelRoomScene');}
        });
    }
 

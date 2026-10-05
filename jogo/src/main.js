@@ -12,7 +12,11 @@ const gameConfig = {
         height: 720,
         autoCenter: Phaser.Scale.CENTER_BOTH,
         mode: Phaser.Scale.FIT
-    }
+    },
+
+    input: {
+    gamepad: true
+    },
 };
 
 const game = new Phaser.Game(gameConfig);

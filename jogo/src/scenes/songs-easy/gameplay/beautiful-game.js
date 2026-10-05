@@ -183,48 +183,7 @@ create() {
         this.music.play();
         this.songStartTime =
             this.time.now;
-            this.tapete =
-    this.input.gamepad.pad1;
 
-this.botoesAnteriores = [];
-
-if (this.tapete) {
-
-    console.log(
-        'TAPETE JÁ ESTAVA CONECTADO!'
-    );
-
-    console.log(
-        'Nome:',
-        this.tapete.id
-    );
-
-} else {
-
-    console.log(
-        'NENHUM TAPETE ENCONTRADO AINDA.'
-    );
-
-    this.input.gamepad.once(
-        'connected',
-        (pad) => {
-
-            console.log(
-                'TAPETE CONECTADO!'
-            );
-
-            console.log(
-                'Nome:',
-                pad.id
-            );
-
-            this.tapete = pad;
-
-            this.botoesAnteriores = [];
-
-        }
-    );
-}
 }
 
 
@@ -280,45 +239,6 @@ update() {
             return;
         }
         
-        if (this.tapete) {
-
-    this.tapete.buttons.forEach((button, index) => {
-
-        const estavaPressionado =
-            this.botoesAnteriores[index] || false;
-
-        if (
-            button.pressed &&
-            !estavaPressionado
-        ) {
-
-            console.log(
-                'BOTÃO DO TAPETE:',
-                index
-            );
-
-            if (index === 0) {
-                this.hitNote('left', 2);
-            }
-
-            if (index === 1) {
-                this.hitNote('down', 2);
-            }
-
-            if (index === 2) {
-                this.hitNote('up', 2);
-            }
-
-            if (index === 3) {
-                this.hitNote('right', 2);
-            }
-        }
-
-        this.botoesAnteriores[index] =
-            button.pressed;
-
-    });
-}
 
         const songTime =
             ( this.time.now -

@@ -1,74 +1,59 @@
 window.PlayScene = class PlayScene extends Phaser.Scene {
+  constructor() {
+    super({
+      key: "PlayScene",
+    });
+  }
 
-    constructor() {
-        super({
-            key: 'PlayScene',
-        });
-    }
+  create() {
+    const background = this.add.image(
+      this.scale.width / 2,
+      this.scale.height / 2,
+      "background",
+    );
 
-    create() {
+    background.setDisplaySize(this.scale.width, this.scale.height);
 
-        const background = this.add.image(
-            this.scale.width / 2,
-            this.scale.height / 2,
-            'background'
-        );
+    const buttonBackground = this.add.graphics();
 
-        background.setDisplaySize(
-            this.scale.width,
-            this.scale.height
-        );
+    buttonBackground.fillStyle(0x631597, 0.4);
 
+    buttonBackground.fillRoundedRect(
+      this.scale.width / 2 - 355,
+      this.scale.height / 2 - 150,
+      700,
+      300,
+      80,
+    );
 
-        const buttonBackground = this.add.graphics();
+    const button = this.add.text(
+      this.scale.width / 2,
+      this.scale.height / 2,
+      "PLAY",
+      {
+        fontFamily: "Times New Roman",
+        fontSize: "190px",
+        fontStyle: "bold",
+        color: "#8c40d3",
+        stroke: "#311649c2",
+        strokeThickness: 10,
+      },
+    );
 
-        buttonBackground.fillStyle(0x631597, 0.4);
+    button.setOrigin(0.5);
 
-        buttonBackground.fillRoundedRect(
-            this.scale.width / 2 - 355,
-            this.scale.height / 2 - 150,
-            700,
-            300,
-            80
-        );
+    button.setInteractive();
 
+    this.input.keyboard.on("keydown-UP", () => {
+      button.setScale(1.2);
+    });
 
-        const button = this.add.text(
-            this.scale.width / 2,
-            this.scale.height / 2,
-            'PLAY',
-            {
-                fontFamily: 'Times New Roman',
-                fontSize: '190px',
-                fontStyle: 'bold',
-                color: '#8c40d3',
-                stroke: '#311649c2',
-                strokeThickness: 10
-            }
-        );
+    this.input.keyboard.on("keydown-DOWN", () => {
+      button.setScale(1);
+    });
 
-        button.setOrigin(0.5);
-
-        button.setInteractive();
-
-
-        this.input.keyboard.on('keydown-UP', () => {
-
-            button.setScale(1.2);
-
-        });
-
-
-        this.input.keyboard.on('keydown-DOWN', () => {
-
-            button.setScale(1);
-
-        });
-
-
-        this.input.keyboard.on('keydown-ENTER', () => {
-            this.scene.start('DifficultyScene');
-        });
-
-    }
+    this.input.keyboard.on("keydown-ENTER", () => {
+      this.scene.start("DifficultyScene");
+    });
+  }
 };

@@ -1,51 +1,38 @@
 window.YeahScene = class YeahScene extends Phaser.Scene {
+  constructor() {
+    super({
+      key: "YeahScene",
+    });
+  }
 
-    constructor() {
-        super({
-            key: 'YeahScene',
-        });
-    }
+  create() {
+    console.log(">>> YEAH SCENE INICIOU");
 
-    create() {
+    const background = this.add.image(
+      this.scale.width / 2,
+      this.scale.height / 2,
+      "background",
+    );
 
-        console.log('>>> YEAH SCENE INICIOU');
+    background.setDisplaySize(this.scale.width, this.scale.height);
 
-        const background = this.add.image(
-            this.scale.width / 2,
-            this.scale.height / 2,
-            'background'
-        );
+    const cutscene = document.createElement("div");
 
-        background.setDisplaySize(
-            this.scale.width,
-            this.scale.height
-        );
+    cutscene.id = "cutscene-hard";
 
-        const cutscene = document.createElement('div');
-
-        cutscene.id = 'cutscene-hard';
-       
-        cutscene.innerHTML = `
+    cutscene.innerHTML = `
             <img src="assets/images/1-hard.png">
             <img src="assets/images/2-hard.png">
             <img src="assets/images/3-hard.png">
             <img src="assets/images/lets-play-hard.png">
             `;
 
-        document
-            .getElementById('game-container')
-            .appendChild(cutscene);
+    document.getElementById("game-container").appendChild(cutscene);
 
-       this.time.delayedCall(8000, () => {
+    this.time.delayedCall(8000, () => {
+      cutscene.remove();
 
-            cutscene.remove();
-
-            this.scene.start('YeahGameScene');
-
-        });
-
-
-    }
-
-
+      this.scene.start("YeahGameScene");
+    });
+  }
 };

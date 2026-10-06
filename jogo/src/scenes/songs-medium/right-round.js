@@ -1,42 +1,35 @@
 window.RightRoundScene = class RightRoundScene extends Phaser.Scene {
+  constructor() {
+    super({
+      key: "RightRoundScene",
+    });
+  }
 
-    constructor() {
-        super({
-            key: 'RightRoundScene',
-        });
-    }
+  create() {
+    const background = this.add.image(
+      this.scale.width / 2,
+      this.scale.height / 2,
+      "background",
+    );
 
-    create() {
+    background.setDisplaySize(this.scale.width, this.scale.height);
 
-        const background = this.add.image(
-            this.scale.width / 2,
-            this.scale.height / 2,
-            'background'
-        );
+    const cutscene = document.createElement("div");
 
-        background.setDisplaySize(
-            this.scale.width,
-            this.scale.height
-        );
+    cutscene.id = "cutscene-medium";
 
-        const cutscene = document.createElement('div');
-
-        cutscene.id = 'cutscene-medium';
-       
-        cutscene.innerHTML = `
+    cutscene.innerHTML = `
             <img src="assets/images/1-medium.png">
             <img src="assets/images/2-medium.png">
             <img src="assets/images/3-medium.png">
             <img src="assets/images/lets-play-medium.png">
             `;
 
-        document
-            .getElementById('game-container')
-            .appendChild(cutscene);
+    document.getElementById("game-container").appendChild(cutscene);
 
-       this.time.delayedCall(8000, () => {
-            cutscene.remove();
-            this.scene.start('RightRoundGameScene');
-        });
-    }
+    this.time.delayedCall(8000, () => {
+      cutscene.remove();
+      this.scene.start("RightRoundGameScene");
+    });
+  }
 };

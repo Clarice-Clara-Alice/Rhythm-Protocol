@@ -1,8 +1,6 @@
-window.BeautifulScene = class BeautifulScene extends Phaser.Scene {
+export default class BeautifulScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BeautifulScene",
-    });
+    super("BeautifulScene");
   }
 
   create() {

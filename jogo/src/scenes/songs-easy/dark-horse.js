@@ -1,8 +1,6 @@
-window.DarkHorseScene = class DarkHorseScene extends Phaser.Scene {
+export default class DarkHorseScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "DarkHorseScene",
-    });
+    super("DarkHorseScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.DarkHorseScene = class DarkHorseScene extends Phaser.Scene {
       this.scene.start("DarkHorseGameScene");
     });
   }
-};
+}

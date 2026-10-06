@@ -1,8 +1,6 @@
-window.TheFloorGameScene = class TheFloorGameScene extends Phaser.Scene {
+export default class TheFloorGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "TheFloorGameScene",
-    });
+    super("TheFloorGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.TheFloorGameScene = class TheFloorGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

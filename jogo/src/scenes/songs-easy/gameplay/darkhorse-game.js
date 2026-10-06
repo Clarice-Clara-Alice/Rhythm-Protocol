@@ -1,8 +1,6 @@
-window.DarkHorseGameScene = class DarkHorseGameScene extends Phaser.Scene {
+export default class DarkHorseGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "DarkHorseGameScene",
-    });
+    super("DarkHorseGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.DarkHorseGameScene = class DarkHorseGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

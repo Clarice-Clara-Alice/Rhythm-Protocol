@@ -1,8 +1,6 @@
-window.EasyResultScene = class ResultScene extends Phaser.Scene {
+export default class ResultScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "EasyResultScene",
-    });
+    super("EasyResultScene");
   }
 
   create(data) {
@@ -88,4 +86,4 @@ window.EasyResultScene = class ResultScene extends Phaser.Scene {
     window.mapIndex = 0;
     window.activeNotes = [];
   }
-};
+}

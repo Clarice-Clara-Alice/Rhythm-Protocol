@@ -1,8 +1,6 @@
-window.OTFloorScene = class OTFloorScene extends Phaser.Scene {
+export default class OTFloorScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "OTFloorScene",
-    });
+    super("OTFloorScene");
   }
 
   create() {
@@ -33,4 +31,4 @@ window.OTFloorScene = class OTFloorScene extends Phaser.Scene {
       this.scene.start("TheFloorGameScene");
     });
   }
-};
+}

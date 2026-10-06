@@ -1,8 +1,6 @@
-window.CandyShopScene = class CandyShopScene extends Phaser.Scene {
+export default class CandyShopScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "CandyShopScene",
-    });
+    super("CandyShopScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.CandyShopScene = class CandyShopScene extends Phaser.Scene {
       this.scene.start("CandyShopGameScene");
     });
   }
-};
+}

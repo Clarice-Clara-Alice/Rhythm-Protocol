@@ -1,8 +1,6 @@
-window.MediumScene = class MediumScene extends Phaser.Scene {
+export default class MediumScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "MediumScene",
-    });
+    super("MediumScene");
   }
 
   create() {
@@ -239,10 +237,25 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
 
     this.updateSelection();
 
+    this.input.keyboard.on("keydown-S", () => {
+      this.selectedRow++;
+      if (this.selectedRow >= this.buttons.length) {
+        this.selectedRow = 0;
+      }
+      this.updateSelection();
+    });
     this.input.keyboard.on("keydown-DOWN", () => {
       this.selectedRow++;
       if (this.selectedRow >= this.buttons.length) {
         this.selectedRow = 0;
+      }
+      this.updateSelection();
+    });
+
+    this.input.keyboard.on("keydown-W", () => {
+      this.selectedRow--;
+      if (this.selectedRow < 0) {
+        this.selectedRow = this.buttons.length - 1;
       }
       this.updateSelection();
     });
@@ -251,10 +264,15 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
       if (this.selectedRow < 0) {
         this.selectedRow = this.buttons.length - 1;
       }
-
       this.updateSelection();
     });
 
+    this.input.keyboard.on("keydown-D", () => {
+      if (this.buttons[this.selectedRow][1] !== null) {
+        this.selectedColumn = 1;
+      }
+      this.updateSelection();
+    });
     this.input.keyboard.on("keydown-RIGHT", () => {
       if (this.buttons[this.selectedRow][1] !== null) {
         this.selectedColumn = 1;
@@ -262,6 +280,10 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
       this.updateSelection();
     });
 
+    this.input.keyboard.on("keydown-A", () => {
+      this.selectedColumn = 0;
+      this.updateSelection();
+    });
     this.input.keyboard.on("keydown-LEFT", () => {
       this.selectedColumn = 0;
       this.updateSelection();
@@ -290,6 +312,10 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
         this.scene.start("RightRoundScene");
       }
     });
+
+    this.input.keyboard.on("keydown-ESC", () => {
+      this.scene.start("DifficultyScene");
+    });
   }
 
   updateSelection() {
@@ -306,4 +332,4 @@ window.MediumScene = class MediumScene extends Phaser.Scene {
       selectedButton.setScale(1.15);
     }
   }
-};
+}

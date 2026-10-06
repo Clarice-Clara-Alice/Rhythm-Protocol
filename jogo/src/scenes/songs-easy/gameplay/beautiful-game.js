@@ -1,8 +1,6 @@
-window.BeautifulGameScene = class BeautifulGameScene extends Phaser.Scene {
+export default class BeautifulGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BeautifulGameScene",
-    });
+    super("BeautifulGameScene");
   }
 
   preload() {
@@ -306,4 +304,4 @@ window.BeautifulGameScene = class BeautifulGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

@@ -1,8 +1,6 @@
-window.InDaClubGameScene = class InDaClubGameScene extends Phaser.Scene {
+export default class InDaClubGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "InDaClubGameScene",
-    });
+    super("InDaClubGameScene");
   }
 
   preload() {

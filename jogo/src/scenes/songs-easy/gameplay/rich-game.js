@@ -1,8 +1,6 @@
-window.RichGirlGameScene = class RichGirlGameScene extends Phaser.Scene {
+export default class RichGirlGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "RichGirlGameScene",
-    });
+    super("RichGirlGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.RichGirlGameScene = class RichGirlGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

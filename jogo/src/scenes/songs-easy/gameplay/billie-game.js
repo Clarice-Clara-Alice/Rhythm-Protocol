@@ -1,8 +1,6 @@
-window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
+export default class BillieGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BillieGameScene",
-    });
+    super("BillieGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.BillieGameScene = class BillieGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

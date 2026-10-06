@@ -1,8 +1,6 @@
-window.JustDanceScene = class JustDanceScene extends Phaser.Scene {
+export default class JustDanceScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "JustDanceScene",
-    });
+    super("JustDanceScene");
   }
 
   create() {

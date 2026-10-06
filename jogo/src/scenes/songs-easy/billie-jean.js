@@ -1,4 +1,4 @@
-window.BillieScene = class BillieScene extends Phaser.Scene {
+export default class BillieScene extends Phaser.Scene {
   constructor() {
     super({
       key: "BillieScene",

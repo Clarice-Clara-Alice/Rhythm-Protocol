@@ -1,8 +1,6 @@
-window.SexyKnowItGameScene = class SexyKnowItGameScene extends Phaser.Scene {
+export default class SexyKnowItGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "SexyKnowItGameScene",
-    });
+    super("SexyKnowItGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.SexyKnowItGameScene = class SexyKnowItGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

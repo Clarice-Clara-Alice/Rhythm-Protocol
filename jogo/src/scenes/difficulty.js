@@ -1,8 +1,6 @@
-window.DifficultyScene = class DifficultyScene extends Phaser.Scene {
+export default class DifficultyScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "DifficultyScene",
-    });
+    super("DifficultyScene");
   }
 
   create() {
@@ -37,6 +35,13 @@ window.DifficultyScene = class DifficultyScene extends Phaser.Scene {
 
     this.updateSelection();
 
+    this.input.keyboard.on("keydown-D", () => {
+      this.selectedButton++;
+      if (this.selectedButton >= this.buttons.length) {
+        this.selectedButton = 0;
+      }
+      this.updateSelection();
+    });
     this.input.keyboard.on("keydown-RIGHT", () => {
       this.selectedButton++;
       if (this.selectedButton >= this.buttons.length) {
@@ -45,6 +50,13 @@ window.DifficultyScene = class DifficultyScene extends Phaser.Scene {
       this.updateSelection();
     });
 
+    this.input.keyboard.on("keydown-A", () => {
+      this.selectedButton--;
+      if (this.selectedButton < 0) {
+        this.selectedButton = this.buttons.length - 1;
+      }
+      this.updateSelection();
+    });
     this.input.keyboard.on("keydown-LEFT", () => {
       this.selectedButton--;
       if (this.selectedButton < 0) {
@@ -73,4 +85,4 @@ window.DifficultyScene = class DifficultyScene extends Phaser.Scene {
       }
     });
   }
-};
+}

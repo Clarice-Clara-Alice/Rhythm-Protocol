@@ -1,8 +1,6 @@
-window.SmackThatScene = class SmackThatScene extends Phaser.Scene {
+export default class SmackThatScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "SmackThatScene",
-    });
+    super("SmackThatScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.SmackThatScene = class SmackThatScene extends Phaser.Scene {
       this.scene.start("SmackThatGameScene");
     });
   }
-};
+}

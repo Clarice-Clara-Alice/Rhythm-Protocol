@@ -1,8 +1,6 @@
-window.InDaClubScene = class InDaClubScene extends Phaser.Scene {
+export default class InDaClubScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "InDaClubScene",
-    });
+    super("InDaClubScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.InDaClubScene = class InDaClubScene extends Phaser.Scene {
       this.scene.start("InDaClubGameScene");
     });
   }
-};
+}

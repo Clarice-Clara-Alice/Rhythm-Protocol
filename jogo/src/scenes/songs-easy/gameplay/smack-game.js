@@ -1,8 +1,6 @@
-window.SmackThatGameScene = class SmackThatGameScene extends Phaser.Scene {
+export default class SmackThatGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "SmackThatGameScene",
-    });
+    super("SmackThatGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.SmackThatGameScene = class SmackThatGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

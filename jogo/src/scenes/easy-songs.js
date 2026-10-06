@@ -1,8 +1,6 @@
-window.EasyScene = class EasyScene extends Phaser.Scene {
+export default class EasyScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "EasyScene",
-    });
+    super("EasyScene");
   }
 
   create() {
@@ -241,10 +239,25 @@ window.EasyScene = class EasyScene extends Phaser.Scene {
 
     this.updateSelection();
 
+    this.input.keyboard.on("keydown-S", () => {
+      this.selectedRow++;
+      if (this.selectedRow >= this.buttons.length) {
+        this.selectedRow = 0;
+      }
+      this.updateSelection();
+    });
     this.input.keyboard.on("keydown-DOWN", () => {
       this.selectedRow++;
       if (this.selectedRow >= this.buttons.length) {
         this.selectedRow = 0;
+      }
+      this.updateSelection();
+    });
+
+    this.input.keyboard.on("keydown-W", () => {
+      this.selectedRow--;
+      if (this.selectedRow < 0) {
+        this.selectedRow = this.buttons.length - 1;
       }
       this.updateSelection();
     });
@@ -253,10 +266,15 @@ window.EasyScene = class EasyScene extends Phaser.Scene {
       if (this.selectedRow < 0) {
         this.selectedRow = this.buttons.length - 1;
       }
-
       this.updateSelection();
     });
 
+    this.input.keyboard.on("keydown-D", () => {
+      if (this.buttons[this.selectedRow][1] !== null) {
+        this.selectedColumn = 1;
+      }
+      this.updateSelection();
+    });
     this.input.keyboard.on("keydown-RIGHT", () => {
       if (this.buttons[this.selectedRow][1] !== null) {
         this.selectedColumn = 1;
@@ -264,6 +282,10 @@ window.EasyScene = class EasyScene extends Phaser.Scene {
       this.updateSelection();
     });
 
+    this.input.keyboard.on("keydown-A", () => {
+      this.selectedColumn = 0;
+      this.updateSelection();
+    });
     this.input.keyboard.on("keydown-LEFT", () => {
       this.selectedColumn = 0;
       this.updateSelection();
@@ -292,6 +314,10 @@ window.EasyScene = class EasyScene extends Phaser.Scene {
         this.scene.start("SexyKnowItScene");
       }
     });
+
+    this.input.keyboard.on("keydown-ESC", () => {
+      this.scene.start("DifficultyScene");
+    })
   }
 
   updateSelection() {
@@ -308,4 +334,4 @@ window.EasyScene = class EasyScene extends Phaser.Scene {
       selectedButton.setScale(1.15);
     }
   }
-};
+}

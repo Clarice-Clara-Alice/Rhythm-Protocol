@@ -1,8 +1,6 @@
-window.RichGirlScene = class RichGirlScene extends Phaser.Scene {
+export default class RichGirlScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "RichGirlScene",
-    });
+    super("RichGirlScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.RichGirlScene = class RichGirlScene extends Phaser.Scene {
       this.scene.start("RichGirlGameScene");
     });
   }
-};
+}

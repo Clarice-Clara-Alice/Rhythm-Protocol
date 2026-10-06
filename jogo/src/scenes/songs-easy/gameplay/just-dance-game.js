@@ -1,8 +1,6 @@
-window.JustDanceGameScene = class JustDanceGameScene extends Phaser.Scene {
+export default class JustDanceGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "JustDanceGameScene",
-    });
+    super("JustDanceGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.JustDanceGameScene = class JustDanceGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

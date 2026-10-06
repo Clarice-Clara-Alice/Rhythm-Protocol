@@ -1,8 +1,6 @@
-window.SexyKnowItScene = class SexyKnowItScene extends Phaser.Scene {
+export default class SexyKnowItScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "SexyKnowItScene",
-    });
+    super("SexyKnowItScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.SexyKnowItScene = class SexyKnowItScene extends Phaser.Scene {
       this.scene.start("SexyKnowItGameScene");
     });
   }
-};
+}

@@ -36,18 +36,12 @@ class MusicMapper:
         # =========================
 
         # Título
-        title = tk.Label(
-            root,
-            text="MUSIC MAPPER",
-            font=("Arial", 24, "bold")
-        )
+        title = tk.Label(root, text="MUSIC MAPPER", font=("Arial", 24, "bold"))
         title.pack(pady=15)
 
         # Arquivo atual
         self.file_label = tk.Label(
-            root,
-            text="Nenhuma música carregada",
-            font=("Arial", 11)
+            root, text="Nenhuma música carregada", font=("Arial", 11)
         )
         self.file_label.pack(pady=5)
 
@@ -59,7 +53,7 @@ class MusicMapper:
             music_frame,
             text="🎵 Carregar Música",
             font=("Arial", 12),
-            command=self.load_music
+            command=self.load_music,
         )
         self.load_button.grid(row=0, column=0, padx=5)
 
@@ -68,7 +62,7 @@ class MusicMapper:
             text="▶ PLAY",
             font=("Arial", 12, "bold"),
             width=10,
-            command=self.play_music
+            command=self.play_music,
         )
         self.play_button.grid(row=0, column=1, padx=5)
 
@@ -77,7 +71,7 @@ class MusicMapper:
             text="■ STOP",
             font=("Arial", 12, "bold"),
             width=10,
-            command=self.stop_music
+            command=self.stop_music,
         )
         self.stop_button.grid(row=0, column=2, padx=5)
 
@@ -86,9 +80,7 @@ class MusicMapper:
         # =========================
 
         self.time_label = tk.Label(
-            root,
-            text="00:00.000",
-            font=("Consolas", 28, "bold")
+            root, text="00:00.000", font=("Consolas", 28, "bold")
         )
         self.time_label.pack(pady=10)
 
@@ -99,7 +91,7 @@ class MusicMapper:
         instruction = tk.Label(
             root,
             text="Durante a música, pressione ↑ ↓ ← → para registrar as notas.",
-            font=("Arial", 11)
+            font=("Arial", 11),
         )
         instruction.pack(pady=5)
 
@@ -118,7 +110,7 @@ class MusicMapper:
             width=55,
             height=10,
             font=("Consolas", 11),
-            yscrollcommand=scrollbar.set
+            yscrollcommand=scrollbar.set,
         )
         self.event_list.pack(side=tk.LEFT)
 
@@ -132,10 +124,7 @@ class MusicMapper:
         bottom_frame.pack(pady=10)
 
         self.clear_button = tk.Button(
-            bottom_frame,
-            text="🗑 Limpar",
-            font=("Arial", 11),
-            command=self.clear_events
+            bottom_frame, text="🗑 Limpar", font=("Arial", 11), command=self.clear_events
         )
         self.clear_button.grid(row=0, column=0, padx=5)
 
@@ -143,7 +132,7 @@ class MusicMapper:
             bottom_frame,
             text="💾 Salvar JSON",
             font=("Arial", 11, "bold"),
-            command=self.save_json
+            command=self.save_json,
         )
         self.save_button.grid(row=0, column=1, padx=5)
 
@@ -172,8 +161,8 @@ class MusicMapper:
                 ("MP3", "*.mp3"),
                 ("WAV", "*.wav"),
                 ("OGG", "*.ogg"),
-                ("Todos os arquivos", "*.*")
-            ]
+                ("Todos os arquivos", "*.*"),
+            ],
         )
 
         if not file_path:
@@ -186,9 +175,7 @@ class MusicMapper:
 
             filename = os.path.basename(file_path)
 
-            self.file_label.config(
-                text=f"Música: {filename}"
-            )
+            self.file_label.config(text=f"Música: {filename}")
 
             # Reseta tudo
             self.stop_music()
@@ -196,10 +183,7 @@ class MusicMapper:
 
         except Exception as e:
 
-            messagebox.showerror(
-                "Erro",
-                f"Não foi possível carregar a música:\n\n{e}"
-            )
+            messagebox.showerror("Erro", f"Não foi possível carregar a música:\n\n{e}")
 
     # ============================================================
     # PLAY
@@ -209,10 +193,7 @@ class MusicMapper:
 
         if self.music_file is None:
 
-            messagebox.showwarning(
-                "Aviso",
-                "Primeiro carregue uma música."
-            )
+            messagebox.showwarning("Aviso", "Primeiro carregue uma música.")
 
             return
 
@@ -237,9 +218,7 @@ class MusicMapper:
 
         self.is_playing = False
 
-        self.time_label.config(
-            text="00:00.000"
-        )
+        self.time_label.config(text="00:00.000")
 
     # ============================================================
     # TECLAS
@@ -250,12 +229,7 @@ class MusicMapper:
         if not self.is_playing:
             return
 
-        key_map = {
-            "Up": "up",
-            "Down": "down",
-            "Left": "left",
-            "Right": "right"
-        }
+        key_map = {"Up": "up", "Down": "down", "Left": "left", "Right": "right"}
 
         if event.keysym not in key_map:
             return
@@ -269,18 +243,12 @@ class MusicMapper:
         current_time = round(current_time, 3)
 
         # Salva evento
-        event_data = {
-            "tecla": key,
-            "tempo": current_time
-        }
+        event_data = {"tecla": key, "tempo": current_time}
 
         self.events.append(event_data)
 
         # Mostra na lista
-        self.event_list.insert(
-            tk.END,
-            f"{current_time:8.3f}s    →    {key.upper()}"
-        )
+        self.event_list.insert(tk.END, f"{current_time:8.3f}s    →    {key.upper()}")
 
         # Scroll automático
         self.event_list.see(tk.END)
@@ -318,10 +286,7 @@ class MusicMapper:
 
         self.events = []
 
-        self.event_list.delete(
-            0,
-            tk.END
-        )
+        self.event_list.delete(0, tk.END)
 
     # ============================================================
     # SALVAR JSON
@@ -331,55 +296,32 @@ class MusicMapper:
 
         if not self.events:
 
-            messagebox.showwarning(
-                "Aviso",
-                "Nenhuma tecla foi registrada."
-            )
+            messagebox.showwarning("Aviso", "Nenhuma tecla foi registrada.")
 
             return
 
         file_path = filedialog.asksaveasfilename(
             title="Salvar mapa",
             defaultextension=".json",
-            filetypes=[
-                ("JSON", "*.json")
-            ]
+            filetypes=[("JSON", "*.json")],
         )
 
         if not file_path:
             return
 
-        data = {
-            "musica": os.path.basename(self.music_file),
-            "eventos": self.events
-        }
+        data = {"musica": os.path.basename(self.music_file), "eventos": self.events}
 
         try:
 
-            with open(
-                file_path,
-                "w",
-                encoding="utf-8"
-            ) as file:
+            with open(file_path, "w", encoding="utf-8") as file:
 
-                json.dump(
-                    data,
-                    file,
-                    indent=4,
-                    ensure_ascii=False
-                )
+                json.dump(data, file, indent=4, ensure_ascii=False)
 
-            messagebox.showinfo(
-                "Sucesso",
-                "Mapa salvo com sucesso!"
-            )
+            messagebox.showinfo("Sucesso", "Mapa salvo com sucesso!")
 
         except Exception as e:
 
-            messagebox.showerror(
-                "Erro",
-                f"Não foi possível salvar:\n\n{e}"
-            )
+            messagebox.showerror("Erro", f"Não foi possível salvar:\n\n{e}")
 
     # ============================================================
     # FECHAR

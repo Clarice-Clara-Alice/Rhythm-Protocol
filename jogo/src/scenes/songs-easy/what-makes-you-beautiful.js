@@ -1,42 +1,33 @@
-window.BeautifulScene = class BeautifulScene extends Phaser.Scene {
+export default class BeautifulScene extends Phaser.Scene {
+  constructor() {
+    super("BeautifulScene");
+  }
 
-    constructor() {
-        super({
-            key: 'BeautifulScene',
-        });
-    }
+  create() {
+    const background = this.add.image(
+      this.scale.width / 2,
+      this.scale.height / 2,
+      "background",
+    );
 
-    create() {
+    background.setDisplaySize(this.scale.width, this.scale.height);
 
-        const background = this.add.image(
-            this.scale.width / 2,
-            this.scale.height / 2,
-            'background'
-        );
+    const cutscene = document.createElement("div");
 
-        background.setDisplaySize(
-            this.scale.width,
-            this.scale.height
-        );
+    cutscene.id = "cutscene-easy";
 
-        const cutscene = document.createElement('div');
-
-        cutscene.id = 'cutscene-easy';
-       
-        cutscene.innerHTML = `
+    cutscene.innerHTML = `
             <img src="assets/images/1-easy.png">
             <img src="assets/images/2-easy.png">
             <img src="assets/images/3-easy.png">
             <img src="assets/images/lets-play-easy.png">
             `;
 
-        document
-            .getElementById('game-container')
-            .appendChild(cutscene);
+    document.getElementById("game-container").appendChild(cutscene);
 
-       this.time.delayedCall(8000, () => {
-            cutscene.remove();
-            this.scene.start('BeautifulGameScene');
-        });
-    }
+    this.time.delayedCall(8000, () => {
+      cutscene.remove();
+      this.scene.start("BeautifulGameScene");
+    });
+  }
 };

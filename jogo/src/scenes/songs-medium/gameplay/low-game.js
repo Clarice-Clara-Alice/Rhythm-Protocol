@@ -1,8 +1,6 @@
-window.LowGameScene = class LowGameScene extends Phaser.Scene {
+export default class LowGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "LowGameScene",
-    });
+    super("LowGameScene");
   }
 
   preload() {

@@ -1,8 +1,6 @@
-window.RightRoundScene = class RightRoundScene extends Phaser.Scene {
+export default class RightRoundScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "RightRoundScene",
-    });
+    super("RightRoundScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.RightRoundScene = class RightRoundScene extends Phaser.Scene {
       this.scene.start("RightRoundGameScene");
     });
   }
-};
+}

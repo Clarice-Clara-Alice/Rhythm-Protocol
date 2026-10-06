@@ -1,8 +1,6 @@
-window.HighwayGameScene = class HighwayGameScene extends Phaser.Scene {
+export default class HighwayGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "HighwayGameScene",
-    });
+    super("HighwayGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.HighwayGameScene = class HighwayGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

@@ -1,8 +1,6 @@
-window.TemperatureGameScene = class TemperatureGameScene extends Phaser.Scene {
+export default class TemperatureGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "TemperatureGameScene",
-    });
+    super("TemperatureGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.TemperatureGameScene = class TemperatureGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

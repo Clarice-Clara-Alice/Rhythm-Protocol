@@ -1,8 +1,6 @@
-window.HighwayScene = class HighwayScene extends Phaser.Scene {
+export default class HighwayScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "HighwayScene",
-    });
+    super("HighwayScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.HighwayScene = class HighwayScene extends Phaser.Scene {
       this.scene.start("HighwayGameScene");
     });
   }
-};
+}

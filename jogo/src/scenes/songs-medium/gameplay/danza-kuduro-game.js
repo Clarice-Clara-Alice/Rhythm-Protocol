@@ -1,8 +1,6 @@
-window.DanzaKuduroGameScene = class DanzaKuduroGameScene extends Phaser.Scene {
+export default class DanzaKuduroGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "DanzaKuduroGameScene",
-    });
+    super("DanzaKuduroGameScene");
   }
 
   preload() {
@@ -304,4 +302,4 @@ window.DanzaKuduroGameScene = class DanzaKuduroGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

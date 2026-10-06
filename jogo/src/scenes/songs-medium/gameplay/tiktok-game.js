@@ -1,8 +1,6 @@
-window.TiktokGameScene = class TiktokGameScene extends Phaser.Scene {
+export default class TiktokGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "TiktokGameScene",
-    });
+    super("TiktokGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.TiktokGameScene = class TiktokGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

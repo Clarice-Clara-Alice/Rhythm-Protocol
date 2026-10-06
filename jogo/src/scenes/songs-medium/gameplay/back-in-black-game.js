@@ -1,8 +1,6 @@
-window.BackInBlackGameScene = class BackInBlackGameScene extends Phaser.Scene {
+export default class BackInBlackGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BackInBlackGameScene",
-    });
+    super("BackInBlackGameScene");
   }
 
   preload() {
@@ -303,4 +301,4 @@ window.BackInBlackGameScene = class BackInBlackGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

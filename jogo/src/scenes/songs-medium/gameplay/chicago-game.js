@@ -1,8 +1,6 @@
-window.ChicagoGameScene = class ChicagoGameScene extends Phaser.Scene {
+export default class ChicagoGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "ChicagoGameScene",
-    });
+    super("ChicagoGameScene");
   }
 
   preload() {
@@ -304,4 +302,4 @@ window.ChicagoGameScene = class ChicagoGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

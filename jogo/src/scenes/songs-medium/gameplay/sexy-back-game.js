@@ -1,8 +1,6 @@
-window.SexyBackGameScene = class SexyBackGameScene extends Phaser.Scene {
+export default class SexyBackGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "SexyBackGameScene",
-    });
+    super("SexyBackGameScene");
   }
 
   preload() {
@@ -304,4 +302,4 @@ window.SexyBackGameScene = class SexyBackGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

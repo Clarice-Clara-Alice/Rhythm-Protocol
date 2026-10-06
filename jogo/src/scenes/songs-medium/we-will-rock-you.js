@@ -1,8 +1,6 @@
-window.WeWillRockYouScene = class WeWillRockYouScene extends Phaser.Scene {
+export default class WeWillRockYouScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "WeWillRockYouScene",
-    });
+    super("WeWillRockYouScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.WeWillRockYouScene = class WeWillRockYouScene extends Phaser.Scene {
       this.scene.start("WeWillRockYouGameScene");
     });
   }
-};
+}

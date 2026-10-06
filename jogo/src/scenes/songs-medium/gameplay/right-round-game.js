@@ -1,8 +1,6 @@
-window.RightRoundGameScene = class RightRoundGameScene extends Phaser.Scene {
+export default class RightRoundGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "RightRoundGameScene",
-    });
+    super("RightRoundGameScene");
   }
 
   preload() {
@@ -304,4 +302,4 @@ window.RightRoundGameScene = class RightRoundGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

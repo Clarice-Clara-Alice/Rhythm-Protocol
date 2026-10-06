@@ -1,8 +1,6 @@
-window.LowScene = class LowScene extends Phaser.Scene {
+export default class LowScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "LowScene",
-    });
+    super("LowScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.LowScene = class LowScene extends Phaser.Scene {
       this.scene.start("LowGameScene");
     });
   }
-};
+}

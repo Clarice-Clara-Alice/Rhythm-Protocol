@@ -1,8 +1,6 @@
-window.BackInBlackScene = class BackInBlackScene extends Phaser.Scene {
+export default class BackInBlackScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BackInBlackScene",
-    });
+    super("BackInBlackScene");
   }
 
   create() {

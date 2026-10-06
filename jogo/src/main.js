@@ -53,6 +53,46 @@ import JustDanceGameScene from "./scenes/songs-easy/gameplay/just-dance-game.js"
 import SexyKnowItScene from "./scenes/songs-easy/sexy-and-i-know-it.js";
 import SexyKnowItGameScene from "./scenes/songs-easy/gameplay/sexy-game.js";
 
+// Low - Train
+import LowScene from "./scenes/songs-medium/low.js";
+import LowGameScene from "./scenes/songs-medium/gameplay/low-game.js";
+
+// Tiktok - Kesha
+import TiktokScene from "./scenes/songs-medium/tiktok.js";
+import TiktokGameScene from "./scenes/songs-medium/gameplay/tiktok-game.js";
+
+// Back In Black - AC/DC
+import BackInBlackScene from "./scenes/songs-medium/back-in-black.js";
+import BackInBlackGameScene from "./scenes/songs-medium/gameplay/back-in-black-game.js";
+
+// We Will Rock You - Queen
+import WeWillRockYouScene from "./scenes/songs-medium/we-will-rock-you.js";
+import WeWillRockYouGameScene from "./scenes/songs-medium/gameplay/we-will-rock-you-game.js";
+
+// Temperature - Sean
+import TemperatureScene from "./scenes/songs-medium/temperature.js";
+import TemperatureGameScene from "./scenes/songs-medium/gameplay/temperature-game.js";
+
+// Highway to Hell - AC/DC
+import HighwayScene from "./scenes/songs-medium/highway-to-hell.js";
+import HighwayGameScene from "./scenes/songs-medium/gameplay/highway-to-hell-game.js";
+
+// Danza Kuduro - Don Omar
+import DanzaKuduroScene from "./scenes/songs-medium/danza-kuduro.js";
+import DanzaKuduroGameScene from "./scenes/songs-medium/gameplay/danza-kuduro-game.js";
+
+// Chicago - Michael Jackson
+import ChicagoScene from "./scenes/songs-medium/chicago.js";
+import ChicagoGameScene from "./scenes/songs-medium/gameplay/chicago-game.js";
+
+// Sexy Back - Justin Timberlake
+import SexyBackScene from "./scenes/songs-medium/sexy-back.js";
+import SexyBackGameScene from "./scenes/songs-medium/gameplay/sexy-back-game.js";
+
+// Right Round - Kesha
+import RightRoundScene from "./scenes/songs-medium/right-round.js";
+import RightRoundGameScene from "./scenes/songs-medium/gameplay/right-round-game.js";
+
 class Game extends Phaser.Game {
   constructor() {
     super(config);
@@ -108,6 +148,46 @@ class Game extends Phaser.Game {
     this.scene.add("SexyKnowItScene", SexyKnowItScene);
     this.scene.add("SexyKnowItGameScene", SexyKnowItGameScene);
 
+    // Low - Train
+    this.scene.add("LowScene", LowScene);
+    this.scene.add("LowGameScene", LowGameScene);
+
+    // Tiktok - Kesha
+    this.scene.add("TiktokScene", TiktokScene);
+    this.scene.add("TiktokGameScene", TiktokGameScene);
+
+    // Back In Black - AC/DC
+    this.scene.add("BackInBlackScene", BackInBlackScene);
+    this.scene.add("BackInBlackGameScene", BackInBlackGameScene);
+
+    // We Will Rock You - Queen
+    this.scene.add("WeWillRockYouScene", WeWillRockYouScene);
+    this.scene.add("WeWillRockYouGameScene", WeWillRockYouGameScene);
+
+    // Temperature - Sean
+    this.scene.add("TemperatureScene", TemperatureScene);
+    this.scene.add("TemperatureGameScene", TemperatureGameScene);
+
+    // Highway to Hell - AC/DC
+    this.scene.add("HighwayScene", HighwayScene);
+    this.scene.add("HighwayGameScene", HighwayGameScene);
+
+    // Danza Kuduro - Don Omar
+    this.scene.add("DanzaKuduroScene", DanzaKuduroScene);
+    this.scene.add("DanzaKuduroGameScene", DanzaKuduroGameScene);
+
+    // Chicago - Michael Jackson
+    this.scene.add("ChicagoScene", ChicagoScene);
+    this.scene.add("ChicagoGameScene", ChicagoGameScene);
+
+    // Sexy Back - Justin Timberlake
+    this.scene.add("SexyBackScene", SexyBackScene);
+    this.scene.add("SexyBackGameScene", SexyBackGameScene);
+
+    // Right Round - Kesha
+    this.scene.add("RightRoundScene", RightRoundScene);
+    this.scene.add("RightRoundGameScene", RightRoundGameScene);
+
     this.scene.start("PreloadScene");
   }
 }
@@ -117,29 +197,6 @@ window.onload = () => {
 };
 
 /*
-game.scene.add("BeautifulScene", BeautifulScene);
-game.scene.add("TheFloorGameScene", TheFloorGameScene);
-game.scene.add("BillieGameScene", BillieGameScene);
-game.scene.add("LowScene", LowScene);
-game.scene.add("HighwayScene", HighwayScene);
-game.scene.add("DanzaKuduroScene", DanzaKuduroScene);
-game.scene.add("BackInBlackScene", BackInBlackScene);
-game.scene.add("TemperatureScene", TemperatureScene);
-game.scene.add("ChicagoScene", ChicagoScene);
-game.scene.add("WeWillRockYouScene", WeWillRockYouScene);
-game.scene.add("SexyBackScene", SexyBackScene);
-game.scene.add("RightRoundScene", RightRoundScene);
-game.scene.add("TiktokScene", TiktokScene);
-game.scene.add("LowGameScene", LowGameScene);
-game.scene.add("HighwayGameScene", HighwayGameScene);
-game.scene.add("DanzaKuduroGameScene", DanzaKuduroGameScene);
-game.scene.add("BackInBlackGameScene", BackInBlackGameScene);
-game.scene.add("TemperatureGameScene", TemperatureGameScene);
-game.scene.add("ChicagoGameScene", ChicagoGameScene);
-game.scene.add("WeWillRockYouGameScene", WeWillRockYouGameScene);
-game.scene.add("SexyBackGameScene", SexyBackGameScene);
-game.scene.add("RightRoundGameScene", RightRoundGameScene);
-game.scene.add("TiktokGameScene", TiktokGameScene);
 
 // Músicas - difícil
 

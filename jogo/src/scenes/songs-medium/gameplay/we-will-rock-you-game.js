@@ -1,10 +1,6 @@
-window.WeWillRockYouGameScene = class WeWillRockYouGameScene extends (
-  Phaser.Scene
-) {
+export default class WeWillRockYouGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "WeWillRockYouGameScene",
-    });
+    super("WeWillRockYouGameScene");
   }
 
   preload() {
@@ -306,4 +302,4 @@ window.WeWillRockYouGameScene = class WeWillRockYouGameScene extends (
 
     return arrows[direction];
   }
-};
+}

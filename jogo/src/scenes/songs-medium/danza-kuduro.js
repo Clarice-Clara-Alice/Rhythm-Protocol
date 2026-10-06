@@ -1,8 +1,6 @@
-window.DanzaKuduroScene = class DanzaKuduroScene extends Phaser.Scene {
+export default class DanzaKuduroScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "DanzaKuduroScene",
-    });
+    super("DanzaKuduroScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.DanzaKuduroScene = class DanzaKuduroScene extends Phaser.Scene {
       this.scene.start("DanzaKuduroGameScene");
     });
   }
-};
+}

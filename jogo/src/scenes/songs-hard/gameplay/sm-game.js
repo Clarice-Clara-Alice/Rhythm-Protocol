@@ -1,8 +1,6 @@
-window.SMGameScene = class SMGameScene extends Phaser.Scene {
+export default class SMGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "SMGameScene",
-    });
+    super("SMGameScene");
   }
 
   preload() {
@@ -400,4 +398,4 @@ window.SMGameScene = class SMGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

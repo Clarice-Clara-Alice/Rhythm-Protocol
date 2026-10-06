@@ -1,8 +1,6 @@
-window.BadRomanceScene = class BadRomanceScene extends Phaser.Scene {
+export default class BadRomanceScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BadRomanceScene",
-    });
+    super("BadRomanceScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.BadRomanceScene = class BadRomanceScene extends Phaser.Scene {
       this.scene.start("BadRomanceGameScene");
     });
   }
-};
+}

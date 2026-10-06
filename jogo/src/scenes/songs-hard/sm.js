@@ -1,8 +1,6 @@
-window.SMScene = class SMScene extends Phaser.Scene {
+export default class SMScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "SMScene",
-    });
+    super("SMScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.SMScene = class SMScene extends Phaser.Scene {
       this.scene.start("SMGameScene");
     });
   }
-};
+}

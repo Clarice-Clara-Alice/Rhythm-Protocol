@@ -93,6 +93,46 @@ import SexyBackGameScene from "./scenes/songs-medium/gameplay/sexy-back-game.js"
 import RightRoundScene from "./scenes/songs-medium/right-round.js";
 import RightRoundGameScene from "./scenes/songs-medium/gameplay/right-round-game.js";
 
+// Yeah - Usher
+import YeahScene from "./scenes/songs-hard/yeah.js";
+import YeahGameScene from "./scenes/songs-hard/gameplay/yeah-game.js";
+
+// Beat It - Michael Jackson
+import BeatItScene from "./scenes/songs-hard/beat-it.js";
+import BeatItGameScene from "./scenes/songs-hard/gameplay/beat-it-game.js";
+
+// I Was Made for Lovin You - Kiss
+import LovinYouScene from "./scenes/songs-hard/lovin-you.js";
+import LovinYouGameScene from "./scenes/songs-hard/gameplay/lovin-you-game.js";
+
+// Poker Face - Lady Gaga
+import PokerFaceScene from "./scenes/songs-hard/poker-face.js";
+import PokerFaceGameScene from "./scenes/songs-hard/gameplay/poker-face-game.js";
+
+// Crazy In Love - Beyoncé
+import CrazyInLoveScene from "./scenes/songs-hard/crazy-in-love.js";
+import CrazyInLoveGameScene from "./scenes/songs-hard/gameplay/crazy-in-love-game.js";
+
+// Bad Romance - Lady Gaga
+import BadRomanceScene from "./scenes/songs-hard/bad-romance.js";
+import BadRomanceGameScene from "./scenes/songs-hard/gameplay/bad-rom-game.js";
+
+// S&M - Rihanna
+import SMScene from "./scenes/songs-hard/sm.js";
+import SMGameScene from "./scenes/songs-hard/gameplay/sm-game.js";
+
+// Bohemian Rhapsody - Queen
+import BohemianRhapsodyScene from "./scenes/songs-hard/bohemian-rhapsody.js";
+import BohemianRhapsodyGameScene from "./scenes/songs-hard/gameplay/bohemian-rhapsody-game.js";
+
+// Cherry Pie - Warrant
+import CherryPieScene from "./scenes/songs-hard/cherry-pie.js";
+import CherryPieGameScene from "./scenes/songs-hard/gameplay/cherry-pie-game.js";
+
+// Hotel Room - Pitbull
+import HotelRoomScene from "./scenes/songs-hard/hotel-room.js";
+import HotelRoomGameScene from "./scenes/songs-hard/gameplay/hotel-room-game.js";
+
 class Game extends Phaser.Game {
   constructor() {
     super(config);
@@ -188,6 +228,46 @@ class Game extends Phaser.Game {
     this.scene.add("RightRoundScene", RightRoundScene);
     this.scene.add("RightRoundGameScene", RightRoundGameScene);
 
+    // Yeah - Usher
+    this.scene.add("YeahScene", YeahScene);
+    this.scene.add("YeahGameScene", YeahGameScene);
+
+    // Beat It - Michael Jackson
+    this.scene.add("BeatItScene", BeatItScene);
+    this.scene.add("BeatItGameScene", BeatItGameScene);
+
+    // I Was Made for Lovin You - Kiss
+    this.scene.add("LovinYouScene", LovinYouScene);
+    this.scene.add("LovinYouGameScene", LovinYouGameScene);
+
+    // Poker Face - Lady Gaga
+    this.scene.add("PokerFaceScene", PokerFaceScene);
+    this.scene.add("PokerFaceGameScene", PokerFaceGameScene);
+
+    // Crazy In Love - Beyoncé
+    this.scene.add("CrazyInLoveScene", CrazyInLoveScene);
+    this.scene.add("CrazyInLoveGameScene", CrazyInLoveGameScene);
+
+    // Bad Romance - Lady Gaga
+    this.scene.add("BadRomanceScene", BadRomanceScene);
+    this.scene.add("BadRomanceGameScene", BadRomanceGameScene);
+
+    // S&M - Rihanna
+    this.scene.add("SMScene", SMScene);
+    this.scene.add("SMGameScene", SMGameScene);
+
+    // Bohemian Rhapsody - Queen
+    this.scene.add("BohemianRhapsodyScene", BohemianRhapsodyScene);
+    this.scene.add("BohemianRhapsodyGameScene", BohemianRhapsodyGameScene);
+
+    // Cherry Pie - Warrant
+    this.scene.add("CherryPieScene", CherryPieScene);
+    this.scene.add("CherryPieGameScene", CherryPieGameScene);
+
+    // Hotel Room - Pitbull
+    this.scene.add("HotelRoomScene", HotelRoomScene);
+    this.scene.add("HotelRoomGameScene", HotelRoomGameScene);
+
     this.scene.start("PreloadScene");
   }
 }
@@ -195,36 +275,3 @@ class Game extends Phaser.Game {
 window.onload = () => {
   const game = new Game();
 };
-
-/*
-
-// Músicas - difícil
-
-game.scene.add("BadRomanceScene", BadRomanceScene);
-game.scene.add("BeatItScene", BeatItScene);
-game.scene.add("YeahScene", YeahScene);
-game.scene.add("BohemianRhapsodyScene", BohemianRhapsodyScene);
-game.scene.add("CherryPieScene", CherryPieScene);
-game.scene.add("CrazyInLoveScene", CrazyInLoveScene);
-game.scene.add("LovinYouScene", LovinYouScene);
-game.scene.add("PokerFaceScene", PokerFaceScene);
-game.scene.add("SMScene", SMScene);
-game.scene.add("HotelRoomScene", HotelRoomScene);
-
-// Gameplay - Difícil
-
-game.scene.add("BeatItGameScene", BeatItGameScene);
-game.scene.add("BadRomanceGameScene", BadRomanceGameScene);
-game.scene.add("YeahGameScene", YeahGameScene);
-game.scene.add("BohemianRhapsodyGameScene", BohemianRhapsodyGameScene);
-game.scene.add("CherryPieGameScene", CherryPieGameScene);
-game.scene.add("CrazyInLoveGameScene", CrazyInLoveGameScene);
-game.scene.add("LovinYouGameScene", LovinYouGameScene);
-game.scene.add("PokerFaceGameScene", PokerFaceGameScene);
-game.scene.add("SMGameScene", SMGameScene);
-game.scene.add("HotelRoomGameScene", HotelRoomGameScene);
-
-// Resultado
-
-
-*/

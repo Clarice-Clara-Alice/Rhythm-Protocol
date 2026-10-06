@@ -1,8 +1,6 @@
-window.PokerFaceScene = class PokerFaceScene extends Phaser.Scene {
+export default class PokerFaceScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "PokerFaceScene",
-    });
+    super("PokerFaceScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.PokerFaceScene = class PokerFaceScene extends Phaser.Scene {
       this.scene.start("PokerFaceGameScene");
     });
   }
-};
+}

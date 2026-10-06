@@ -1,8 +1,6 @@
-window.CrazyInLoveGameScene = class CrazyInLoveGameScene extends Phaser.Scene {
+export default class CrazyInLoveGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "CrazyInLoveGameScene",
-    });
+    super("CrazyInLoveGameScene");
   }
 
   preload() {
@@ -400,4 +398,4 @@ window.CrazyInLoveGameScene = class CrazyInLoveGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

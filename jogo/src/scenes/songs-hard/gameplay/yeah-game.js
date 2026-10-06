@@ -1,8 +1,6 @@
-window.YeahGameScene = class YeahGameScene extends Phaser.Scene {
+export default class YeahGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "YeahGameScene",
-    });
+    super("YeahGameScene");
   }
 
   preload() {
@@ -400,4 +398,4 @@ window.YeahGameScene = class YeahGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

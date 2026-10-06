@@ -1,8 +1,6 @@
-window.BadRomanceGameScene = class BadRomanceGameScene extends Phaser.Scene {
+export default class BadRomanceGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BadRomanceGameScene",
-    });
+    super("BadRomanceGameScene");
   }
 
   preload() {

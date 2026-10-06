@@ -1,10 +1,6 @@
-window.BohemianRhapsodyScene = class BohemianRhapsodyScene extends (
-  Phaser.Scene
-) {
+export default class BohemianRhapsodyScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BohemianRhapsodyScene",
-    });
+    super("BohemianRhapsodyScene");
   }
 
   create() {
@@ -34,4 +30,4 @@ window.BohemianRhapsodyScene = class BohemianRhapsodyScene extends (
       this.scene.start("BohemianRhapsodyGameScene");
     });
   }
-};
+}

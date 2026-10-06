@@ -1,8 +1,6 @@
-window.CherryPieGameScene = class CherryPieGameScene extends Phaser.Scene {
+export default class CherryPieGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "CherryPieGameScene",
-    });
+    super("CherryPieGameScene");
   }
 
   preload() {
@@ -400,4 +398,4 @@ window.CherryPieGameScene = class CherryPieGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

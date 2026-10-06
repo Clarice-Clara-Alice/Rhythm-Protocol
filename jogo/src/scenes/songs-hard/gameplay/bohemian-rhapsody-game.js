@@ -1,10 +1,6 @@
-window.BohemianRhapsodyGameScene = class BohemianRhapsodyGameScene extends (
-  Phaser.Scene
-) {
+export default class BohemianRhapsodyGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BohemianRhapsodyGameScene",
-    });
+    super("BohemianRhapsodyGameScene");
   }
 
   preload() {
@@ -405,4 +401,4 @@ window.BohemianRhapsodyGameScene = class BohemianRhapsodyGameScene extends (
 
     return arrows[direction];
   }
-};
+}

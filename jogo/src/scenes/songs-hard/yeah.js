@@ -1,8 +1,6 @@
-window.YeahScene = class YeahScene extends Phaser.Scene {
+export default class YeahScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "YeahScene",
-    });
+    super("YeahScene");
   }
 
   create() {
@@ -35,4 +33,4 @@ window.YeahScene = class YeahScene extends Phaser.Scene {
       this.scene.start("YeahGameScene");
     });
   }
-};
+}

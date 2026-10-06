@@ -1,8 +1,6 @@
-window.PokerFaceGameScene = class PokerFaceGameScene extends Phaser.Scene {
+export default class PokerFaceGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "PokerFaceGameScene",
-    });
+    super("PokerFaceGameScene");
   }
 
   preload() {
@@ -400,4 +398,4 @@ window.PokerFaceGameScene = class PokerFaceGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

@@ -1,8 +1,6 @@
-window.HotelRoomGameScene = class HotelRoomGameScene extends Phaser.Scene {
+export default class HotelRoomGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "HotelRoomGameScene",
-    });
+    super("HotelRoomGameScene");
   }
 
   preload() {
@@ -400,4 +398,4 @@ window.HotelRoomGameScene = class HotelRoomGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

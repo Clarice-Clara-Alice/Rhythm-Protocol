@@ -1,8 +1,6 @@
-window.HotelRoomScene = class HotelRoomScene extends Phaser.Scene {
+export default class HotelRoomScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "HotelRoomScene",
-    });
+    super("HotelRoomScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.HotelRoomScene = class HotelRoomScene extends Phaser.Scene {
       this.scene.start("HotelRoomGameScene");
     });
   }
-};
+}

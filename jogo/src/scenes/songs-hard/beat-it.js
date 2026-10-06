@@ -1,8 +1,6 @@
-window.BeatItScene = class BeatItScene extends Phaser.Scene {
+export default class BeatItScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BeatItScene",
-    });
+    super("BeatItScene");
   }
 
   create() {
@@ -32,4 +30,4 @@ window.BeatItScene = class BeatItScene extends Phaser.Scene {
       this.scene.start("BeatItGameScene");
     });
   }
-};
+}

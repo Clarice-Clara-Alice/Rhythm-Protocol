@@ -1,8 +1,6 @@
-window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
+export default class BeatItGameScene extends Phaser.Scene {
   constructor() {
-    super({
-      key: "BeatItGameScene",
-    });
+    super("BeatItGameScene");
   }
 
   preload() {
@@ -400,4 +398,4 @@ window.BeatItGameScene = class BeatItGameScene extends Phaser.Scene {
 
     return arrows[direction];
   }
-};
+}

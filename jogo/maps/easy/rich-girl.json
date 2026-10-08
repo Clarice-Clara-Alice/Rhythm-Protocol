@@ -3,10 +3,6 @@
     "eventos": [
         {
             "tecla": "up",
-            "tempo": 0.744
-        },
-        {
-            "tecla": "up",
             "tempo": 1.848
         },
         {
@@ -367,7 +363,7 @@
         },
         {
             "tecla": "down",
-            "tempo": 59.112
+            "tempo": 58.812
         },
         {
             "tecla": "down",
@@ -399,10 +395,6 @@
         },
         {
             "tecla": "down",
-            "tempo": 63.737
-        },
-        {
-            "tecla": "down",
             "tempo": 63.976
         },
         {
@@ -416,10 +408,6 @@
         {
             "tecla": "right",
             "tempo": 65.768
-        },
-        {
-            "tecla": "down",
-            "tempo": 66.248
         },
         {
             "tecla": "down",
@@ -492,14 +480,6 @@
         {
             "tecla": "right",
             "tempo": 76.312
-        },
-        {
-            "tecla": "right",
-            "tempo": 76.568
-        },
-        {
-            "tecla": "down",
-            "tempo": 76.904
         },
         {
             "tecla": "down",

@@ -4,7 +4,7 @@ export default class SexyKnowItGameScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.audio("sexyMusic", "assets/music/sexy-know-it.mp3");
+    this.load.audio("sexyMusic", "assets/music/sexy-and-i-know-it.mp3");
     this.load.json("sexyMap", "maps/easy/sexy-and-i-know-it.json");
   }
 

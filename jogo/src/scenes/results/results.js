@@ -44,15 +44,6 @@ export default class ResultScene extends Phaser.Scene {
       .setOrigin(0.5);
 
     this.add
-      .text(this.scale.width / 2, 175, "Enter = Reiniciar", {
-        fontFamily: "Audiowide",
-        fontSize: "40px",
-        fontStyle: "bold",
-        color: "#e6e0e0",
-      })
-      .setOrigin(0.5);
-
-    this.add
       .text(320, 570, player1Score.toString(), {
         fontFamily: "Audiowide",
         fontSize: "60px",
@@ -69,21 +60,4 @@ export default class ResultScene extends Phaser.Scene {
         color: "#e6e0e0",
       })
       .setOrigin(0.5);
-
-    this.input.keyboard.on("keydown-ENTER", () => {
-      this.resetGameData();
-      this.scene.start("PlayScene");
-    });
-  }
-
-  resetGameData() {
-    window.player1Score = 0;
-    window.player2Score = 0;
-
-    window.player1Combo = 0;
-    window.player2Combo = 0;
-
-    window.mapIndex = 0;
-    window.activeNotes = [];
-  }
-}
+}}

@@ -168,9 +168,11 @@ class Game extends Phaser.Game {
 
     // In Da Club - 50 Cent
     this.scene.add("InDaClubScene", InDaClubScene);
-
+    this.scene.add("InDaClubGameScene", InDaClubGameScene);
+  
     // What Makes You Beautiful - ID
     this.scene.add("BeautifulScene", BeautifulScene);
+    this.scene.add("BeautifulGameScene", BeautifulGameScene);
 
     // Rich Girl - Eve
     this.scene.add("RichGirlScene", RichGirlScene);

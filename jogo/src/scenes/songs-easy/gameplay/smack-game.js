@@ -285,7 +285,7 @@ export default class SmackThatGameScene extends Phaser.Scene {
       return;
     }
     this.gameEnded = true;
-    this.scene.start("EasyResultScene", {
+    this.scene.start("ResultScene", {
       player1Score: this.player1Score,
       player2Score: this.player2Score,
     });

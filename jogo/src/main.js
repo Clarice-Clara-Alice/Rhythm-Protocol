@@ -9,7 +9,7 @@ import DifficultyScene from "./scenes/difficulty.js";
 
 // Easy, Medium and Hard Scenes
 import EasyScene from "./scenes/easy-songs.js";
-import EasyResultScene from "./scenes/results/easy-results.js";
+import ResultScene from "./scenes/results/results.js";
 import MediumScene from "./scenes/medium-songs.js";
 import HardScene from "./scenes/hard-songs.js";
 
@@ -146,7 +146,7 @@ class Game extends Phaser.Game {
     this.scene.add("PlayScene", PlayScene);
     this.scene.add("DifficultyScene", DifficultyScene);
     this.scene.add("EasyScene", EasyScene);
-    this.scene.add("EasyResultScene", EasyResultScene);
+    this.scene.add("ResultScene", ResultScene);
     this.scene.add("MediumScene", MediumScene);
     this.scene.add("HardScene", HardScene);
 

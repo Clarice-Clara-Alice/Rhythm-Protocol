@@ -1,6 +1,6 @@
 export default class ResultScene extends Phaser.Scene {
   constructor() {
-    super("EasyResultScene");
+    super("ResultScene");
   }
 
   create(data) {

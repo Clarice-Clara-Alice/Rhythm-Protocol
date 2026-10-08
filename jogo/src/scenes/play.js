@@ -21,7 +21,7 @@ export default class PlayScene extends Phaser.Scene {
 
     this.add
       .text(this.scale.width / 2, this.scale.height / 2, "PLAY", {
-        fontFamily: "Times New Roman",
+        fontFamily: "Audiowide",
         fontSize: "190px",
         fontStyle: "bold",
         color: "#8c40d3",

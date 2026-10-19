@@ -21,9 +21,9 @@ import TheFloorGameScene from "./scenes/songs-easy/gameplay/floor-game.js";
 import BillieScene from "./scenes/songs-easy/billie-jean.js";
 import BillieGameScene from "./scenes/songs-easy/gameplay/billie-game.js";
 
-// Smack That - Akon
-import SmackThatScene from "./scenes/songs-easy/smack-that.js";
-import SmackThatGameScene from "./scenes/songs-easy/gameplay/smack-game.js";
+// Girls Just Want to Have Fun - Cyndi Lauper
+import GirlsJustWantScene from "./scenes/songs-easy/girls-just-want.js";
+import GirlsJustWantGameScene from "./scenes/songs-easy/gameplay/girls-just-want-game.js";
 
 // Dark Horse - Katy Perry
 import DarkHorseScene from "./scenes/songs-easy/dark-horse.js";
@@ -158,9 +158,9 @@ class Game extends Phaser.Game {
     this.scene.add("BillieScene", BillieScene);
     this.scene.add("BillieGameScene", BillieGameScene);
 
-    // Smack That - Akon
-    this.scene.add("SmackThatScene", SmackThatScene);
-    this.scene.add("SmackThatGameScene", SmackThatGameScene);
+    // Girls Just Want to Have Fun - Cyndi Lauper
+    this.scene.add("GirlsJustWantScene", GirlsJustWantScene);
+    this.scene.add("GirlsJustWantGameScene", GirlsJustWantGameScene);
 
     // Dark Horse - Katy Perry
     this.scene.add("DarkHorseScene", DarkHorseScene);

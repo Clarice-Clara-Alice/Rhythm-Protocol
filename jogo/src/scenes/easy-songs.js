@@ -99,25 +99,25 @@ export default class EasyScene extends Phaser.Scene {
 
     RichGirl.add([RichGirlBack, Rich]);
 
-    // Smack That - Akon
+    // Girls Just Want to Have Fun - Cyndi Lauper
 
-    const SmackThat = this.add.container(275, 440);
-    const SmackThatBack = this.add.graphics();
-    SmackThatBack.fillStyle(0x66877d, 0.4);
-    SmackThatBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
+    const GirlsJustWant = this.add.container(275, 440);
+    const GirlsJustWantBack = this.add.graphics();
+    GirlsJustWantBack.fillStyle(0x66877d, 0.4);
+    GirlsJustWantBack.fillRoundedRect(-205, -42.5, 410, 85, 40);
 
-    const Smack = this.add.text(0, 0, "Smack That - Akon", {
+    const Girls = this.add.text(0, 0, "Girls Just Want to Have Fun - Cyndi Lauper", {
       fontFamily: "Times New Roman",
-      fontSize: "25px",
+      fontSize: "20px",
       fontStyle: "bold",
       color: "#d8f5df",
       stroke: "#294916",
       strokeThickness: 3,
     });
 
-    Smack.setOrigin(0.5);
+    Girls.setOrigin(0.5);
 
-    SmackThat.add([SmackThatBack, Smack]);
+    GirlsJustWant.add([GirlsJustWantBack, Girls]);
 
     // Candy Shop - 50 Cent
 
@@ -227,7 +227,7 @@ export default class EasyScene extends Phaser.Scene {
 
       [BillieJean, RichGirl],
 
-      [SmackThat, CandyShop],
+      [GirlsJustWant, CandyShop],
 
       [DarkHorse, JustDance],
 
@@ -301,7 +301,7 @@ export default class EasyScene extends Phaser.Scene {
       } else if (this.selectedRow === 1 && this.selectedColumn === 1) {
         this.scene.start("RichGirlScene");
       } else if (this.selectedRow === 2 && this.selectedColumn === 0) {
-        this.scene.start("SmackThatScene");
+        this.scene.start("GirlsJustWantScene");
       } else if (this.selectedRow === 2 && this.selectedColumn === 1) {
         this.scene.start("CandyShopScene");
       } else if (this.selectedRow === 3 && this.selectedColumn === 0) {

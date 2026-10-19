@@ -1,6 +1,6 @@
-export default class SmackThatScene extends Phaser.Scene {
+export default class GirlsJustWantScene extends Phaser.Scene {
   constructor() {
-    super("SmackThatScene");
+    super("GirlsJustWantScene");
   }
 
   create() {
@@ -27,7 +27,7 @@ export default class SmackThatScene extends Phaser.Scene {
 
     this.time.delayedCall(8000, () => {
       cutscene.remove();
-      this.scene.start("SmackThatGameScene");
+      this.scene.start("GirlsJustWantGameScene");
     });
   }
 }

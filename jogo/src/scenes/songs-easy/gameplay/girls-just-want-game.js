@@ -1,11 +1,11 @@
-export default class SmackThatGameScene extends Phaser.Scene {
+export default class GirlsJustWantGameScene extends Phaser.Scene {
   constructor() {
-    super("SmackThatGameScene");
+    super("GirlsJustWantGameScene");
   }
 
   preload() {
-    this.load.audio("smackMusic", "assets/music/smack-that.mp3");
-    this.load.json("smackMap", "maps/easy/smack-that.json");
+    this.load.audio("girlsJustWantMusic", "assets/music/girls-just-want-to-have-fun.mp3");
+    this.load.json("girlsJustWantMap", "maps/easy/girls-just-want-to-have-fun.json");
   }
 
   create() {
@@ -91,10 +91,10 @@ export default class SmackThatGameScene extends Phaser.Scene {
       })
       .setOrigin(0.5);
 
-    this.mapData = this.cache.json.get("smackMap");
+    this.mapData = this.cache.json.get("girlsJustWantMap");
 
     if (!this.mapData) {
-      console.error("ERRO: Não foi possível carregar smackMap.");
+      console.error("ERRO: Não foi possível carregar girlsJustWantMap.");
 
       return;
     }
@@ -108,7 +108,7 @@ export default class SmackThatGameScene extends Phaser.Scene {
     this.input.keyboard.on("keydown-DOWN", () => this.hitNote("down", 2));
     this.input.keyboard.on("keydown-UP", () => this.hitNote("up", 2));
     this.input.keyboard.on("keydown-RIGHT", () => this.hitNote("right", 2));
-    this.music = this.sound.add("smackMusic");
+    this.music = this.sound.add("girlsJustWantMusic");
     this.music.play();
     this.songStartTime = this.time.now;
   }

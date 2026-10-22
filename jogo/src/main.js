@@ -13,6 +13,10 @@ import ResultScene from "./scenes/results/results.js";
 import MediumScene from "./scenes/medium-songs.js";
 import HardScene from "./scenes/hard-songs.js";
 
+// SNCT
+import MediumSceneSNCT from "./scenes/medium-songs-snct.js";
+import HardSceneSNCT from "./scenes/hard-songs-snct.js";
+
 // On the floor - JLO
 import OTFloorScene from "./scenes/songs-easy/on-the-floor.js";
 import TheFloorGameScene from "./scenes/songs-easy/gameplay/floor-game.js";
@@ -149,6 +153,8 @@ class Game extends Phaser.Game {
     this.scene.add("ResultScene", ResultScene);
     this.scene.add("MediumScene", MediumScene);
     this.scene.add("HardScene", HardScene);
+    this.scene.add("MediumSceneSNCT", MediumSceneSNCT);
+    this.scene.add("HardSceneSNCT", HardSceneSNCT);
 
     // On the floor - JLO
     this.scene.add("OTFloorScene", OTFloorScene);

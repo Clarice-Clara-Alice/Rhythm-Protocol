@@ -17,12 +17,12 @@ export default class DifficultyScene extends Phaser.Scene {
     ]);
     const Medio = this.add.container(640, 360, [
       this.add.image(0, 0, "Capsula"),
-      this.add.image(0, 0, "Menina"),
+      this.add.image(0, 0, "Menina2"),
       this.add.image(5, 225, "medio-diff"),
     ]);
     const Dificil = this.add.container(1040, 360, [
       this.add.image(0, 0, "Capsula"),
-      this.add.image(0, 0, "Mulher"),
+      this.add.image(0, 0, "Mulher2"),
       this.add.image(5, 225, "dificil-diff"),
     ]);
     this.buttons = [Facil, Medio, Dificil];
@@ -69,9 +69,9 @@ export default class DifficultyScene extends Phaser.Scene {
       if (this.selectedButton === 0) {
         this.scene.start("EasyScene");
       } else if (this.selectedButton === 1) {
-        this.scene.start("MediumScene");
+        this.scene.start("MediumSceneSNCT");
       } else if (this.selectedButton === 2) {
-        this.scene.start("HardScene");
+        this.scene.start("HardSceneSNCT");
       }
     });
   }

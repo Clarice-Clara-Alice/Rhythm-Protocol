@@ -26,7 +26,9 @@ export default class PreloadScene extends Phaser.Scene {
     this.load.image("Capsula", "./images/capsula.png");
     this.load.image("Homem", "./images/homem.png");
     this.load.image("Menina", "./images/menina.png");
+    this.load.image("Menina2", "./images/menina2.png");
     this.load.image("Mulher", "./images/mulher.png");
+    this.load.image("Mulher2", "./images/mulher2.png");
     this.load.image("facil-diff", "./images/facil-diff.png");
     this.load.image("medio-diff", "./images/medio-diff.png");
     this.load.image("dificil-diff", "./images/dificil-diff.png");
@@ -43,6 +45,7 @@ export default class PreloadScene extends Phaser.Scene {
     this.load.image("P2Perde", "./images/P2Perde.png");
     this.load.image("P1Empate", "./images/P1Empate.png");
     this.load.image("P2Empate", "./images/P2Empate.png");
+    this.load.image("Nada", "./images/Nada.png");
   }
 
   create() {

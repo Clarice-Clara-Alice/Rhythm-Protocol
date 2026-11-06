@@ -2,10 +2,6 @@
     "musica": "back-in-black.mp3",
     "eventos": [
         {
-            "tecla": "up",
-            "tempo": 0.776
-        },
-        {
             "tecla": "down",
             "tempo": 1.384
         },

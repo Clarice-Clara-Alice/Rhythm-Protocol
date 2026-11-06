@@ -2,10 +2,6 @@
     "musica": "sexy-know-it.mp3",
     "eventos": [
         {
-            "tecla": "up",
-            "tempo": 0.872
-        },
-        {
             "tecla": "left",
             "tempo": 1.041
         },

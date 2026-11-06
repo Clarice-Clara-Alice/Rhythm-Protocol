@@ -2,10 +2,6 @@
     "musica": "cherry-pie.mp3",
     "eventos": [
         {
-            "tecla": "up",
-            "tempo": 0.736
-        },
-        {
             "tecla": "down",
             "tempo": 0.912
         },
